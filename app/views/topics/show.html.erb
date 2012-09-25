@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<% provide(:title, @topic.name) %>  
+<% for post in @topic.posts %>  
+<div class="post">  
+  <span class="left"><%= link_to post.user.username, user_url(post.user) %><br /><%= link_to "Edit", edit_post_path(post) %><br /><%= link_to "Delete", post, :confirm => 'Are you sute?', :method => :delete %></span>  
+  <span class="right"><%= post.content %></span>  
+</div>  
+<% end %>  
+<p>  
+  <% if logged_in? %><%= link_to "Reply", "#{new_post_path}?topic=#{@topic.id}" %> |<% end %>  
+  <% if admin? %><%= link_to "Destroy Topic", @topic, :confirm => 'Are you sure?', :method => :delete %> |<% end %>  
+  <%= link_to "View All", forum_path(@topic.forum_id) %>  
+</p> 

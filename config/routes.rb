@@ -1,6 +1,13 @@
 KForum::Application.routes.draw do
 
+  resources :posts
+
+  resources :topics
+
+  resources :forums
+
   devise_for :users
+  
   root :to => 'static_pages#home'
 
   match '/help',    to: 'staticpages#help'

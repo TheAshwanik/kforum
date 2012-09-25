@@ -9,4 +9,30 @@ module ApplicationHelper
     end
   end
 
+  def admin?  
+    if current_user.admin == true || current_user.id == 1
+      puts "True ashwani"  
+      return true  
+    else
+      puts "False ashwani"  
+      return false  
+    end  
+  end  
+  
+  def owner?(id)  
+    if current_user.id == id  
+      return true  
+    else  
+      return false  
+    end  
+  end
+  
+  def admin_or_owner?(id)  
+    if (admin? || owner?(id))  
+      return true  
+    else  
+      return false  
+    end  
+  end  
+  
 end
