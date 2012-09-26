@@ -49,10 +49,6 @@ class TopicsController < ApplicationController
     params[:topic][:last_post_at] = Time.now
     params[:topic][:user_id] = current_user.id
 
-    puts "ashwani"
-    puts params
-    puts "ashwani"
-    
     @topic = Topic.new(:name => params[:topic][:name],
       :last_poster_id => params[:topic][:last_poster_id],
       :last_post_at => params[:topic][:last_post_at],
@@ -77,7 +73,7 @@ class TopicsController < ApplicationController
 
     respond_to do |format|
       if @topic.update_attributes(params[:topic])
-        format.html { redirect_to @topic, notice: 'Topic was successfully updated.' }
+        format.html { redirect_to forum_url(@topic.forum_id), notice: 'Topic was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -90,10 +86,11 @@ class TopicsController < ApplicationController
   # DELETE /topics/1.json
   def destroy
     @topic = Topic.find(params[:id])
+    forum_id = @topic.forum_id
     @topic.destroy
 
     respond_to do |format|
-      format.html { redirect_to topics_url }
+      format.html {  redirect_to forum_url(forum_id) }
       format.json { head :no_content }
     end
   end

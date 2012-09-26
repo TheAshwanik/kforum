@@ -150,7 +150,16 @@ aside {
 
 /* forms */
 
-input, textarea, select, .uneditable-input {
+textarea {
+  border: 1px solid #bbb;
+  width: auto;
+  padding: 10px;
+  height: auto;
+  margin-bottom: 35px;
+  @include box_sizing;
+}
+
+input, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   padding: 10px;
@@ -268,4 +277,4 @@ table tr td h4 {margin:0; padding:0; font-weight:normal;}
 .post {width:100%; display:table;}  
 .post span {padding:5px; border:3px solid #eee; margin:0;}  
 .post span.left {width:150px; background:#eee; border:3px solid #eee; display:table-cell;}  
-.post span.rightright { border:3px solid #eee; display:table-cell;}  
+.post span.rightright { border:3px solid #eee; display:table-cell;}

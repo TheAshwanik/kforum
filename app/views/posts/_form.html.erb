@@ -11,8 +11,8 @@
     </div>
   <% end %>
 
-  <% if params[:topic] %>
-  	<input type="hidden" id="topic_forum_id" name="post[topic_id]" value="<%= params[:topic] %>" />
+  <% if params[:topic_id] %>
+  	<input type="hidden" id="topic_forum_id" name="post[topic_id]" value="<%= params[:topic_id] %>" />
   <% end %>
     
   <div class="field">

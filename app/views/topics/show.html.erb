@@ -1,20 +1,16 @@
-<p id="notice"><%= notice %></p>
-
 <% provide(:title, @topic.name) %> 
 <% if @topic.posts.count >0 %>
-	<% for post in @topic.posts %>  
-	<div class="post">  
-	  <span class="left"><%= link_to post.user.username, user_url(post.user) %>
-	  	<br /><%= link_to "Edit", edit_post_path(post) %>
-	  	<br /><%= link_to "Delete", post, :confirm => 'Are you sute?', :method => :delete %></span>  
-	  <span class="right"><%= post.content %></span>  
-	</div>  
+	<% for post in @topic.posts %>
+	<pre>
+	  	<%= link_to gravatar_for(post.user), post.user.username %>
+        <%= post.content %>
+	</pre>  
 	<p>  
-	  <% if user_signed_in? %><%= link_to "Reply", "#{new_post_path}?topic=#{@topic.id}" %> |<% end %>  
-	  <% if admin? %><%= link_to "Destroy Topic", @topic, :confirm => 'Are you sure?', :method => :delete %> |<% end %>  
-	  <%= link_to "View All", forum_path(@topic.forum_id) %>  
+	  <% if user_signed_in? %><%= link_to "Reply", "#{new_post_path}?topic_id=#{@topic.id}" %> |<% end %>
+	  <%= link_to "Edit", edit_post_path(post) %> |
+	  <%= link_to "Delete", post, :confirm => 'Are you sute?', :method => :delete %>  
 	</p>
 	<% end %>
 <% else %>
-	<%= link_to "New Post", {new_post_path}?topic=#{@topic.id} %>
+	<%= link_to "New Post", "/posts/new?topic_id=#{@topic.id}"  %>
 <% end %>

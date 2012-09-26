@@ -73,7 +73,7 @@ class PostsController < ApplicationController
         @topic = Topic.find(@post.topic_id)  
         @topic.update_attributes(:last_poster_id => current_user.id, :last_post_at => Time.now)  
     
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+        format.html { redirect_to @topic, notice: 'Post was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -85,13 +85,14 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
-    @post = Post.find(params[:id])  
+    @post = Post.find(params[:id])
+    topic_id = @post.topic_id  
     admin_or_owner_required(@post.user.id)
      
     @post.destroy
 
     respond_to do |format|
-      format.html { redirect_to forums_url  }
+      format.html { redirect_to topic_url(topic_id)  }
       format.json { head :no_content }
     end
   end
