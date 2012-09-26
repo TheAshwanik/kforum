@@ -11,12 +11,17 @@
     </div>
   <% end %>
 
+<h2> <%= params %> </h2>
+  <% if params[:forum_id] %>
+  	<input type="hidden" id="forum_forum_id" name="topic[forum_id]" value="<%= params[:forum_id] %>" />
+  <% end %>
+    
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
   <p>  
-    <textarea name="post[content]" cols="80" rows="20"><%= @post.content %></textarea>  
+    <textarea name="post[content]" cols="80" rows="20"></textarea>  
   </p>
   <div class="actions">
     <%= f.submit %>

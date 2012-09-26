@@ -1,5 +1,5 @@
 class Forum < ActiveRecord::Base
-  attr_accessible :description, :name
+  attr_accessible :description, :name, :forum_id
   has_many :topics, :dependent => :destroy
   
   def most_recent_post  

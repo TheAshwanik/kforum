@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 <% provide(:title, "Forums") %> 
 
 <table>  
@@ -10,7 +9,7 @@
   <% for topic in @forum.topics %>  
     <tr>  
       <td><%= link_to h(topic.name), topic_path(topic.id) %>  
-      <td><%= topic.posts - 1 %></td>  
+      <td><%= topic.posts.count - 1 %></td>  
       <td class="right">
       	<%= distance_of_time_in_words_to_now topic.last_post_at %> ago by 
       	<%= link_to topic.user.username, "/users/#{topic.last_poster_id}" %>
@@ -19,4 +18,4 @@
     </tr>  
   <% end %>  
 </table>  
-<p><%= link_to "New Topic", "/topics/new?forum=#{@forum.id}" %></p>
+<p><%= link_to "New Topic", "/topics/new?forum_id=#{@forum.id}" %></p>
