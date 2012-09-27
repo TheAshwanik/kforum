@@ -1,4 +1,11 @@
 <%= form_for(@post) do |f| %>
+
+	<div disabled="true">
+		<script type="text/javascript">
+       		bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+		</script>
+	</div>
+	
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -17,7 +24,7 @@
     
   <div class="field">
     <%= f.label :content %><br />
-    <%= f.text_area :content %>
+    <%= f.text_area :content,:cols=>"85", :rows=>"15"  %>
   </div>
   <div class="actions">
     <%= f.submit %>

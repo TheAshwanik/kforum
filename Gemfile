@@ -10,6 +10,7 @@ gem 'bootstrap-will_paginate', '0.0.6'
 
 gem 'sqlite3'
 gem 'devise', '1.4.7'
+gem 'acts_as_commentable_with_threading'
 
 
 # Gems used only for assets and not required

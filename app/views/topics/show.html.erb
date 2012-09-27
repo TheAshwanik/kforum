@@ -10,6 +10,8 @@
 	  <%= link_to "Edit", edit_post_path(post) %> |
 	  <%= link_to "Delete", post, :confirm => 'Are you sute?', :method => :delete %>  
 	</p>
+	
+
 	<% end %>
 <% else %>
 	<%= link_to "New Post", "/posts/new?topic_id=#{@topic.id}"  %>
