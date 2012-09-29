@@ -1,18 +1,26 @@
 KForum::Application.routes.draw do
 
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
 
   resources :topics
 
   resources :forums
 
-  devise_for :users
+  devise_for :users do
+     resources :posts
+     resources :comments
+  end
+
+  
+  resources :comments
   
   root :to => 'static_pages#home'
 
-  match '/help',    to: 'staticpages#help'
-  match '/about',   to: 'staticpages#about'
-  match '/contact', to: 'staticpages#contact'
+  match '/help',    to: 'static_pages#help'
+  match '/about',   to: 'static_pages#about'
+  match '/contact', to: 'static_pages#contact'
   match '/users', to: 'users#show'
   
   # The priority is based upon order of creation:

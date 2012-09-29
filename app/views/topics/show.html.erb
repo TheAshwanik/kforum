@@ -1,18 +1,81 @@
-<% provide(:title, @topic.name) %> 
-<% if @topic.posts.count >0 %>
+<% provide(:title, @topic.name) %>
+<div class="navbar"><h2 class="pull-left">Topic of Discussion: <%= @topic.name %></h2></div><br /> <br>
+<% if @topic.posts.count > 0 %>
+	<%@outer_index=1%>
 	<% for post in @topic.posts %>
-	<pre>
-	  	<%= link_to gravatar_for(post.user), post.user.username %>
-        <%= post.content %>
-	</pre>  
-	<p>  
-	  <% if user_signed_in? %><%= link_to "Reply", "#{new_post_path}?topic_id=#{@topic.id}" %> |<% end %>
-	  <%= link_to "Edit", edit_post_path(post) %> |
-	  <%= link_to "Delete", post, :confirm => 'Are you sute?', :method => :delete %>  
-	</p>
-	
+	<div class="well well-large">
+	    <% @post = post %>
+		  		<div class="row">
+		  			<!--<div class="span2" style="width: 110px">
+		  				<%= link_to gravatar_for(post.user), post.user.username %>
+		  			</div> -->
+	       			<p class="span10 post-body"><%= raw(post.content) %></p>
+	       			
+	       			<br /><br />
+	       			<div class="span11"> 
+	       				   <p class="posted-at pull-right">–Posted on <%= post.created_at %> by 
+	       						<a href="/users/"<%=post.user.id%>><%= find_user(post.user_id).username %> 
+	       						</a>
+	       					</p>
+	       			</div>
+	       		</div>
+	        	<div class="well well-small">
+				<div class="tabbable tabs-left">
+				<% @all_comments = post.comment_threads %>
+		        <% if @all_comments %>
+		        	<ul class="nav nav-tabs">
+		        		<% @i = 1 %>
+						<% for c in @all_comments %>
+							<li id="li-tab<%=@i%><%=@outer_index%>">
+								<a href="#tab<%=@i%><%=@outer_index%>" data-toggle="tab">Comment</a>
+							</li>
+					   		<% @i = @i + 1 %>
+						<% end %>
+					</ul>
+					<div class="tab-content">
+						<% @i = 1 %>
+						<% for c in @all_comments %>							
+					   		<% @user = find_user(c.user_id) %>
+					   		<div class="tab-pane" id="tab<%=@i%><%=@outer_index%>">
+					     	 <pre>
+						     <p class="posted-details"><%= raw(c.body) %></p>
+						     <p class="posted-at">–Posted <span class="timeago" title="<%= c.created_at %>">a day ago</span> by <a href="users/66354"><%= @user.username %> </a></p>
+						     </pre>
+				     		</div>
+							<% @i = @i + 1 %>
+						<% end %>
+					</div>
+			    <% end %>
+			    </div> <!-- end of tabbable tabs-left --> 
+			    </div> <!-- end of well small -->
+			    <div><script language="javascript"> this.document.getElementById("li-tab1<%=@outer_index%>").setAttribute("class", "active");</script></div>
+			    <div><script language="javascript"> this.document.getElementById("tab1<%=@outer_index%>").setAttribute("class", "tab-pane active");</script></div>
 
-	<% end %>
+		  
+		 <p>
+		 <!-- <a href="/comments/new?post_id=<%= post.id %>" title="Comment" 
+		   onclick="Modalbox.show(this.href, {title: this.title, width: 800}); return false;">
+		   Comment</a> -->
+		  <% if user_signed_in? %>
+		     <%= link_to "Comment on this post", "/comments/new?post_id=#{post.id}"%>|
+		  <% end %>
+	 	  <% if owner?(post.user_id) %>
+		  	<%= link_to "Edit", edit_post_path(post) %>|
+		  <% end %>
+		  <% if admin_or_owner?(post.user_id) %>
+		  	<%= link_to "Delete", post, :method =>:delete,:confirm => "Are you sure?" %>|
+		  <% end %>	
+		 </p>
+	 </div>	 <!-- end of well large -->	
+     <%@outer_index = @outer_index + 1 %>	
+	 <% end %>
+	 
+
+	 
+	 <% if user_signed_in? %>
+		  	<%= link_to "Reply", "#{new_post_path}?topic_id=#{@topic.id}" %>
+	 <% end %>
+	 	 
 <% else %>
 	<%= link_to "New Post", "/posts/new?topic_id=#{@topic.id}"  %>
 <% end %>

@@ -268,6 +268,22 @@ aside {
 }
 
 
+.posted-details, .posted-at{
+  margin: 0 20px 10px;
+  font-size: 11px;
+  font-style: italic;
+  color: #888;
+  text-align: left;
+  font-family: "Open Sans",Verdana,Geneva,sans-serif;
+  font: normal 1em/1.6em Georgia,Cambria,"Times New Roman",Times,serif;
+}
+
+.post-body {
+  font-family: "Open Sans",Verdana,Geneva,sans-serif;
+  line-height: 1.4;
+  text-align: left;
+}
+
 table tr th {background:#222; color:#fff; padding:0; border:#111 solid 1px;}  
 table tr td {border:1px #ccc solid; padding:5px;}  
 table tr td.rightright {background: #eee;}  
@@ -278,3 +294,6 @@ table tr td h4 {margin:0; padding:0; font-weight:normal;}
 .post span {padding:5px; border:3px solid #eee; margin:0;}  
 .post span.left {width:150px; background:#eee; border:3px solid #eee; display:table-cell;}  
 .post span.rightright { border:3px solid #eee; display:table-cell;}
+
+
+div.hidden { display: none; }

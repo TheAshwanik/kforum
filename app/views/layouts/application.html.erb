@@ -2,11 +2,18 @@
 <html>
   <head>
     <title><%= full_title(yield(:title)) %></title>
-    <%= stylesheet_link_tag    "application", media: "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= javascript_include_tag 'nicEdit' %>
     <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "application", media: "all" %>
+	<%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'jquery' %>
+    <script type="text/javascript" src="/assets/jquery.markitup.js"></script>
+    <script type="text/javascript" src="/assets/jquery.timeago"></script>
+    <script type="text/javascript" src="/assets/set.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="/assets/style.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/default_style.css" />   
     <%= render 'layouts/shim' %>
+    
   </head>
   <body>
     <%= render 'layouts/header' %>

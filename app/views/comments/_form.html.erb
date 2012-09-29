@@ -1,0 +1,35 @@
+<%= form_for [@post, @comment], :html => {:multipart => true} do |f|%>
+	
+	
+	<div disabled="true">
+		<script type="text/javascript" >
+		   $(document).ready(function() {
+		      $("textarea").markItUp(mySettings);
+		   });
+		</script>
+	</div>
+	
+	  <% if @comment.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this topic from being saved:</h2>
+		  <ul>
+	      <% @comment.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	  <% end %>
+  
+	  <div>
+	      <%= f.hidden_field :commentable_id, :value=> @post.id %>
+	      <div class="field">
+		      	<%= f.label :body %>
+		      	<%= f.text_area :body, :cols=>"100", :rows=>"15"  %><br>
+		  </div>
+		      
+	      <div class="submit">
+	        <%= f.submit "Add comment" , :class => "btn btn-primary" %>
+	      </div>		    
+	  </div>
+
+<% end %>
