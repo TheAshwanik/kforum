@@ -52,9 +52,9 @@ class TopicsController < ApplicationController
     @topic = Topic.new(:name => params[:topic][:name],
       :last_poster_id => params[:topic][:last_poster_id],
       :last_post_at => params[:topic][:last_post_at],
-      :forum_id => params[:topic][:forum_id],
+      :forum_id => params[:forum_id],
       :user_id => params[:topic][:user_id])
-        
+    
     respond_to do |format|
       if @topic.save
         format.html { redirect_to "/forums/#{@topic.forum_id}", notice: 'Topic was successfully created.' }
@@ -90,7 +90,7 @@ class TopicsController < ApplicationController
     @topic.destroy
 
     respond_to do |format|
-      format.html {  redirect_to forum_url(forum_id) }
+      format.html {  redirect_to forum_url(forum_id) , notice: 'Topic was successfully deleted.'}
       format.json { head :no_content }
     end
   end

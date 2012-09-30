@@ -9,9 +9,17 @@
     <script type="text/javascript" src="/assets/jquery.markitup.js"></script>
     <script type="text/javascript" src="/assets/jquery.timeago"></script>
     <script type="text/javascript" src="/assets/set.js"></script>
-    
+    <script type="text/javascript"> 
+	    $(function() {
+	   $('#flash').delay(500).fadeIn('normal', function() {
+	      $(this).delay(2500).fadeOut();
+	   });
+	});
+	</script>
+	<script>jQuery(document).ready(function($) {$("abbr.timeago").timeago();});</script>
     <link rel="stylesheet" type="text/css" href="/assets/style.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/default_style.css" />   
+	<link rel="stylesheet" type="text/css" href="/assets/default_style.css" />
+	   
     <%= render 'layouts/shim' %>
     
   </head>
@@ -19,7 +27,8 @@
     <%= render 'layouts/header' %>
     <div class="container">
         <% flash.each do |key, value| %>
-          <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+         <%= content_tag(:div, value , class: "alert alert-#{key}", :id => "flash") %>
+          
         <% end %>
 	    
 	<%= yield %>

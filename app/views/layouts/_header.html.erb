@@ -4,6 +4,11 @@
       <%= link_to "KForum", root_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
+          <li><form class="navbar-search" >
+  			<input style="height: 30px ; border-radius: 8px 8px 8px 8px; margin-bottom: 0" 
+  				type="text" class="search-query" placeholder="Search Topics">
+		  </form></li>
+		  
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "Forum", forums_path %></li>
           <li><%= link_to "Help", help_path %></li>
@@ -27,4 +32,3 @@
     </div>
   </div>
 </header>
-

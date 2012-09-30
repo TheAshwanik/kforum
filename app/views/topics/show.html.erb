@@ -13,8 +13,8 @@
 	       			
 	       			<br /><br />
 	       			<div class="span11"> 
-	       				   <p class="posted-at pull-right">–Posted on <%= post.created_at %> by 
-	       						<a href="/users/"<%=post.user.id%>><%= find_user(post.user_id).username %> 
+	       				   <p class="posted-at pull-right">–Posted  <abbr class="timeago" title="<%= (post.created_at).getutc.iso8601 %>"></abbr> 
+	       						  by <a href="/users/"<%=post.user.id%>> <%= find_user(post.user_id).username %>  
 	       						</a>
 	       					</p>
 	       			</div>
@@ -27,7 +27,7 @@
 		        		<% @i = 1 %>
 						<% for c in @all_comments %>
 							<li id="li-tab<%=@i%><%=@outer_index%>">
-								<a href="#tab<%=@i%><%=@outer_index%>" data-toggle="tab"><i class="icon-comment"></i></a>
+								<a href="#tab<%=@i%><%=@outer_index%>" data-toggle="tab"><i class="icon-comment icon-white"></i></a>
 							</li>
 					   		<% @i = @i + 1 %>
 						<% end %>
@@ -38,11 +38,19 @@
 					   		<% @user = find_user(c.user_id) %>
 					   		<div class="tab-pane" id="tab<%=@i%><%=@outer_index%>">
 					     	 <pre>
-						     <p class="posted-details"><%= raw(c.body) %></p>
-						     <p class="posted-at">–Posted <span class="timeago" title="<%= c.created_at %>">a day ago</span> by <a href="users/66354"><%= @user.username %> </a></p>
+							    <p class="posted-details"><%= raw(c.body) %></p>
+							    <p class="posted-at">–Posted  <abbr class="timeago" title="<%= (c.created_at).getutc.iso8601 %>"></abbr> by <a href="users/66354"><%= @user.username %> </a></p>
 						     </pre>
+							 <% @i = @i + 1 %>
+							 <div class="pull-right"><% if owner?(c.user_id) %>
+						  		<i class="icon-edit icon-white"></i><%= link_to " Edit Comment", edit_comment_path(:id => c.id, :post_id => c.commentable_id) %> |
+						  	 <% end %>
+						  	 <% if admin_or_owner?(c.user_id) %>
+						  		<i class="icon-trash icon-white"></i><%= link_to " Delete Comment", c , :params => {:id => c.id, :post_id => c.commentable_id}, :method =>:delete, :confirm => "Are you sure?" %>
+						     <% end %></div>
+					    	 
 				     		</div>
-							<% @i = @i + 1 %>
+					    	
 						<% end %>
 					</div>
 			    <% end %>
@@ -50,20 +58,21 @@
 			    </div> <!-- end of well small -->
 			    <div><script language="javascript"> this.document.getElementById("li-tab1<%=@outer_index%>").setAttribute("class", "active");</script></div>
 			    <div><script language="javascript"> this.document.getElementById("tab1<%=@outer_index%>").setAttribute("class", "tab-pane active");</script></div>
-
+				
+					
 		  
 		 <p>
 		 <!-- <a href="/comments/new?post_id=<%= post.id %>" title="Comment" 
 		   onclick="Modalbox.show(this.href, {title: this.title, width: 800}); return false;">
 		   Comment</a> -->
 		  <% if user_signed_in? %>
-		     <i class="icon-pencil"></i><%= link_to " Comment on this post", "/comments/new?post_id=#{post.id}"%> |
+		     <i class="icon-pencil icon-white"></i><%= link_to " Comment on post", "/comments/new?post_id=#{post.id}"%> |
 		  <% end %>
 	 	  <% if owner?(post.user_id) %>
-		  	<i class="icon-edit"></i><%= link_to " Edit", edit_post_path(post) %> |
+		  	<i class="icon-edit icon-white"></i><%= link_to " Edit Post", edit_post_path(post) %> |
 		  <% end %>
 		  <% if admin_or_owner?(post.user_id) %>
-		  	<i class="icon-trash"></i><%= link_to " Delete", post, :method =>:delete,:confirm => "Are you sure?" %>
+		  	<i class="icon-trash icon-white"></i><%= link_to " Delete Post", post, :method =>:delete,:confirm => "Are you sure?" %>
 		  <% end %>	
 		 </p>
 	 </div>	 <!-- end of well large -->	

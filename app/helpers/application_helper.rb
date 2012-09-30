@@ -1,7 +1,7 @@
 module ApplicationHelper
 # Returns the full title on a per-page basis.
   def full_title(page_title)
-    base_title = "Ruby on Rails Tutorial Sample App"
+    base_title = "KForum"
     if page_title.empty?
       base_title
     else
@@ -11,10 +11,8 @@ module ApplicationHelper
 
   def admin?  
     if current_user.admin == true || current_user.id == 1
-      puts "True ashwani"  
       return true  
-    else
-      puts "False ashwani"  
+    else 
       return false  
     end  
   end  
@@ -40,4 +38,19 @@ module ApplicationHelper
     return @user
   end
   
+  def show_flash(options={})
+    options = {:fade => 1, :display => 2, :highlight => 3}.merge(options)
+    html = content_tag(:div, flash.collect{ |key,msg| content_tag(:div, msg, :class => key, :attributes => "style = display: none;") }, :id => 'flash-message')
+    html << content_tag(:script, "new Effect.Highlight('flash-message', {duration: #{options[:highlight]}});") if options[:highlight]
+    html << content_tag(:script, "setTimeout(\"$('flash-message').fade({duration: #{options[:fade]}});\", #{options[:display]*1000}); return false;")
+  end
+  
+  
+  def timeago(time, options = {})
+    puts "ashwani timeago"
+    options[:class] ||= "timeago"
+    content_tag(:abbr, time.to_s, options.merge(:title => time.getutc.iso8601)) if time
+    puts "ashwani"
+  end
+
 end

@@ -1,14 +1,24 @@
-<h1>Welcome to the KForum</h1>
-
-    <h2>
-      This is the home page for the KForum application.
-    </h2>
+<br /><br /><br />
+<div class="hero-unit">
+  <h1>Welcome to the KForum</h1>
+  <center><p>This is the home page for the KForum application.</p>
     
-  <% if user_signed_in? && current_user.confirmed? %>
-    Signed in as <%= current_user.email %>. Not you?
-    <%= link_to "Sign out", destroy_user_session_path , :method => :delete %>
-  <% else %>
-    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
-  <% end %>
+    <% if !user_signed_in? && !current_user.confirmed? %>
+    <a class="btn btn-primary">Sign In</a>
+    Or
+    <a class="btn btn-primary">Sign Up</a>
+    <% end %>
+  </center>  
+  <br /><br />
+  <div class="pull-right">
+	  <br /><br />
+	  <% if user_signed_in? && current_user.confirmed? %>
+	    Signed in as <%= current_user.email %>. Not you?
+	    <%= link_to "Sign out", destroy_user_session_path , :method => :delete %>
+	  <% else %>
+	    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+	  <% end %>
+  </div>
   
+</div> 
 <!--<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>-->
