@@ -27,7 +27,7 @@
 		        		<% @i = 1 %>
 						<% for c in @all_comments %>
 							<li id="li-tab<%=@i%><%=@outer_index%>">
-								<a href="#tab<%=@i%><%=@outer_index%>" data-toggle="tab">Comment</a>
+								<a href="#tab<%=@i%><%=@outer_index%>" data-toggle="tab"><i class="icon-comment"></i></a>
 							</li>
 					   		<% @i = @i + 1 %>
 						<% end %>
@@ -57,13 +57,13 @@
 		   onclick="Modalbox.show(this.href, {title: this.title, width: 800}); return false;">
 		   Comment</a> -->
 		  <% if user_signed_in? %>
-		     <%= link_to "Comment on this post", "/comments/new?post_id=#{post.id}"%>|
+		     <i class="icon-pencil"></i><%= link_to " Comment on this post", "/comments/new?post_id=#{post.id}"%> |
 		  <% end %>
 	 	  <% if owner?(post.user_id) %>
-		  	<%= link_to "Edit", edit_post_path(post) %>|
+		  	<i class="icon-edit"></i><%= link_to " Edit", edit_post_path(post) %> |
 		  <% end %>
 		  <% if admin_or_owner?(post.user_id) %>
-		  	<%= link_to "Delete", post, :method =>:delete,:confirm => "Are you sure?" %>|
+		  	<i class="icon-trash"></i><%= link_to " Delete", post, :method =>:delete,:confirm => "Are you sure?" %>
 		  <% end %>	
 		 </p>
 	 </div>	 <!-- end of well large -->	
