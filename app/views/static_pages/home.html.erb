@@ -3,7 +3,7 @@
   <h1>Welcome to the KForum</h1>
   <center><p>This is the home page for the KForum application.</p>
     
-    <% if !user_signed_in? && !current_user.confirmed? %>
+    <% if nil !user_signed_in? && !current_user.confirmed? %>
     <a class="btn btn-primary">Sign In</a>
     Or
     <a class="btn btn-primary">Sign Up</a>
@@ -12,7 +12,7 @@
   <br /><br />
   <div class="pull-right">
 	  <br /><br />
-	  <% if user_signed_in? && current_user.confirmed? %>
+	  <% if !nil && user_signed_in? && current_user.confirmed? %>
 	    Signed in as <%= current_user.email %>. Not you?
 	    <%= link_to "Sign out", destroy_user_session_path , :method => :delete %>
 	  <% else %>
