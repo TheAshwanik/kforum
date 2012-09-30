@@ -8,11 +8,15 @@ gem 'bootswatch-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
 gem 'devise', '1.4.7'
 gem 'acts_as_commentable_with_threading'
 
+group :production do
+  gem 'pg', '0.12.2'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
