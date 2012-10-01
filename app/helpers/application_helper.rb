@@ -47,10 +47,15 @@ module ApplicationHelper
   
   
   def timeago(time, options = {})
-    puts "ashwani timeago"
     options[:class] ||= "timeago"
     content_tag(:abbr, time.to_s, options.merge(:title => time.getutc.iso8601)) if time
-    puts "ashwani"
+  end
+  
+  def find_forumName_by_topicId(id)
+    @topic = Topic.find(id)
+    forum_id = @topic.forum_id
+    @forum = Forum.find(forum_id)
+    params.merge({:forum => @forum.name,:forum_id => forum_id})
   end
 
 end

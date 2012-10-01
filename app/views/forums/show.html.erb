@@ -1,6 +1,6 @@
 <% provide(:title, "Forums") %>
 <br />
-<h2 class="pull-left">Discussion Topics in Forum: <%= @forum.name %></h2><br /><br />
+<h4 class="pull-left"><%= @forum.name %></h4><br /><br />
 <br />
 <table class="table table-striped table-bordered">  
   <tr>  
@@ -22,5 +22,5 @@
      <% if admin? %><td><%= link_to "Delete", topic, :confirm => 'Are you sure?', :method => :delete %></td><% end %>
     </tr>  
   <% end %>  
-</table>  
-<p><%= link_to "New Topic", "/topics/new?forum_id=#{@forum.id}" %></p>
+</table><br />  
+<p><%= link_to "New Topic", "/topics/new?forum_id=#{@forum.id}" , :class => "btn btn-primary", :style =>"color:white" %></p>

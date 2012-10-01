@@ -3,22 +3,20 @@
   <h1>Welcome to the KForum</h1>
   <center><p>This is the home page for the KForum application.</p>
     
-    <% if nil && !user_signed_in? && !current_user.confirmed? %>
-    <a class="btn btn-primary">Sign In</a>
-    Or
-    <a class="btn btn-primary">Sign Up</a>
-    <% end %>
-  </center>  
   <br /><br />
-  <div class="pull-right">
+  <div>
 	  <br /><br />
 	  <% if !nil && user_signed_in? && current_user.confirmed? %>
-	    Signed in as <%= current_user.email %>. Not you?
-	    <%= link_to "Sign out", destroy_user_session_path , :method => :delete %>
+	    <div class="pull-right">Signed in as <%= current_user.email %>. Not you?
+	    <%= link_to "Sign out", destroy_user_session_path , :method => :delete %></div>
 	  <% else %>
-	    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+	    <h3><%= link_to "Sign up", new_user_registration_path , :class => "btn btn-primary", :style =>"color:white" %>
+	    	   or   <%= link_to "Sign in", new_user_session_path , :class => "btn btn-primary", :style =>"color:white" %></h3>
 	  <% end %>
+	  <br />
   </div>
+  </center>  
+
   
 </div> 
 <!--<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>-->

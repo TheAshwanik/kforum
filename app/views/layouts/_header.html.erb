@@ -5,7 +5,7 @@
       <nav>
         <ul class="nav pull-right">
           <li><form class="navbar-search" >
-  			<input style="height: 30px ; border-radius: 8px 8px 8px 8px; margin-bottom: 0" 
+  			<input style="height: 20px ; border-radius: 8px 8px 8px 8px; margin-bottom: 0" 
   				type="text" class="search-query" placeholder="Search Topics">
 		  </form></li>
 		  
@@ -16,8 +16,8 @@
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><%= link_to "Profile", user_registration_path %></li>
-                <li><%= link_to "Settings", edit_user_registration_path(current_user) %></li>
+                <li><%= link_to "My Profile", user_registration_path %></li>
+                <li><%= link_to "Edit Settings", edit_user_registration_path(current_user) %></li>
                 <li class="divider"></li>
                 <li>
                   <%= link_to "Sign out", destroy_user_session_path, method: "delete" %>

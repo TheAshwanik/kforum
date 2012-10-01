@@ -1,5 +1,6 @@
 <% provide(:title, @topic.name) %>
-<div class="navbar"><h2 class="pull-left">Topic of Discussion: <%= @topic.name %></h2></div><br /> <br>
+<% @forumHash = find_forumName_by_topicId(params[:id]) %><br />
+<div class="navbar"><h4 class="pull-left"><%= link_to @forumHash[:forum], forum_path(:id => @forumHash[:forum_id] ) %> >> <%= @topic.name %></h4></div><br /> <br>
 <% if @topic.posts.count > 0 %>
 	<%@outer_index=1%>
 	<% for post in @topic.posts %>
@@ -82,9 +83,9 @@
 
 	 
 	 <% if user_signed_in? %>
-		  	<%= link_to "Reply", "#{new_post_path}?topic_id=#{@topic.id}" %>
+		  	<%= link_to "Reply", "#{new_post_path}?topic_id=#{@topic.id}" , :class => "btn btn-primary", :style =>"color:white" %>
 	 <% end %>
 	 	 
 <% else %>
-	<%= link_to "New Post", "/posts/new?topic_id=#{@topic.id}"  %>
+	<%= link_to "New Post", "/posts/new?topic_id=#{@topic.id}" , :class => "btn btn-primary", :style =>"color:white"  %>
 <% end %>

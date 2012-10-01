@@ -10,6 +10,9 @@ $grayMediumLight: #eaeaea;
   box-sizing: border-box;
 }
 
+.container {
+  height : 100%;
+}
 
 /* universal */
 
@@ -35,6 +38,8 @@ textarea {
     margin-bottom: 10px;
   }
 }
+
+
 
 /* typography */
 
@@ -62,7 +67,6 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
-
 
 /* header */
 

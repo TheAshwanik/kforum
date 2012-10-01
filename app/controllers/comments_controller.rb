@@ -4,8 +4,6 @@ class CommentsController < ApplicationController
   # GET /comments/new
   def new
     @comment = Comment.new
-    puts "ashwani-comments"
-    puts params
     respond_to do |format|
       format.html
       format.js { render new_comment_path }
@@ -63,9 +61,6 @@ class CommentsController < ApplicationController
 
   private
     def get_post
-      puts "ashwani-comments-get_post"
-      puts params    
-      puts "ashwani-comments-get_post ends"
       @post = Post.find(params[:post_id])
     end    
 end

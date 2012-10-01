@@ -1,12 +1,13 @@
-<h2>Resend confirmation instructions</h2>
+<% full_title "Resend confirmation instructions" %>
+<h2 class="pull-left">Resend confirmation instructions</h2><br /><br /><br />
 
 <%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post }) do |f| %>
   <%= devise_error_messages! %>
 
   <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
+  <%= f.email_field :email %></div><br />
 
-  <div><%= f.submit "Resend confirmation instructions" %></div>
+  <div><%= f.submit "Resend confirmation instructions" , :class => "btn btn-primary", :style =>"color:white"%></div>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>
