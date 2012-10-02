@@ -11,8 +11,8 @@
     <script type="text/javascript" src="/assets/set.js"></script>
     <script type="text/javascript"> 
 	    $(function() {
-	   $('#flash').delay(500).fadeIn('normal', function() {
-	      $(this).delay(2500).fadeOut();
+	   $('#flash').delay(1000).fadeIn('normal', function() {
+	      $(this).delay(3500).fadeOut();
 	   });
 	});
 	</script>
@@ -31,7 +31,7 @@
           
         <% end %>
 	    
-	<%= yield %>
+	<div class="herounitmaxim" style="height: 100%"><%= yield %></div>
 	<%= render 'layouts/footer' %>
 	<%= debug(params) if Rails.env.development? %>
     </div>
