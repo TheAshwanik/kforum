@@ -36,7 +36,6 @@ textarea {
 }
 
 
-
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -86,8 +85,7 @@ p {
 
 footer {
   margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
+  padding-top: 5px;  //border-top: 1px solid $grayMediumLight;;
   color: $grayLight;
   a {
     color: $gray;
@@ -279,7 +277,7 @@ aside {
 .post-body {
   font-family: "Open Sans",Verdana,Geneva,sans-serif;
   line-height: 1.4;
-  text-align: left;
+ // text-align: left;
 }
 
 div.hidden { display: none; }
