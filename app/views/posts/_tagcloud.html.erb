@@ -1,0 +1,11 @@
+    <% show_tag_cloud %>
+    <% @tags.sort_by(&:count).reverse.each do |k| %>
+      <% url_opts = {:action => "tagged", :controller => "posts"}
+         link_name = "#{k.name} (#{k.count})"
+      %>
+      <% if @tag == k.name %>
+        <%= link_to link_name, url_opts.merge(:tag => nil), :class => "tag current_tag", :title => "Click again to see all" %>
+      <% else %>
+        <%= link_to link_name,  url_opts.merge(:tag => k.name), :class => "tag", :title => "Click to filter by #{k.name}" %>
+      <% end %>
+    <% end %>

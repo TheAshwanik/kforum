@@ -13,7 +13,9 @@ KForum::Application.routes.draw do
      resources :comments
   end
 
-  
+  match 'tagged' => 'posts#tagged', :as => 'tagged'
+  #get 'tags/:tag', to: 'topics#show', as: :tag
+
   resources :comments
   
   root :to => 'static_pages#home'

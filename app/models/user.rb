@@ -10,4 +10,7 @@ class User < ActiveRecord::Base
   
   has_many :posts, :dependent => :destroy
   has_many :topics, :dependent => :destroy
+  
+  acts_as_tagger
+  
 end

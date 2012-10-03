@@ -28,6 +28,10 @@
     <%= f.label :content %><br />
     <%= f.text_area :content,:cols=>"100", :rows=>"15"  %>
   </div>
+   	<div><%= f.label :tags %>
+	<%= f.text_field :tag_list %>
+	</div>
+
   <div class="actions">
     <%= f.submit  :class => "btn btn-primary", :style =>"color:white" %>
   </div>

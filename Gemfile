@@ -13,6 +13,7 @@ group :development, :test do
 end
 gem 'devise', '1.4.7'
 gem 'acts_as_commentable_with_threading'
+gem 'acts-as-taggable-on', '~> 2.3.1'
 
 group :production do
   gem 'pg', '0.12.2'

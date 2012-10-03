@@ -7,11 +7,12 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
-
+    @tags = Post.tag_counts_on(:tags)
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }
-    end
+   end
   end
 
   # GET /posts/1
@@ -47,7 +48,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(:content => params[:post][:content], 
     :topic_id => params[:post][:topic_id], 
-    :user_id => current_user.id)  
+    :user_id => current_user.id,:tag_list => params[:post][:tag_list])  
     
     respond_to do |format|
       if @post.save
@@ -96,4 +97,17 @@ class PostsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  
+  def tagged
+    if params[:tag].present? 
+      puts "params tag present"
+      @posts = Post.tagged_with(params[:tag])
+      puts  @posts.count
+    else 
+      @posts = Post.postall
+    end  
+  end
+  
+
 end
