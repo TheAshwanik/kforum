@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121002182741) do
+ActiveRecord::Schema.define(:version => 20121004183907) do
 
   create_table "comments", :force => true do |t|
     t.integer  "commentable_id",   :default => 0
@@ -90,6 +90,7 @@ ActiveRecord::Schema.define(:version => 20121002182741) do
     t.datetime "confirmation_sent_at"
     t.string   "username"
     t.boolean  "admin"
+    t.boolean  "mail_subscription"
   end
 
   add_index "users", ["confirmation_token"], :name => "index_users_on_confirmation_token", :unique => true

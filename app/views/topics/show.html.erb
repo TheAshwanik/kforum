@@ -10,16 +10,16 @@
 		  			<!--<div class="span2" style="width: 110px">
 		  				<%= link_to gravatar_for(post.user), post.user.username %>
 		  			</div> -->
-	       			<p class="span11" style="padding-left: 20px"><%= raw(post.content) %></p>
+	       			<p class="span12" style="padding-left: 20px"><%= raw(post.content) %></p>
 	       			
-	       			<div class="span10 pull-right" style="border-radius: 8px 8px 8px 8px; margin-left: 30px"><i class="icon-tags icon-white"></i><% @post.tags.any? %>
+	       			<div class="span12 pull-right" style="border-radius: 8px 8px 8px 8px; margin-left: 20px"><i class="icon-tags icon-white"></i><% @post.tags.any? %>
 				        <% @post.tags.each do |tag| %>				        
-				         <div class="box-tag" style="float: left; text-align: left;border-radius: 8px 8px 8px 8px;"> <%= link_to tag.name, tagged_url(:tag => tag.name) %></div>
+				         <div class="box-tag"> <%= link_to tag.name, tagged_url(:tag => tag.name) %></div>
 					<% end %>
 					</div>
 	       			
 	       			<br /><br />
-	       			<div class="span11"> 
+	       			<div class="span12"> 
 	       				   <p class="posted-at pull-right">–Posted  <abbr class="timeago" title="<%= (post.created_at).getutc.iso8601 %>"></abbr> 
 	       						  by <a href="/users/"<%=post.user.id%>> <%= find_user(post.user_id).username %>  
 	       						</a>
@@ -73,13 +73,13 @@
 		   onclick="Modalbox.show(this.href, {title: this.title, width: 800}); return false;">
 		   Comment</a> -->
 		  <% if user_signed_in? %>
-		     <i class="icon-pencil icon-white"></i><%= link_to " Comment on post", "/comments/new?post_id=#{post.id}"%> |
+		     <i class="icon-pencil icon-white"></i><%= link_to " Comment on post", "/comments/new?post_id=#{post.id}"%> 
 		  <% end %>
-	 	  <% if owner?(post.user_id) %>
-		  	<i class="icon-edit icon-white"></i><%= link_to " Edit Post", edit_post_path(post) %> |
+	 	  <% if admin_or_owner?(post.user_id) %>
+		  	| <i class="icon-edit icon-white"></i><%= link_to " Edit Post", edit_post_path(post) %>
 		  <% end %>
 		  <% if admin_or_owner?(post.user_id) %>
-		  	<i class="icon-trash icon-white"></i><%= link_to " Delete Post", post, :method =>:delete,:confirm => "Are you sure?" %>
+		  	| <i class="icon-trash icon-white"></i><%= link_to " Delete Post", post, :method =>:delete,:confirm => "Are you sure?" %>
 		  <% end %>	
 		 </p>
 	 </div>	 <!-- end of well large -->	

@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     @users = User.all
   end
   
- def show
+  def show
     @user = User.find(session["warden.user.user.key"][1][0])
   end
 end

@@ -15,6 +15,8 @@
 
   <div><%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation %></div><br />
+  
+  <div><%= f.check_box :mail_subscription %> <%= f.label "Lend a helping hand, by receiving E-mail for new posts?" %></div><br />
 
   <div><%= f.submit "Sign up"  , :class => "btn btn-primary", :style =>"color:white" %></div>
 <% end %>

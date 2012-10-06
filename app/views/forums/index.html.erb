@@ -22,9 +22,13 @@
       </td>  
       <% if admin? %>
       	<td><%= link_to "Edit", edit_forum_path(forum) %></td>
+      <% else %>
+      	<td></td>
       <% end %>  
       <% if admin? %>
       	<td><%= link_to "Delete", forum, :confirm => 'Are you sure?', :method => :delete %></td>
+      <% else %>
+      	<td></td>
       <% end %>  
     </tr>  
   <% end %>  

@@ -18,6 +18,7 @@ html {
 
 body {
   padding-top: 60px;
+
 }
 
 section {
@@ -117,7 +118,7 @@ footer {
 }
 
 /* sidebar */
-
+/*
 aside {
   section {
     padding: 10px 0;
@@ -138,6 +139,33 @@ aside {
       margin-bottom: 3px;
     }
   }
+}*/
+
+aside {
+  position: fixed;
+  text-align: right;
+  padding-right: 3px;
+  width: 18%;
+}
+aside a {
+  text-decoration: none;
+}
+aside ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+aside ul #sub_menu {
+  font-size: 90%;
+  background: #EBDDE2;
+}
+aside ul li {
+  padding: 0px;
+  padding-right: 5px;
+  margin: 0px;
+}
+aside ul li.selected {
+  background: #E3E4FA;
 }
 
 .gravatar {
@@ -268,10 +296,14 @@ aside {
   margin: 0 20px 10px;
   font-size: 11px;
   font-style: italic;
-  color: #888;
+  //color: #888;
+  color: white;
   text-align: left;
   font-family: "Open Sans",Verdana,Geneva,sans-serif;
   font: normal 1em/1.6em Georgia,Cambria,"Times New Roman",Times,serif;
+  
+  
+  
 }
 
 .post-body {
@@ -330,7 +362,13 @@ div.hidden { display: none; }
   font-size: 90%;
   //line-height: 2.4;
   white-space: nowrap;
-
+  border-radius: 6px 6px 6px 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 2px;
+  padding-left: 2px;
+  float: left; 
+  text-align: left;
 }
 
 a.visited{

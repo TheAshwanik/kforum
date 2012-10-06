@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /> 
+</head> 
+<body> 
+
+<div> 
+<h3>Hi <%= @username %></h3> 
+<%= User.find(@post.user_id).username %> have posted the following in KForum:<br />
+<pre><table><td><%= @post.content %></td></table></pre><br/> 
+</div>
+<!-- <div><%= link_to "Login", new_user_session_url() %> Or -->
+<div><%= link_to "View and Reply to this post", topic_url(@post.topic.id) %></div><br />
+<div>You received this message because you are subscribed to the KForum Groups.<br /> 
+Thanks for subscribing and have a great day!
+</div><br />
+<div>
+- KForum Team
+</div>
+
+</body> 
+</html> 

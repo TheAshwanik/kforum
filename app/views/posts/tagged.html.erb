@@ -1,5 +1,7 @@
-<h2 class="pull-left">Posts Tagged with: <%= params[:tag] %></h2>
-<br/> <br />
+<% provide(:title, params[:tag]) %>
+<br />
+<div class="navbar"><h4 class="pull-left">All posts tagged with: &nbsp;&nbsp;&nbsp;<%= params[:tag] %></h4></div><br /> <br>
+
 <% provide(:title, "Tag: #{params[:tag]}" ) %>
 
 <!-- <div id="tag_cloud">
@@ -18,16 +20,16 @@
 		  			<!--<div class="span2" style="width: 110px">
 		  				<%= link_to gravatar_for(post.user), post.user.username %>
 		  			</div> -->
-	       			<p class="span10 post-body"><%= raw(post.content) %></p>
+	       			<p class="span12" style="padding-left: 20px"><%= raw(post.content) %></p>
 	       			
-	       			<div class="span10 pull-right" style="border-radius: 8px 8px 8px 8px; margin-left: 30px"><i class="icon-tags icon-white"></i><% @post.tags.any? %>
+	       			<div class="span12 pull-right" style="border-radius: 8px 8px 8px 8px; margin-left: 20px"><i class="icon-tags icon-white"></i><% @post.tags.any? %>
 				        <% @post.tags.each do |tag| %>				        
 				         <div class="box-tag" style="float: left; text-align: left;border-radius: 8px 8px 8px 8px;"> <%= link_to tag.name, tagged_url(:tag => tag.name) %></div>
 					<% end %>
 					</div>
 	       			
 	       			<br /><br />
-	       			<div class="span11"> 
+	       			<div class="span12"> 
 	       				   <p class="posted-at pull-right">–Posted  <abbr class="timeago" title="<%= (post.created_at).getutc.iso8601 %>"></abbr> 
 	       						  by <a href="/users/"<%=post.user.id%>> <%= find_user(post.user_id).username %>  
 	       						</a>

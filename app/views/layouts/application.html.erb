@@ -7,6 +7,13 @@
 	<%= javascript_include_tag 'application' %>
     <%= javascript_include_tag 'jquery' %>
     
+   <style type="text/css">
+      	a:link {text-decoration: none;color: #33B5E5;}
+  		a:visited {text-decoration: none;color: #33B5E5;}
+  		a:active {text-decoration: none;color: #33B5E5;}
+  		a:hover {text-decoration: underline; color: $grayDarker;}
+   </style>
+    
    <%= render 'layouts/shim' %>
     
   </head>
@@ -27,12 +34,12 @@
 			
 			<!--right col-->
 		    <div class="span3">
-		       <!-- Buttons -->
-            	
+		        <!-- Buttons -->
+            	<%= render 'layouts/sidebar' %>
 		    </div>
 	  </div>    	  			
 	<%= render 'layouts/footer' %>
-	<!-- <%= debug(params) if Rails.env.development? %>-->
+	<%= debug(params) if Rails.env.development? %>
    </div>  <!-- /container -->
 
   </body>

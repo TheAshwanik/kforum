@@ -18,6 +18,8 @@
 
   <div><%= f.label :current_password , "Current Password: (we need your current password to confirm your changes)" %>
   <%= f.password_field :current_password %></div><br />
+  
+  <div><%= f.check_box :mail_subscription %> <%= f.label "Lend a helping hand, by receiving E-mail for new posts?" %></div>
 
   <div><%= f.submit "Update" , :class => "btn btn-primary", :style =>"color:white"  %></div>
 <% end %>

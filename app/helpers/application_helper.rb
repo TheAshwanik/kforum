@@ -58,4 +58,24 @@ module ApplicationHelper
     params.merge({:forum => @forum.name,:forum_id => forum_id})
   end
 
+
+  def menu_for(bar,&block)
+    menu_items = ["Forum","Edit Setting"]
+    path_of = { "Forum" => forums_path,
+                "Edit Setting" => edit_user_registration_path }
+                
+    menu_items.each do |item|
+      if item == bar and block_given?
+        concat content_tag(:li,link_to(item, path_of[item]),
+  	                       :class => 'selected')
+        sub_menu = content_tag(:div,:id => 'sub_menu') do
+          capture(&block)
+        end
+        concat sub_menu
+      else
+        concat content_tag(:li,link_to(item, path_of[item]))
+      end
+    end
+  end # end of menu_for
+
 end

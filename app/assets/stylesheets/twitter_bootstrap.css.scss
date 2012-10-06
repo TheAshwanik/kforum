@@ -13,3 +13,8 @@ body { padding-top: 60px; }
 
 // And finally bootswatch style itself
 @import "bootswatch/cyborg/bootswatch";
+
+
+code, pre, pre.prettyprint {
+background-color: rgba(238, 238, 238, 0.28);
+}

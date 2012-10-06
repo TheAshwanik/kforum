@@ -18,8 +18,17 @@
       	<%= distance_of_time_in_words_to_now topic.last_post_at %> ago by 
       	<%= link_to topic.user.username, "/users/#{topic.last_poster_id}" %>
       </td>
-     <td><%= link_to "Edit",edit_topic_path(topic.id) %></td>
-     <% if admin? %><td><%= link_to "Delete", topic, :confirm => 'Are you sure?', :method => :delete %></td><% end %>
+     
+     <% if admin_or_owner?(topic.user_id)  %>
+     	<td><%= link_to "Edit",edit_topic_path(topic.id) %></td>
+     <% else %>
+     	<td></td>
+     <% end %>
+     <% if admin? %>
+     	<td><%= link_to "Delete", topic, :confirm => 'Are you sure?', :method => :delete %></td>
+     <% else %>
+     	<td></td>
+     <% end %>
     </tr>  
   <% end %>  
 </table><br />  
