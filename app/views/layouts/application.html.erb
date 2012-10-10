@@ -18,11 +18,10 @@
     
   </head>
   <body>
-    
+   
+   <div id="wrap"> 
    <div class="container-fluid">
       <div class="row-fluid">
-
-		    
       		<div class="span9" style="padding-left: 65px;">
 		        <% flash.each do |key, value| %>
 		        <%= content_tag(:div, value , class: "alert alert-#{key}", :id => "flash") %>
@@ -37,11 +36,15 @@
 		        <!-- Buttons -->
             	<%= render 'layouts/sidebar' %>
 		    </div>
-	  </div>    	  			
+		    
+		    <div id="push"></div>
+	  </div>
+	  </div>  <!-- /container -->
+	</div>  	  			
 	<%= render 'layouts/footer' %>
 	<%= debug(params) if Rails.env.development? %>
-   </div>  <!-- /container -->
-
+   
+  
   </body>
   
    <script type="text/javascript" src="/assets/jquery.markitup.js"></script>
