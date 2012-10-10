@@ -5,6 +5,6 @@ class UsersController < ApplicationController
   end
   
   def show
-    @user = User.find(session["warden.user.user.key"][1][0])
+    @user = User.find(params[:id])
   end
 end

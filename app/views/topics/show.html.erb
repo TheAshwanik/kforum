@@ -22,7 +22,7 @@
 	       			<br /><br />
 	       			<div class="span12"> 
 	       				   <p class="posted-at pull-right">–Posted  <abbr class="timeago" title="<%= (post.created_at).getutc.iso8601 %>"></abbr> 
-	       						  by <a href="/users/"<%=post.user.id%>> <%= find_user(post.user_id).username %>  
+	       						  by <a href="/users/<%= post.user_id %>" > <%= find_user(post.user_id).username %>  
 	       						</a>
 	       					</p>
 	       			</div>
@@ -47,7 +47,7 @@
 					   		<div class="tab-pane" id="tab<%=@i%><%=@outer_index%>">
 					     	 <pre>
 							    <p class="posted-details"><%= raw(c.body) %></p>
-							    <p class="posted-at">–Posted  <abbr class="timeago" title="<%= (c.created_at).getutc.iso8601 %>"></abbr> by <a href="users/66354"><%= @user.username %> </a></p>
+							    <p class="posted-at">–Posted  <abbr class="timeago" title="<%= (c.created_at).getutc.iso8601 %>"></abbr> by <a href="/users/<%= @user.id %>"><%= @user.username %> </a></p>
 						     </pre>
 							 <% @i = @i + 1 %>
 							 <div class="pull-right"><% if owner?(c.user_id) %>

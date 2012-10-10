@@ -1,19 +1,99 @@
 <% provide(:title, @user.username) %>
-<div class="row">
-  <aside class="span4">
-    <section>
-      <%= link_to gravatar_for(@user), @user.username %>
-      <h1>
-        <%= @user.username %>
-      </h1>
-    </section>
-  </aside>
-    
-  <div id="topics">  
-    <strong>topics</strong>  
-      <% @user.topics.each do |topic| %>  
-      <%= link_to topic.name, topic_url(topic.id) %>  
-      <% end %>  
-  </div>  
- 
-</div>
+   <%= link_to gravatar_for(@user), @user.username %>
+     <h3>
+       <%= @user.username %>
+     </h3><br />
+
+<br />  <br /> <br />     
+
+<% if @user.posts.count > 0 %>
+	<%@outer_index=1%>
+	<div>
+		<% for post in @user.posts %>
+			<% @forumHash = find_forumName_by_topicId(post.topic_id) %>
+			<div class="navbar"><h4 class="pull-left"><%= link_to @forumHash[:forum], forum_path(:id => @forumHash[:forum_id] ) %> >> 
+				<%= link_to @topic.name, topic_path(post.topic_id) %></h4></div><br />
+				
+		<div class="well well-large">
+		    <% @post = post %>
+			  		<div class="row">
+			  			<!--<div class="span2" style="width: 110px">
+			  				<%= link_to gravatar_for(post.user), post.user.username %>
+			  			</div> -->
+		       			<p class="span12" style="padding-left: 20px"><%= raw(post.content) %></p>
+		       			
+		       			<div class="span12 pull-right" style="border-radius: 8px 8px 8px 8px; margin-left: 20px"><i class="icon-tags icon-white"></i><% @post.tags.any? %>
+					        <% @post.tags.each do |tag| %>				        
+					         <div class="box-tag"> <%= link_to tag.name, tagged_url(:tag => tag.name) %></div>
+						<% end %>
+						</div>
+		       			
+		       			<br /><br />
+		       			<div class="span12"> 
+		       				   <p class="posted-at pull-right">–Posted  <abbr class="timeago" title="<%= (post.created_at).getutc.iso8601 %>"></abbr> 
+		       						  by <a href="/users/<%= post.user_id %>"> <%= find_user(post.user_id).username %>  
+		       						</a>
+		       					</p>
+		       			</div>
+		       		</div>
+		        	<div class="well well-small">
+					<div class="tabbable tabs-left">
+					<% @all_comments = post.comment_threads %>
+			        <% if @all_comments %>
+			        	<ul class="nav nav-tabs">
+			        		<% @i = 1 %>
+							<% for c in @all_comments %>
+								<li id="li-tab<%=@i%><%=@outer_index%>">
+									<a href="#tab<%=@i%><%=@outer_index%>" data-toggle="tab"><i class="icon-comment icon-white"></i></a>
+								</li>
+						   		<% @i = @i + 1 %>
+							<% end %>
+						</ul>
+						<div class="tab-content">
+							<% @i = 1 %>
+							<% for c in @all_comments %>							
+						   		<% @user = find_user(c.user_id) %>
+						   		<div class="tab-pane" id="tab<%=@i%><%=@outer_index%>">
+						     	 <pre>
+								    <p class="posted-details"><%= raw(c.body) %></p>
+								    <p class="posted-at">–Posted  <abbr class="timeago" title="<%= (c.created_at).getutc.iso8601 %>"></abbr> by <a href="/users/<%= @user.id %>"><%= @user.username %> </a></p>
+							     </pre>
+								 <% @i = @i + 1 %>
+								 <div class="pull-right"><% if owner?(c.user_id) %>
+							  		<i class="icon-edit icon-white"></i><%= link_to " Edit Comment", edit_comment_path(:id => c.id, :post_id => c.commentable_id) %> |
+							  	 <% end %>
+							  	 <% if admin_or_owner?(c.user_id) %>
+							  		<i class="icon-trash icon-white"></i><%= link_to " Delete Comment", c , :params => {:id => c.id, :post_id => c.commentable_id}, :method =>:delete, :confirm => "Are you sure?" %>
+							     <% end %></div>
+						    	 
+					     		</div>
+						    	
+							<% end %>
+						</div>
+				    <% end %>
+				    </div> <!-- end of tabbable tabs-left --> 
+				    </div> <!-- end of well small -->
+				    <div><script language="javascript"> this.document.getElementById("li-tab1<%=@outer_index%>").setAttribute("class", "active");</script></div>
+				    <div><script language="javascript"> this.document.getElementById("tab1<%=@outer_index%>").setAttribute("class", "tab-pane active");</script></div>
+					
+						
+			  
+			 <p>
+			 <!-- <a href="/comments/new?post_id=<%= post.id %>" title="Comment" 
+			   onclick="Modalbox.show(this.href, {title: this.title, width: 800}); return false;">
+			   Comment</a> -->
+			  <% if user_signed_in? %>
+			     <i class="icon-pencil icon-white"></i><%= link_to " Comment on post", "/comments/new?post_id=#{post.id}"%> 
+			  <% end %>
+		 	  <% if admin_or_owner?(post.user_id) %>
+			  	| <i class="icon-edit icon-white"></i><%= link_to " Edit Post", edit_post_path(post) %>
+			  <% end %>
+			  <% if admin_or_owner?(post.user_id) %>
+			  	| <i class="icon-trash icon-white"></i><%= link_to " Delete Post", post, :method =>:delete,:confirm => "Are you sure?" %>
+			  <% end %>	
+			 </p>
+		 </div>	 <!-- end of well large -->	
+	     <%@outer_index = @outer_index + 1 %>
+		 <% end %>
+	 </div>
+<% end %>
