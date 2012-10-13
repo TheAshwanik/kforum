@@ -1,10 +1,42 @@
 <br /><br /><br /><br />
-<aside class="well well-large" style="border-radius: 6px 6px 6px 6px; " >
-  <div>
-  	<ul>
-     <% menu_for "Articles" do %>
-      <li><%= link_to("Forum", forums_path, :class => 'selected') %></li>
-     <% end %>
-     </ul>
- </div>
-</aside>
+<%if @home_page %>
+	<aside class="well well-large" style="border-radius: 6px 6px 6px 6px; " >
+    <div>
+	 	<ul class="nav nav-list">
+	    <li class="nav-header">Helper links</li>
+	    <li><a href="/">Home</a></li>
+	    <li><a href=<%=forums_path%>>Forum</a></li>
+	    </ul>
+	 </div> 
+	</aside>
+<% else %>
+	<aside class="well well-large" style="border-radius: 6px 6px 6px 6px; " >
+	  <!-- <div>
+	  	<ul>
+	     <% menu_for "Articles" do %>
+	      <li><%= link_to("Forum", forums_path, :class => 'selected') %></li>
+	     <% end %>
+	     </ul>
+	 </div> -->
+	 
+	 <div>
+	 	<ul class="nav nav-list">
+	    <li class="nav-header pull-left">Helper links</li><br />
+	    <li class="divider"></li>  
+	    <li><a href="/">Home</a></li>
+	    <li><a href=<%=forums_path%>>Forum</a></li>
+	   
+	    </ul>
+	 </div> 
+	
+	 <br />
+	  <div>
+	 	<ul class="nav nav-list">
+	    <li class="nav-header pull-left">Helper links</li><br />
+	    <li class="divider"></li>  
+	    <li><a href="/">Home</a></li>
+	    <li><a href=<%=forums_path%>>Forum</a></li>
+	    </ul>
+	 </div> 
+	</aside>
+<% end %>	
