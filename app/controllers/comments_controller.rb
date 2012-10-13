@@ -4,6 +4,7 @@ class CommentsController < ApplicationController
   # GET /comments/new
   def new
     @comment = Comment.new
+    @post = Post.find(params[:post_id])
     respond_to do |format|
       format.html
       format.js { render new_comment_path }
