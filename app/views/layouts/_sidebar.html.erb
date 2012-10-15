@@ -3,9 +3,11 @@
 	<aside class="well well-large" style="border-radius: 6px 6px 6px 6px; " >
     <div>
 	 	<ul class="nav nav-list">
-	    <li class="nav-header">Helper links</li>
-	    <li><a href="/">Home</a></li>
-	    <li><a href=<%=forums_path%>>Forum</a></li>
+	    <li class="nav-header ">Knock Yourself Out</li>
+	    <li class="divider"></li>
+	    <li><a href="http://www.tibco.com/industries/telecommunications/fulfillment-orchestration/provisioning-and-service-activation/default.jsp"  target="blank">Tibco KPSA</a></li>
+	    <li><a href="http://www.tibco.com/multimedia/solution-brief-fulfillment-orchestration-suite_tcm8-13810.pdf" target="blank">Tibco FOS</a></li>
+	    <li><a href="https://docs.tibco.com/" target="blank">Tibco Product Documentation</a></li>
 	    </ul>
 	 </div> 
 	</aside>
@@ -37,6 +39,16 @@
 	    <li><a href="/">Home</a></li>
 	    <li><a href=<%=forums_path%>>Forum</a></li>
 	    </ul>
+	 </div>
+	 
+	 <div id="tag_cloud" style="width: auto">
+	 	<ul class="nav nav-list">
+	 		<li class="nav-header pull-left">Whats Hot ?</li><br />
+			<li class="divider"></li>  
+			 <li><% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
+			    <%= link_to tag.name, tagged_url(:tag => tag.name), class: css_class %>
+			    <% end %>
+			 </li>
 	 </div> 
 	</aside>
 <% end %>	
