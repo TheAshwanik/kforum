@@ -1,11 +1,19 @@
-    <% show_tag_cloud %>
+    <div style="background-color: #131517;padding: 10px; color: white;" >
+			
+	<% show_tag_cloud %>
+	<span>
     <% @tags.sort_by(&:count).reverse.each do |k| %>
       <% url_opts = {:action => "tagged", :controller => "posts"}
          link_name = "#{k.name} (#{k.count})"
       %>
       <% if @tag == k.name %>
-        <%= link_to link_name, url_opts.merge(:tag => nil), :class => "tag current_tag", :title => "Click again to see all" %>
+        <%= link_to link_name, url_opts.merge(:tag => nil), 
+        	:class => "tag current_tag", :title => "Click again to see all", :style => "margin:5px; display: inline-block;" %>
       <% else %>
-        <%= link_to link_name,  url_opts.merge(:tag => k.name), :class => "tag", :title => "Click to filter by #{k.name}" %>
+        <%= link_to link_name,  url_opts.merge(:tag => k.name), 
+        	:class => "tag", :title => "Click to filter by #{k.name}" , :style => "margin:5px; display: inline-block;"%>
       <% end %>
+      
     <% end %>
+    </span>
+    </div>

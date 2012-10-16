@@ -1,7 +1,6 @@
 <% full_title "New Post" %>
-<h4 class="pull-left">You are Posting on :</h4><br />
-<div style="width: 720px;"><%=raw(@topic.name) %></div> <br /><br />
-
-<%= render 'form' %>
-
-<%= link_to 'Back', posts_path %>
+<div style="width: 700px; background-color: rgba(40, 40, 40, 0.9);padding: 20px;color: white">
+	<h4 class="pull-left">You are Posting on Topic:</h4><br /><br />
+	<%= raw(@topic.name) %><br /><br />
+	<%= render 'form' %>
+</div>

@@ -1,5 +1,6 @@
 <% full_title "New Comment" %>
-<h4 class="pull-left">You are Commenting on :</h4><br />
-<div style="width: 720px;"><%=raw(@post.content) %></div> <br /><br /><br />
-
-<%= render 'form' %>
+<div style="width: 700px; background-color: rgba(40, 40, 40, 0.9);padding: 20px;color: white">
+	<h4 class="pull-left">You are Commenting on Post :</h4><br /><br />
+	<%= raw(@post.content) %><br /><br />
+	<%= render 'form' %>
+</div>

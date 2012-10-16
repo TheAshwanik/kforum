@@ -1,9 +1,12 @@
-<br /><br /><br /><br />
+
+<% if !nil && user_signed_in? && current_user.confirmed? %>
+
 <%if @home_page %>
-	<aside class="well well-large" style="border-radius: 6px 6px 6px 6px; " >
+	<br /><br /><br /><br />
+	<aside class="well well-large" style="border-radius: 6px 6px 6px 6px; background-color: rgba(40, 40, 40, 0.9) " >
     <div>
 	 	<ul class="nav nav-list">
-	    <li class="nav-header ">Knock Yourself Out</li>
+	    <li class="nav-header" style="color: white">Knock Yourself Out</li>
 	    <li class="divider"></li>
 	    <li><a href="http://www.tibco.com/industries/telecommunications/fulfillment-orchestration/provisioning-and-service-activation/default.jsp"  target="blank">Tibco KPSA</a></li>
 	    <li><a href="http://www.tibco.com/multimedia/solution-brief-fulfillment-orchestration-suite_tcm8-13810.pdf" target="blank">Tibco FOS</a></li>
@@ -12,7 +15,7 @@
 	 </div> 
 	</aside>
 <% else %>
-	<aside class="well well-large" style="border-radius: 6px 6px 6px 6px; " >
+	<aside class="well well-large" style="border-radius: 6px 6px 6px 6px; background-color: rgba(40, 40, 40, 0.9)" >
 	  <!-- <div>
 	  	<ul>
 	     <% menu_for "Articles" do %>
@@ -23,7 +26,7 @@
 	 
 	 <div>
 	 	<ul class="nav nav-list">
-	    <li class="nav-header pull-left">Helper links</li><br />
+	    <li class="nav-header pull-left" style="color: white">Helper links</li><br />
 	    <li class="divider"></li>  
 	    <li><a href="/">Home</a></li>
 	    <li><a href=<%=forums_path%>>Forum</a></li>
@@ -34,21 +37,26 @@
 	 <br />
 	  <div>
 	 	<ul class="nav nav-list">
-	    <li class="nav-header pull-left">Helper links</li><br />
+	    <li class="nav-header pull-left" style="color: white">Helper links</li><br />
 	    <li class="divider"></li>  
 	    <li><a href="/">Home</a></li>
-	    <li><a href=<%=forums_path%>>Forum</a></li>
+	    <img src="https://www.delicious.com/static/img/delicious.small.gif" height="10" width="10" alt="Delicious" />
+        <a href="https://www.delicious.com/save" onclick="window.open('https://www.delicious.com/save?v=5&noui&jump=close&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;"> Save this on Delicious</a>
 	    </ul>
 	 </div>
-	 
+	 <br />
 	 <div id="tag_cloud" style="width: auto">
 	 	<ul class="nav nav-list">
 	 		<li class="nav-header pull-left">Whats Hot ?</li><br />
-			<li class="divider"></li>  
+			<li class="divider"></li>
 			 <li><% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
-			    <%= link_to tag.name, tagged_url(:tag => tag.name), class: css_class %>
+			    <%= link_to tag.name, tagged_url(:tag => tag.name), class: css_class , :style => "padding-top: 0px; padding-bottom: 0px;" %>
 			    <% end %>
 			 </li>
-	 </div> 
+			 
+	 </div>
+
 	</aside>
+    
+<% end %>
 <% end %>	

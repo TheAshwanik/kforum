@@ -1,6 +1,5 @@
 <%= form_for [@post, @comment], :html => {:multipart => true} do |f|%>
 	
-	
 	<div disabled="true">
 		<script type="text/javascript" >
 		   $(document).ready(function() {
@@ -27,7 +26,8 @@
 		  </div>
 		      
 	      <div class="submit">
-	        <%= f.submit :class => "btn btn-primary" %>
+	        <%= f.submit :class => "btn btn-large btn-primary" %>
+	        <%= link_to "Cancel" , :back, :class => "btn btn-large btn-primary", :style =>"color:white"  %>
 	      </div>		    
 	  </div>
 

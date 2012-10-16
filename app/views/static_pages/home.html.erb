@@ -1,7 +1,7 @@
 <br /><br /><br /><br />
-<div class="hero-unit">
-  <h1>Welcome to KForum</h1><br />
-  <center>A General discussion forum.<br /> 
+<div class="hero-unit" style="background-color: rgba(40, 40, 40, 0.9) ">
+  <h1 style="color: white">Welcome to KForum</h1><br />
+  <center style="color: white ; font-size: 14px">A General discussion forum.<br /> 
     As a founder, my goal is to help beginners to discuss about Service Delivery & Order Management, Telecom Provisioning, 
     Various Network Equipments and to get some samples and help them in solving problems
   	in Kabira, KPSA, KxDR etc...<br/>
@@ -21,6 +21,36 @@
   </div>
   </center> 
 
+</div>
+
+<!--
+<div class="hero-unit">
+  <center><div id="wordcloud"></div></center>
 </div> 
+  	   <script type="text/javascript">
+      /*!
+       * Create an array of word objects, each representing a word in the cloud
+       */
+
+      
+      //var word_array = [{"text":"eventdictionary","weight":10},{"text":"KPSA dictionary","weight":3},{"text":"kpsa","weight":3},{"text":"How to implement the eventdictionary?","weight":3},{"text":"hello","weight":7},{"text":"new","weight":3}]  
+     /* var word_array = [
+          {text: "Lorem", weight: 15},
+          {text: "Ipsum", weight: 9, link: "http://jquery.com/"},
+          {text: "Dolor", weight: 6, html: {title: "I can haz any html attribute"}},
+          {text: "Sit", weight: 7},
+          {text: "Amet", weight: 5}
+          // ...as many words as you want
+      ];*/
+	  var word_array = <%= @tag_cloud.to_json.html_safe %>
+      $(function() {
+        // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
+        $("#wordcloud").jQCloud(word_array,{
+		  width: 800,
+		  height: 100,
+		  delayedMode: true
+		});
+      });
+    </script>-->  
 
 <!--<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>-->

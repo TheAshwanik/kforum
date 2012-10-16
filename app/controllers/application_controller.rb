@@ -5,7 +5,6 @@ class ApplicationController < ActionController::Base
   
   before_filter :set_cache_buster
   
-  
   def admin_required  
     unless current_user && (current_user.admin == true || current_user.id == 1)  
       redirect_to '/'  
@@ -24,7 +23,6 @@ class ApplicationController < ActionController::Base
     response.headers["Expires"] = "Fri, 01 Jan 1990 00:00:00 GMT"
   end
    
-  
   protected
 
     def routing_error(exception)

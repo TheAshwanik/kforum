@@ -85,6 +85,7 @@ p {
   /*text-transform: uppercase;*/
   letter-spacing: -1px;
   padding-top: 9px;
+  padding-left: 80px;
   font-weight: bold;
   line-height: 1;
   &:hover {
@@ -97,10 +98,12 @@ p {
 
 #footer {
   height: 30px;
-  margin-top: 30px;
-  padding-top: 60px;
+  margin-top: 100px;
+  //padding-top: 60px;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 20px;
+  background-color: black;
     //border-top: 1px solid $grayMediumLight;
  
   small { 
@@ -161,10 +164,10 @@ aside {
 }*/
 
 aside {
-  position: fixed;
+  //position: fixed;
   text-align: right;
   padding-right: 3px;
-  width: 18%;
+  //width: 18%;
 }
 aside a {
   text-decoration: none;
@@ -222,6 +225,7 @@ input {
   padding: 10px;
   height: auto;
   margin-bottom: 35px;
+  color: black;
   //@include box_sizing;
 }
 
@@ -300,9 +304,9 @@ div.hidden { display: none; }
 #tag_cloud {
   width: 400px;
   line-height: 1.6em;
-  .s { font-size: 0.8em; }
-  .m { font-size: 1.2em; }
-  .l { font-size: 1.8em; }
+  .s { font-size: 0.4em; }
+  .m { font-size: 0.8em; }
+  .l { font-size: 1.2em; }
 }
 
 /**** and associated tag-cloud styles ****/
@@ -324,6 +328,7 @@ div.hidden { display: none; }
   -moz-border-radius: 7px;
   font-weight: bold;
 }
+
 .tag:hover, .current_tag:hover {
   background-color: #bbb;
   color: black;

@@ -1,7 +1,10 @@
 <% provide(:title, params[:tag]) %>
-<br />
-<div class="navbar"><h4 class="pull-left">All posts tagged with: &nbsp;&nbsp;&nbsp;<%= params[:tag] %></h4></div><br /> <br>
-
+<div style="height:100%;  
+			background-color: #131517; 
+			padding: 10px 10px 30px; 
+			color: white" >
+			<h4 class="pull-left" style="font-size: 25px">All posts tagged with: &nbsp;&nbsp;&nbsp;<%= params[:tag] %></h4>
+</div><br />
 <% provide(:title, "Tag: #{params[:tag]}" ) %>
 
 <!-- <div id="tag_cloud">
@@ -14,7 +17,7 @@
 	<% @outer_index=1 %>
 	
 	<% @posts.each do |post| %>
-	<div class="well well-large">
+	<div class="well well-large" style="background-color: rgb(40, 40, 40); border-radius: 6px 6px 6px 6px;">
 	    <% @post = post %>
 		  		<div class="row">
 		  			<!--<div class="span2" style="width: 110px">
@@ -36,7 +39,7 @@
 	       					</p>
 	       			</div>
 	       		</div>
-	        	<div class="well well-small">
+	        	<div class="well well-small" style="background-color: rgb(40, 40, 40); border-radius: 6px 6px 6px 6px;">
 				<div class="tabbable tabs-left">
 				<% @all_comments = post.comment_threads %>
 		        <% if @all_comments %>

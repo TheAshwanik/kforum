@@ -16,10 +16,11 @@
   <% end %>
     
   <div class="field">
-    <%= f.label :name %>
+    <%= f.label :name , :style => "color: white"%>
     <%= f.text_field :name %><br />
   </div><br />
   <div class="actions">
-    <%= f.submit :class => "btn btn-primary", :style =>"color:white" %>
+    <%= f.submit :class => "btn btn-large btn-primary", :style =>"color:white" %>
+    <%= link_to "Cancel" , :back, :class => "btn btn-large btn-primary", :style =>"color:white"  %>
   </div>
 <% end %>

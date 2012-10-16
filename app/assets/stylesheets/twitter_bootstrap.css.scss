@@ -22,7 +22,7 @@ background-color: rgba(238, 238, 238, 0.28);
 }
 
 // Bootstrap body padding for fixed navbar
-body { 
+/*body { 
   padding-top: 60px; 
   background-repeat: repeat;
   background-image: linear-gradient(bottom, #1A1A1A 93%, #1F1E1F 100%, #141414 100%);
@@ -39,9 +39,21 @@ body {
     color-stop(1, #141414),
     color-stop(1, #141314),
     color-stop(1, #000000)
-  );
+  );*/
 
-
-
-
+body { 
+  background-image: url('background3.jpg');
+  background-repeat: repeat; 
 }
+
+input, input:focus {
+
+  color: black;
+  //@include box_sizing;
+}
+
+
+.navbar-inner .container, {
+  width:auto;
+}
+

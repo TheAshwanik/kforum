@@ -1,21 +1,28 @@
 <header class="navbar navbar-fixed-top">
   <div class="navbar-inner">
+  	
     <div class="container">
-      <%= link_to "KForum", root_path, id: "logo" %>
-      <nav>
-        <ul class="nav nav-tabs pull-right">
+      <div class="pull-left"><%= link_to "KForum", root_path, id: "logo" %></div>
+   	  
+   	  <div class="container">
+      <div class="pull-right">
+       <nav>   
+        <ul class="nav nav-tabs">        	
+	      <% if signed_in? %>
+	        <li>
+	        	<form class="navbar-search" >
+	  				<input style="height: 20px; margin:0px 
+	  					padding-top: 8px; padding-bottom: 8px;" 
+	  					type="text" class="search-query" placeholder="Search Topics">
+			 	</form>
+			 </li>
+		  <% end %>
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "Forum", forums_path %></li>
           <li><%= link_to "Help", help_path %></li>
           <% if signed_in? %>
-             <li><form class="navbar-search" >
-  				<input style="height: 20px ; border-radius: 8px 8px 8px 8px; margin-bottom: 0" 
-  				type="text" class="search-query" placeholder="Search Topics">
-		     </form></li>
-		   <% end %> 
-          <% if signed_in? %>
             <li id="fat-menu" class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><Account><%=current_user.username%>&nbsp;<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><%= link_to "My Profile", "/users/#{current_user.id}" %></li>
                 <li><%= link_to "Edit Settings", edit_user_registration_path(current_user) %></li>
@@ -29,8 +36,10 @@
             <li><%= link_to "Sign in", user_session_path %></li>
           <% end %>
         </ul>
-        
-      </nav>
+        </nav>
+        </div>
+
     </div>
   </div>
+</div>
 </header>
