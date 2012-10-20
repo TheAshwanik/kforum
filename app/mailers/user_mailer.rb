@@ -3,15 +3,13 @@ class UserMailer < ActionMailer::Base
   
    def new_post(post)
      @post = post
-     @user = User.where(:mail_subscription => 't')
-     puts @user.all
-     for user in @user do
-       if user.id != post.user_id
-          @username = user.username
-          sleep(2) # Make sure it doesn't get too crowded in there!
-          puts "sending mail now*************"
-          mail(:to => user.email, :subject => "New Post in Kforum").deliver
-       end
-     end  
+     #@user = User.where(:mail_subscription => 't').except(post.user_id)
+     @user = User.find(:all, :conditions => ["id != ? AND mail_subscription == ?", post.user_id, 't'])
+
+
+     emails = @user.collect(&:email).join(",")
+     puts "*************sending mails to " + emails.to_s + "*************"
+     mail(:bcc => emails , :subject => "New Post in Kforum").deliver
+      
   end
 end
