@@ -1,71 +1,85 @@
-           post_comments GET    /posts/:post_id/comments(.:format)          comments#index
-                         POST   /posts/:post_id/comments(.:format)          comments#create
-        new_post_comment GET    /posts/:post_id/comments/new(.:format)      comments#new
-       edit_post_comment GET    /posts/:post_id/comments/:id/edit(.:format) comments#edit
-            post_comment GET    /posts/:post_id/comments/:id(.:format)      comments#show
-                         PUT    /posts/:post_id/comments/:id(.:format)      comments#update
-                         DELETE /posts/:post_id/comments/:id(.:format)      comments#destroy
-                   posts GET    /posts(.:format)                            posts#index
-                         POST   /posts(.:format)                            posts#create
-                new_post GET    /posts/new(.:format)                        posts#new
-               edit_post GET    /posts/:id/edit(.:format)                   posts#edit
-                    post GET    /posts/:id(.:format)                        posts#show
-                         PUT    /posts/:id(.:format)                        posts#update
-                         DELETE /posts/:id(.:format)                        posts#destroy
-                  topics GET    /topics(.:format)                           topics#index
-                         POST   /topics(.:format)                           topics#create
-               new_topic GET    /topics/new(.:format)                       topics#new
-              edit_topic GET    /topics/:id/edit(.:format)                  topics#edit
-                   topic GET    /topics/:id(.:format)                       topics#show
-                         PUT    /topics/:id(.:format)                       topics#update
-                         DELETE /topics/:id(.:format)                       topics#destroy
-                  forums GET    /forums(.:format)                           forums#index
-                         POST   /forums(.:format)                           forums#create
-               new_forum GET    /forums/new(.:format)                       forums#new
-              edit_forum GET    /forums/:id/edit(.:format)                  forums#edit
-                   forum GET    /forums/:id(.:format)                       forums#show
-                         PUT    /forums/:id(.:format)                       forums#update
-                         DELETE /forums/:id(.:format)                       forums#destroy
-                         GET    /posts(.:format)                            posts#index
-                         POST   /posts(.:format)                            posts#create
-                         GET    /posts/new(.:format)                        posts#new
-                         GET    /posts/:id/edit(.:format)                   posts#edit
-                         GET    /posts/:id(.:format)                        posts#show
-                         PUT    /posts/:id(.:format)                        posts#update
-                         DELETE /posts/:id(.:format)                        posts#destroy
-                comments GET    /comments(.:format)                         comments#index
-                         POST   /comments(.:format)                         comments#create
-             new_comment GET    /comments/new(.:format)                     comments#new
-            edit_comment GET    /comments/:id/edit(.:format)                comments#edit
-                 comment GET    /comments/:id(.:format)                     comments#show
-                         PUT    /comments/:id(.:format)                     comments#update
-                         DELETE /comments/:id(.:format)                     comments#destroy
-        new_user_session GET    /users/sign_in(.:format)                    devise/sessions#new
-            user_session POST   /users/sign_in(.:format)                    devise/sessions#create
-    destroy_user_session DELETE /users/sign_out(.:format)                   devise/sessions#destroy
-           user_password POST   /users/password(.:format)                   devise/passwords#create
-       new_user_password GET    /users/password/new(.:format)               devise/passwords#new
-      edit_user_password GET    /users/password/edit(.:format)              devise/passwords#edit
-                         PUT    /users/password(.:format)                   devise/passwords#update
-cancel_user_registration GET    /users/cancel(.:format)                     devise/registrations#cancel
-       user_registration POST   /users(.:format)                            devise/registrations#create
-   new_user_registration GET    /users/sign_up(.:format)                    devise/registrations#new
-  edit_user_registration GET    /users/edit(.:format)                       devise/registrations#edit
-                         PUT    /users(.:format)                            devise/registrations#update
-                         DELETE /users(.:format)                            devise/registrations#destroy
-       user_confirmation POST   /users/confirmation(.:format)               devise/confirmations#create
-   new_user_confirmation GET    /users/confirmation/new(.:format)           devise/confirmations#new
-                         GET    /users/confirmation(.:format)               devise/confirmations#show
-                  tagged        /tagged(.:format)                           posts#tagged
-                         GET    /comments(.:format)                         comments#index
-                         POST   /comments(.:format)                         comments#create
-                         GET    /comments/new(.:format)                     comments#new
-                         GET    /comments/:id/edit(.:format)                comments#edit
-                         GET    /comments/:id(.:format)                     comments#show
-                         PUT    /comments/:id(.:format)                     comments#update
-                         DELETE /comments/:id(.:format)                     comments#destroy
-                    root        /                                           static_pages#home
-                    help        /help(.:format)                             static_pages#help
-                   about        /about(.:format)                            static_pages#about
-                 contact        /contact(.:format)                          static_pages#contact
-                                /users/:id(.:format)                        users#show
+                 admin_root        /admin(.:format)                            admin/dashboard#index
+            admin_dashboard        /admin/dashboard(.:format)                  admin/dashboard#index
+   batch_action_admin_users POST   /admin/users/batch_action(.:format)         admin/users#batch_action
+                admin_users GET    /admin/users(.:format)                      admin/users#index
+                            POST   /admin/users(.:format)                      admin/users#create
+             new_admin_user GET    /admin/users/new(.:format)                  admin/users#new
+            edit_admin_user GET    /admin/users/:id/edit(.:format)             admin/users#edit
+                 admin_user GET    /admin/users/:id(.:format)                  admin/users#show
+                            PUT    /admin/users/:id(.:format)                  admin/users#update
+                            DELETE /admin/users/:id(.:format)                  admin/users#destroy
+batch_action_admin_comments POST   /admin/comments/batch_action(.:format)      admin/comments#batch_action
+             admin_comments GET    /admin/comments(.:format)                   admin/comments#index
+                            POST   /admin/comments(.:format)                   admin/comments#create
+              admin_comment GET    /admin/comments/:id(.:format)               admin/comments#show
+              post_comments GET    /posts/:post_id/comments(.:format)          comments#index
+                            POST   /posts/:post_id/comments(.:format)          comments#create
+           new_post_comment GET    /posts/:post_id/comments/new(.:format)      comments#new
+          edit_post_comment GET    /posts/:post_id/comments/:id/edit(.:format) comments#edit
+               post_comment GET    /posts/:post_id/comments/:id(.:format)      comments#show
+                            PUT    /posts/:post_id/comments/:id(.:format)      comments#update
+                            DELETE /posts/:post_id/comments/:id(.:format)      comments#destroy
+                      posts GET    /posts(.:format)                            posts#index
+                            POST   /posts(.:format)                            posts#create
+                   new_post GET    /posts/new(.:format)                        posts#new
+                  edit_post GET    /posts/:id/edit(.:format)                   posts#edit
+                       post GET    /posts/:id(.:format)                        posts#show
+                            PUT    /posts/:id(.:format)                        posts#update
+                            DELETE /posts/:id(.:format)                        posts#destroy
+                     topics GET    /topics(.:format)                           topics#index
+                            POST   /topics(.:format)                           topics#create
+                  new_topic GET    /topics/new(.:format)                       topics#new
+                 edit_topic GET    /topics/:id/edit(.:format)                  topics#edit
+                      topic GET    /topics/:id(.:format)                       topics#show
+                            PUT    /topics/:id(.:format)                       topics#update
+                            DELETE /topics/:id(.:format)                       topics#destroy
+                     forums GET    /forums(.:format)                           forums#index
+                            POST   /forums(.:format)                           forums#create
+                  new_forum GET    /forums/new(.:format)                       forums#new
+                 edit_forum GET    /forums/:id/edit(.:format)                  forums#edit
+                      forum GET    /forums/:id(.:format)                       forums#show
+                            PUT    /forums/:id(.:format)                       forums#update
+                            DELETE /forums/:id(.:format)                       forums#destroy
+                            GET    /posts(.:format)                            posts#index
+                            POST   /posts(.:format)                            posts#create
+                            GET    /posts/new(.:format)                        posts#new
+                            GET    /posts/:id/edit(.:format)                   posts#edit
+                            GET    /posts/:id(.:format)                        posts#show
+                            PUT    /posts/:id(.:format)                        posts#update
+                            DELETE /posts/:id(.:format)                        posts#destroy
+                   comments GET    /comments(.:format)                         comments#index
+                            POST   /comments(.:format)                         comments#create
+                new_comment GET    /comments/new(.:format)                     comments#new
+               edit_comment GET    /comments/:id/edit(.:format)                comments#edit
+                    comment GET    /comments/:id(.:format)                     comments#show
+                            PUT    /comments/:id(.:format)                     comments#update
+                            DELETE /comments/:id(.:format)                     comments#destroy
+           new_user_session GET    /users/sign_in(.:format)                    devise/sessions#new
+               user_session POST   /users/sign_in(.:format)                    devise/sessions#create
+       destroy_user_session DELETE /users/sign_out(.:format)                   devise/sessions#destroy
+              user_password POST   /users/password(.:format)                   devise/passwords#create
+          new_user_password GET    /users/password/new(.:format)               devise/passwords#new
+         edit_user_password GET    /users/password/edit(.:format)              devise/passwords#edit
+                            PUT    /users/password(.:format)                   devise/passwords#update
+   cancel_user_registration GET    /users/cancel(.:format)                     devise/registrations#cancel
+          user_registration POST   /users(.:format)                            devise/registrations#create
+      new_user_registration GET    /users/sign_up(.:format)                    devise/registrations#new
+     edit_user_registration GET    /users/edit(.:format)                       devise/registrations#edit
+                            PUT    /users(.:format)                            devise/registrations#update
+                            DELETE /users(.:format)                            devise/registrations#destroy
+          user_confirmation POST   /users/confirmation(.:format)               devise/confirmations#create
+      new_user_confirmation GET    /users/confirmation/new(.:format)           devise/confirmations#new
+                            GET    /users/confirmation(.:format)               devise/confirmations#show
+                     tagged        /tagged(.:format)                           posts#tagged
+                            GET    /comments(.:format)                         comments#index
+                            POST   /comments(.:format)                         comments#create
+                            GET    /comments/new(.:format)                     comments#new
+                            GET    /comments/:id/edit(.:format)                comments#edit
+                            GET    /comments/:id(.:format)                     comments#show
+                            PUT    /comments/:id(.:format)                     comments#update
+                            DELETE /comments/:id(.:format)                     comments#destroy
+                       root        /                                           static_pages#home
+                       help        /help(.:format)                             static_pages#help
+                      about        /about(.:format)                            static_pages#about
+                    contact        /contact(.:format)                          static_pages#contact
+                                   /users/:id(.:format)                        users#show

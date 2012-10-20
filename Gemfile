@@ -5,6 +5,7 @@ gem 'bootstrap-sass', '2.0.4'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'bootswatch-rails'
+gem 'activeadmin'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

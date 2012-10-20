@@ -1,5 +1,7 @@
 KForum::Application.routes.draw do
 
+  ActiveAdmin.routes(self)
+
   resources :posts do
     resources :comments
   end

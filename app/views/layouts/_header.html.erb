@@ -26,6 +26,7 @@
               <ul class="dropdown-menu">
                 <li><%= link_to "My Profile", "/users/#{current_user.id}" %></li>
                 <li><%= link_to "Edit Settings", edit_user_registration_path(current_user) %></li>
+                <% if admin? %><li><%= link_to "Administration", admin_root_path() %></li><% end %>
                 <li class="divider"></li>
                 <li>
                   <%= link_to "Sign out", destroy_user_session_path, method: "delete" %>
