@@ -9,13 +9,25 @@
        <nav>   
         <ul class="nav nav-tabs">        	
 	      <% if signed_in? %>
-	        <li>
+	        <!--<li>
 	        	<form class="navbar-search" >
+	  				<i class="icon-search icon-white" style="height: 20px; fit: 20px "></i> 
 	  				<input style="height: 20px; margin:0px 
 	  					padding-top: 8px; padding-bottom: 8px;" 
 	  					type="text" class="search-query" placeholder="Search Topics">
 			 	</form>
-			 </li>
+			 </li>-->
+			 <li>
+			 	<form class="navbar-search" action="/posts" method="get">
+			 		<div class="input-append">
+				    	<span style="height: 17px; margin:0px;
+				        	padding-top: 8px; padding-bottom: 8px;" class="add-on"><i class="icon-search"></i>
+				      	</span><input id="search" name="search" type="text" style="height: 20px; margin:0px;
+				        	padding-top: 8px; padding-bottom: 8px;" class="search-query" placeholder="Search Topics" class="span2">
+				    </div>
+				</form>
+				
+			</li>
 		  <% end %>
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "Forum", forums_path %></li>

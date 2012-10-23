@@ -5,4 +5,9 @@ class Post < ActiveRecord::Base
   has_many :comments
   acts_as_commentable
   acts_as_taggable_on :tags
+  
+  searchable do
+    text :content
+  end
+  
 end

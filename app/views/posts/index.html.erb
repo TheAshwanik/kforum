@@ -1,3 +1,140 @@
+<% if params[:search] != nil && params[:search] != "" %>
+	<% provide(:title, "Listing Posts with Keyword => " + params[:search] + "...") %>
+	<div style="height:100%;  
+			background-color: rgba(40, 40, 40, 0.9); 
+			padding: 10px 10px 40px; 
+			color: white" >
+			
+			<h4 class="pull-left" style="font-size: 25px;">Listing Posts with Keyword => <%=params[:search]%></h4>
+	</div>
+<% else %>
+	<% provide(:title, "Listing all Posts...") %>
+	<div style="height:100%;  
+			background-color: rgba(40, 40, 40, 0.9); 
+			padding: 10px 10px 40px; 
+			color: white" >
+			
+			<h4 class="pull-left" style="font-size: 25px;">Listing all Posts...</h4>
+	</div>
+<% end %>
+
+<% if @posts.count > 0 %>
+	<%= will_paginate @posts, 
+				:style =>"height:100%; background-color: rgba(40, 40, 40, 0.9) ; color: white; padding:10px; border-radius: 6px 6px 6px 6px;" %>
+	<br />
+
+	<% @outer_index=1 %>
+	<div >
+	<% for post in @posts %>
+	
+		<% @forumHash = find_forumName_by_topicId(post.topic_id) %>
+		<% @topicHash = find_TopicName_by_Id(post.topic_id) %>
+		
+		<div style="height:100%;  
+					background-color: #131517; 
+					padding: 5px 5px 20px; 
+					color: white; border-radius: 6px 6px 6px 6px;" >
+				<h4 class="pull-left"><%= link_to @forumHash[:forum], forum_path(:id => @forumHash[:forum_id] ) %> >> 
+					<%= link_to @topicHash[:topic_name], topic_path(:id => @topicHash[:topic_id] ) %></h4>
+		</div>
+		<div class="well well-large" style="background-color: rgb(40, 40, 40); border-radius: 6px 6px 6px 6px;">
+	    <% @post = post %>
+		  		<div class="row" style="color: white">
+		  			<!--<div class="span2" style="width: 110px">
+		  				<%= link_to gravatar_for(post.user), post.user.username %>
+		  			</div> -->
+	       			<p class="span12" style="padding-left: 20px"><%= raw(post.content) %></p>
+	       			
+	       			<div class="span12 pull-right" style="border-radius: 8px 8px 8px 8px; margin-left: 20px"><i class="icon-tags icon-white"></i><% @post.tags.any? %>
+				        <% @post.tags.each do |tag| %>				        
+				         <div class="box-tag"> <%= link_to tag.name, tagged_url(:tag => tag.name) %></div>
+					<% end %>
+					</div>
+	       			
+	       			<br /><br />
+	       			<div class="span12"> 
+	       				   <p class="posted-at pull-right">–Posted  <abbr class="timeago" title="<%= (post.created_at).getutc.iso8601 %>"></abbr> 
+	       						  by <a href="/users/<%= post.user_id %>" > <%= find_user(post.user_id).username %>  
+	       						</a>
+	       					</p>
+	       			</div>
+	       		</div>
+	        	<div class="well well-small" style="background-color: rgba(40, 40, 40, 0.9) ">
+				<div class="tabbable tabs-left">
+				<% @all_comments = post.comment_threads %>
+		        <% if @all_comments %>
+		        	<ul class="nav nav-tabs">
+		        		<% @i = 1 %>
+						<% for c in @all_comments %>
+							<li id="li-tab<%=@i%><%=@outer_index%>">
+								<a href="#tab<%=@i%><%=@outer_index%>" data-toggle="tab"><i class="icon-comment icon-white"></i></a>
+							</li>
+					   		<% @i = @i + 1 %>
+						<% end %>
+					</ul>
+					<div class="tab-content">
+						<% @i = 1 %>
+						<% for c in @all_comments %>							
+					   		<% @user = find_user(c.user_id) %>
+					   		<div class="tab-pane" id="tab<%=@i%><%=@outer_index%>">
+					     	 <pre>
+							    <p class="posted-details"><%= raw(c.body) %></p>
+							    <p class="posted-at">–Posted  <abbr class="timeago" title="<%= (c.created_at).getutc.iso8601 %>"></abbr> by <a href="/users/<%= @user.id %>"><%= @user.username %> </a></p>
+						     </pre>
+							 <% @i = @i + 1 %>
+							 <div class="pull-right"><% if owner?(c.user_id) %>
+						  		<i class="icon-edit icon-white"></i><%= link_to " Edit Comment", edit_comment_path(:id => c.id, :post_id => c.commentable_id) %> |
+						  	 <% end %>
+						  	 <% if admin_or_owner?(c.user_id) %>
+						  		<i class="icon-trash icon-white"></i><%= link_to " Delete Comment", c , :params => {:id => c.id, :post_id => c.commentable_id}, :method =>:delete, :confirm => "Are you sure?" %>
+						     <% end %></div>
+					    	 
+				     		</div>
+					    	
+						<% end %>
+					</div>
+			    <% end %>
+			    </div> <!-- end of tabbable tabs-left --> 
+			    </div> <!-- end of well small -->
+			    <div><script language="javascript"> this.document.getElementById("li-tab1<%=@outer_index%>").setAttribute("class", "active");</script></div>
+			    <div><script language="javascript"> this.document.getElementById("tab1<%=@outer_index%>").setAttribute("class", "tab-pane active");</script></div>
+				
+					
+		  
+		 <p>
+		 <!-- <a href="/comments/new?post_id=<%= post.id %>" title="Comment" 
+		   onclick="Modalbox.show(this.href, {title: this.title, width: 800}); return false;">
+		   Comment</a> -->
+		  <% if user_signed_in? %>
+		     <i class="icon-pencil icon-white"></i><%= link_to " Comment on post", "/comments/new?post_id=#{post.id}"%> 
+		  <% end %>
+	 	  <% if admin_or_owner?(post.user_id) %>
+		  	| <i class="icon-edit icon-white"></i><%= link_to " Edit Post", edit_post_path(post) %>
+		  <% end %>
+		  <% if admin_or_owner?(post.user_id) %>
+		  	| <i class="icon-trash icon-white"></i><%= link_to " Delete Post", post, :method =>:delete,:confirm => "Are you sure?" %>
+		  <% end %>	
+		 </p>
+	 </div>	 <!-- end of well large -->	
+     <%@outer_index = @outer_index + 1 %>
+	 <% end %>
+	 </div>
+	 	 
+<% else %>
+	<div style="height:100%; min-height: 450px; 
+					background-color: rgba(40, 40, 40, 0.9); 
+					padding: 10px 10px 40px; 
+					color: white" >
+				<h4 class="pull-left">No Post Found, Please try with another keyword again</h4>
+		</div><br />
+<% end %>
+
+<%= will_paginate @posts, 
+				:style =>"height:100%; background-color:rgba(40, 40, 40, 0.9) ; color: white; padding:10px; border-radius: 6px 6px 6px 6px;" %>
+	
+
+
+<!--
 <h1>Listing posts</h1>
 <h2> <%= params %></h2>
 <table>
@@ -18,4 +155,8 @@
 <% end %>
 </table>
 
-<br />
+<%= form_tag posts_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+<% end %> -->

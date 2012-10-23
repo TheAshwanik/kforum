@@ -1,7 +1,8 @@
 class TopicsController < ApplicationController
   
-  before_filter :authenticate_user!, :except => [:index, :show]  
-  before_filter :authenticate_user!, :only => :destroy
+  #before_filter :authenticate_user!, :except => [:index, :show]
+  before_filter :authenticate_user! 
+  #before_filter :authenticate_user!, :only => :destroy
   
   # GET /topics
   # GET /topics.json

@@ -57,6 +57,11 @@ module ApplicationHelper
     @forum = Forum.find(forum_id)
     params.merge({:forum => @forum.name,:forum_id => forum_id})
   end
+  
+  def find_TopicName_by_Id(id)
+    @topic = Topic.find(id)
+    params.merge({:topic_name => @topic.name, :topic_id => @topic.id})
+  end
 
 
   def menu_for(bar,&block)
