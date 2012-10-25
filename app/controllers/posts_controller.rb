@@ -6,18 +6,27 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @search = Post.solr_search do
-      fulltext params[:search]
-      paginate :page => params[:page] || 1, :per_page => 4
-    end
-    @posts = @search.results
-    @tags = Post.tag_counts_on(:tags)
+    # The below is for having solr work with your app.
+    #
+    # @search = Post.solr_search do
+    #  fulltext params[:search]
+    #  paginate :page => params[:page] || 1, :per_page => 4
+    # end
+    # @posts = @search.results
+    #
+    #
+    
+     
+   @posts = Post.search_by_content(params[:search], params[:page])
+   @tags = Post.tag_counts_on(:tags)
     
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }
     end
   end
+
+
 
   # GET /posts/1
   # GET /posts/1.json

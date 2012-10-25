@@ -6,8 +6,14 @@ class Post < ActiveRecord::Base
   acts_as_commentable
   acts_as_taggable_on :tags
   
-  searchable do
-    text :content
-  end
+  #searchable do
+  #  text :content
+  #end
   
+  def self.search_by_content(search, page)
+    paginate :per_page => 5, :page => page,
+           :conditions => ["content LIKE :eq", {:eq => "%#{search}%"}]
+  end
+
+
 end

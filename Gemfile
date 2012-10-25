@@ -6,15 +6,15 @@ gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'bootswatch-rails'
 gem 'activeadmin'
-gem 'sunspot_rails'
-gem 'progress_bar'
+#gem 'sunspot_rails'
+#gem 'progress_bar'
 
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
   gem 'sqlite3'
-  gem 'sunspot_solr'
+  #gem 'sunspot_solr'
 end
 gem 'devise', '1.4.7'
 gem 'acts_as_commentable_with_threading'
