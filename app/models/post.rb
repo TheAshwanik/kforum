@@ -11,8 +11,14 @@ class Post < ActiveRecord::Base
   #end
   
   def self.search_by_content(search, page)
-    paginate :per_page => 5, :page => page,
+    if connection.adapter_name == 'PostgreSQL'
+        paginate :per_page => 5, :page => page,
+           :conditions => ["content ILIKE :eq", {:eq => "%#{search}%"}]
+    else
+        paginate :per_page => 5, :page => page,
            :conditions => ["content LIKE :eq", {:eq => "%#{search}%"}]
+    end       
+    
   end
 
 
