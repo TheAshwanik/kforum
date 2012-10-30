@@ -4,7 +4,7 @@ class UserMailer < ActionMailer::Base
    def new_post(post)
      @post = post
      #@user = User.where(:mail_subscription => 't').except(post.user_id)
-     @user = User.find(:all, :conditions => ["id != ? AND mail_subscription == ?", post.user_id, 't'])
+     @user = User.find(:all, :conditions => ["id != ? AND mail_subscription == ?", post.user_id, true])
 
 
      emails = @user.collect(&:email).join(",")
