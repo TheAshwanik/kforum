@@ -8,7 +8,7 @@ gem 'bootswatch-rails'
 gem 'activeadmin'
 #gem 'sunspot_rails'
 #gem 'progress_bar'
-
+gem 'newrelic_rpm'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
