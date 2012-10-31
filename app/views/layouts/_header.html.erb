@@ -29,12 +29,12 @@
 				
 			</li>
 		  <% end %>
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Forum", forums_path %></li>
-          <li><%= link_to "Help", help_path %></li>
+          <li><a href=<%=root_path%>><i class="icon-home icon-white"></i>&nbsp;Home</li></a>
+          <li><a href=<%=forums_path%>><i class="icon-list-alt icon-white"></i>&nbsp;Forum</li></a>
+          <li><a href=<%=help_path%>><i class="icon-bell icon-white "></i>&nbsp;Help</li></a>
           <% if signed_in? %>
             <li id="fat-menu" class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><Account><%=current_user.username%>&nbsp;<b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><Account><i class="icon-wrench icon-white"></i>&nbsp;<%=current_user.username%>&nbsp;<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><%= link_to "My Profile", "/users/#{current_user.id}" %></li>
                 <li><%= link_to "Edit Settings", edit_user_registration_path(current_user) %></li>

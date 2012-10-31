@@ -1,0 +1,107 @@
+
+A new version of the Heroku Toolbelt is available, download and install from https://toolbelt.heroku.com.
+
+2012-10-31T00:36:38+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/default_style.css dyno=web.1 queue=0 wait=0ms service=187ms status=304 bytes=0
+2012-10-31T00:36:38+00:00 app[web.1]: Compiled default_style.css  (0ms)  (pid 2)
+2012-10-31T00:36:38+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (157ms)
+2012-10-31T00:36:38+00:00 app[web.1]: 
+2012-10-31T00:36:38+00:00 app[web.1]: 
+2012-10-31T00:36:38+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.32.89 at 2012-10-31 00:36:38 +0000
+2012-10-31T00:36:38+00:00 heroku[router]: GET kforum.ashwani.co.in/images/mail3.png dyno=web.1 queue=0 wait=0ms service=10ms status=200 bytes=5571
+2012-10-31T00:36:38+00:00 app[web.1]: Compiled jqcloud-1.0.2.min.js  (0ms)  (pid 2)
+2012-10-31T00:36:38+00:00 app[web.1]: 
+2012-10-31T00:36:38+00:00 app[web.1]: 
+2012-10-31T00:36:38+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.32.89 at 2012-10-31 00:36:38 +0000
+2012-10-31T00:36:38+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (173ms)
+2012-10-31T00:36:38+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud-1.0.2.min.js dyno=web.1 queue=0 wait=0ms service=280ms status=304 bytes=0
+2012-10-31T00:36:39+00:00 app[web.1]: Compiled jquery.markitup.js  (1ms)  (pid 2)
+2012-10-31T00:36:39+00:00 heroku[router]: GET kforum.ashwani.co.in/images/facebook_blue.png dyno=web.1 queue=0 wait=0ms service=21ms status=200 bytes=5519
+2012-10-31T00:36:39+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (331ms)
+2012-10-31T00:36:39+00:00 app[web.1]: 
+2012-10-31T00:36:39+00:00 app[web.1]: 
+2012-10-31T00:36:39+00:00 app[web.1]: Start
+ed GET "/assets/jquery.timeago" for 86.214.32.89 at 2012-10-31 00:36:39 +0000
+2012-10-31T00:36:39+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.markitup.js dyno=web.1 queue=0 wait=0ms service=642ms status=304 bytes=0
+2012-10-31T00:36:39+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.timeago dyno=web.1 queue=0 wait=0ms service=795ms status=304 bytes=0
+2012-10-31T00:36:39+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (202ms)
+2012-10-31T00:36:39+00:00 app[web.1]: 
+2012-10-31T00:36:39+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.32.89 at 2012-10-31 00:36:39 +0000
+2012-10-31T00:36:39+00:00 app[web.1]: 
+2012-10-31T00:36:39+00:00 app[web.1]: 
+2012-10-31T00:36:39+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (148ms)
+2012-10-31T00:36:39+00:00 app[web.1]: Compiled style.css  (0ms)  (pid 2)
+2012-10-31T00:36:39+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.32.89 at 2012-10-31 00:36:39 +0000
+2012-10-31T00:36:39+00:00 app[web.1]: 
+2012-10-31T00:36:39+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/style.css dyno=web.1 queue=0 wait=1ms service=957ms status=304 bytes=0
+2012-10-31T00:36:39+00:00 app[web.1]: Compiled set.js  (0ms)  (pid 2)
+2012-10-31T00:36:39+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (281ms)
+2012-10-31T00:36:39+00:00 app[web.1]: 
+2012-10-31T00:36:39+00:00 app[web.1]: 
+2012-10-31T00:36:39+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.32.89 at 2012-10-31 00:36:39 +0000
+2012-10-31T00:36:39+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (5ms)
+2012-10-31T00:36:39+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=866ms status=304 bytes=0
+2012-10-31T00:36:39+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/set.js dyno=web.1 queue=0 wait=0ms service=1249ms status=304 bytes=0
+2012-10-31T00:36:53+00:00 app[web.1]: 
+2012-10-31T00:36:53+00:00 app[web.1]: Started GET "/users" for 86.214.32.89 at 2012-10-31 00:36:53 +0000
+2012-10-31T00:36:53+00:00 app[web.1]: 
+2012-10-31T00:36:53+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/users"):
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+2012-10-31T00:36:53+00:00 app[web.1]: 
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+2012-10-31T00:36:53+00:
+00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+2012-10-31T00:36:53+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+2012-10-31T00:36:53+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+2012-10-31T00:36:53+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+2012-10-31T00:36:53+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+2012-10-31T00:36:53+00:00 app[web.1]: 
+2012-10-31T00:36:53+00:00 app[web.1]: 
+2012-10-31T00:36:53+00:00 heroku[router]: GET kforum.ashwani.co.in/users dyno=web.1 queue=0 wait=0ms service=12ms status=404 bytes=728
+2012-10-31T00:37:30+00:00 app[web.1]: 
+2012-10-31T00:37:30+00:00 app[web.1]: 
+2012-10-31T00:37:30+00:00 app[web.1]: Started GET "/users" for 86.214.32.89 at 2012-10-31 00:37:30 +0000
+2012-10-31T00:37:30+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/users"):
+2012-10-31T00:37:30+00:00 app[web.1]: 
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/
+context.rb:245:in `fetch'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+2012-10-31T00:37:30+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+2012-10-31T00:37:30+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+2012-10-31T00:37:30+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+2012-10-31T00:37:30+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+2012-10-31T00:37:30+00:00 app[web.1]: 
+2012-10-31T00:37:30+00:00 app[web.1]: 
+2012-10-31T00:37:30+00:00 heroku[router]: GET kforum.ashwani.co.in/users dyno=web.1 queue=0 wait=0ms service=17ms status=404 bytes=728
