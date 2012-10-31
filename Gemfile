@@ -9,7 +9,7 @@ gem 'activeadmin'
 #gem 'sunspot_rails'
 #gem 'progress_bar'
 gem 'newrelic_rpm'
-gem 'exception_notification' , :require => 'exception_notifier'
+gem 'exception_notification' , git: 'git://github.com/alanjds/exception_notification.git' , :require => 'exception_notifier'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
