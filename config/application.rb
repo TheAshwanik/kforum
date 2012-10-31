@@ -64,6 +64,11 @@ module KForum
     ActsAsTaggableOn.force_lowercase = true
     
     config.active_record.observers = :post_observer
+    
+    config.middleware.use ExceptionNotifier,
+      :email_prefix => "[KForum-Exception] ",
+      :sender_address => %{"Exception Notifier" <kforum.mail.agent@gmail.com>},
+      :exception_recipients => %w{aryan.ashwani@gmail.com}
 
   end
 end
