@@ -9,7 +9,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module KForum
+module MYForum
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -66,7 +66,7 @@ module KForum
     config.active_record.observers = :post_observer
     
     config.middleware.use ExceptionNotifier,
-      :email_prefix => "[KForum-Exception] ",
+      :email_prefix => "[MYForum-Exception] ",
       :sender_address => %{"Exception Notifier" <kforum.mail.agent@gmail.com>},
       :exception_recipients => %w{aryan.ashwani@gmail.com}
 

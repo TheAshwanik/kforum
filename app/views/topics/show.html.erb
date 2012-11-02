@@ -17,7 +17,7 @@
 		  			<!--<div class="span2" style="width: 110px">
 		  				<%= link_to gravatar_for(post.user), post.user.username %>
 		  			</div> -->
-	       			<p class="span12" style="padding-left: 20px"><%= raw(post.content) %></p>
+	       			<div class="span12" style="padding-left: 20px"><%= raw(post.content) %></div>
 	       			
 	       			<div class="span12 pull-right" style="border-radius: 8px 8px 8px 8px; margin-left: 20px"><i class="icon-tags icon-white"></i><% @post.tags.any? %>
 				        <% @post.tags.each do |tag| %>				        

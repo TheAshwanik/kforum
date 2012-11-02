@@ -8,7 +8,7 @@
 <div> 
 <h3>Hi <%= @username %></h3> 
 <%= User.find(@post.user_id).username %> have posted the following in KForum:<br />
-<pre><table><td><%= @post.content %></td></table></pre><br/> 
+<pre><table><td><%= raw @post.content %></td></table></pre><br/> 
 </div>
 <!-- <div><%= link_to "Login", new_user_session_url() %> Or -->
 <div><%= link_to "View and Reply to this post", topic_url(@post.topic.id) %></div><br />

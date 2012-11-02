@@ -29,7 +29,7 @@
 	    <li class="nav-header pull-left" style="color: white">Helper links</li><br />
 	    <li class="divider"></li>  
 	    <li><a href="/">Home</a></li>
-	    <li><a href=<%=forums_path%>>Forum</a></li>
+	    <li><a href=<%=main_app.forums_path%>>Forum</a></li>
 	   
 	    </ul>
 	 </div> 
@@ -50,7 +50,7 @@
 	 		<li class="nav-header pull-left">Whats Hot ?</li><br />
 			<li class="divider"></li>
 			 <li><% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
-			    <%= link_to tag.name, tagged_url(:tag => tag.name), class: css_class , :style => "padding-top: 0px; padding-bottom: 0px;" %>
+			    <%= link_to tag.name, main_app.tagged_url(:tag => tag.name), class: css_class , :style => "padding-top: 0px; padding-bottom: 0px;" %>
 			    <% end %>
 			 </li>
 			 

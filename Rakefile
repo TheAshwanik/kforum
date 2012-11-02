@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-KForum::Application.load_tasks
+MYForum::Application.load_tasks

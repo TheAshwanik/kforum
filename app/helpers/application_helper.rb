@@ -1,7 +1,7 @@
 module ApplicationHelper
 # Returns the full title on a per-page basis.
   def full_title(page_title)
-    base_title = "KForum"
+    base_title = "MYForum"
     if page_title.empty?
       base_title
     else
@@ -66,8 +66,8 @@ module ApplicationHelper
 
   def menu_for(bar,&block)
     menu_items = ["Forum","Edit Setting"]
-    path_of = { "Forum" => forums_path,
-                "Edit Setting" => edit_user_registration_path }
+    path_of = { "Forum" => main_app.forums_path,
+                "Edit Setting" => main_app.edit_user_registration_path }
                 
     menu_items.each do |item|
       if item == bar and block_given?

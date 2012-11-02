@@ -11,10 +11,22 @@ gem 'activeadmin'
 gem 'newrelic_rpm'
 gem 'exception_notification' , git: 'git://github.com/alanjds/exception_notification.git' , :require => 'exception_notifier'
 
+
+#Refinery
+git 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable' do
+  gem 'refinerycms-core' #You can leave this out if you like. It's a dependency of the other engines.
+  gem 'refinerycms-dashboard'
+  gem 'refinerycms-images'
+  gem 'refinerycms-pages'
+  gem 'refinerycms-resources'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
+  group :development, :test do
   gem 'sqlite3'
+end
   #gem 'sunspot_solr'
 end
 gem 'devise', '1.4.7'
@@ -38,7 +50,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.0.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

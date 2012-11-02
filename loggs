@@ -1,0 +1,102 @@
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.8/lib/active_record/query_cache.rb:64:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `_run__3282918438213277956__call__2730324256980072804__callbacks'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+2012-11-01T18:10:28+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+2012-11-01T18:10:28+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+2012-11-01T18:10:28+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+2012-11-01T18:10:28+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+2012-11-01T18:10:28+00:00 app[web.1]: 
+2012-11-01T18:10:28+00:00 app[web.1]: 
+2012-11-01T18:10:28+00:00 app[web.1]: Processing by ApplicationController#routing_error as HTML
+2012-11-01T18:10:28+00:00 app[web.1]:   Parameters: {"a"=>"users"}
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_request.text.erb (0.5ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_session.text.erb (0.7ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.0ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_environment.text.erb (23.2ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_backtrace.text.erb (0.1ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.0ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/exception_notification.text.erb (30.8ms)
+2012-11-01T18:10:28+00:00 app[web.1]: 
+2012-11-01T18:10:28+00:00 app[web.1]: Completed 500 Internal Server Error in 237ms
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_request.text.erb (0.5ms)
+2012-11-01T18:10:28+00:00 app[web.1]: Sent mail to aryan.ashwani@gmail.com (192ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_session.text.erb (0.5ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.0ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_environment.text.erb (20.3ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/_backtrace.text.erb (0.1ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception
+_notifier/_title.text.erb (0.0ms)
+2012-11-01T18:10:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/exception_notification-048fc6be9721/lib/exception_notifier/views/exception_notifier/exception_notification.text.erb (27.1ms)
+2012-11-01T18:10:28+00:00 app[web.1]: 
+2012-11-01T18:10:28+00:00 app[web.1]: Sent mail to aryan.ashwani@gmail.com (255ms)
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: Started GET "/" for 86.214.36.70 at 2012-11-01 18:10:36 +0000
+2012-11-01T18:10:36+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-01T18:10:36+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+2012-11-01T18:10:36+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-01T18:10:36+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.3ms)
+2012-11-01T18:10:36+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (0.1ms)
+2012-11-01T18:10:36+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (2.9ms)
+2012-11-01T18:10:36+00:00 app[web.1]: Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.36.70 at 2012-11-01 18:10:36 +0000
+2012-11-01T18:10:36+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-01 18:10:36 +0000
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.36.70 at 2012-11-01 18:10:36 +0000
+2012-11-01T18:10:36+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-01T18:10:36+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.36.70 at 2012-11-01 18:10:36 +0000
+2012-11-01T18:10:36+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-01 18:10:36 +0000
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-01 18:10:36 +0000
+2012-11-01T18:10:36+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-01T18:10:36+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.36.70 at 2012-11-01 18:10:36 +0000
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: 
+2012-11-01T18:10:36+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-01T18:10:36+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-01T18:10:36+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-01 18:10:36 +0000

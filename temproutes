@@ -1,5 +1,13 @@
                  admin_root        /admin(.:format)                            admin/dashboard#index
             admin_dashboard        /admin/dashboard(.:format)                  admin/dashboard#index
+   batch_action_admin_posts POST   /admin/posts/batch_action(.:format)         admin/posts#batch_action
+                admin_posts GET    /admin/posts(.:format)                      admin/posts#index
+                            POST   /admin/posts(.:format)                      admin/posts#create
+             new_admin_post GET    /admin/posts/new(.:format)                  admin/posts#new
+            edit_admin_post GET    /admin/posts/:id/edit(.:format)             admin/posts#edit
+                 admin_post GET    /admin/posts/:id(.:format)                  admin/posts#show
+                            PUT    /admin/posts/:id(.:format)                  admin/posts#update
+                            DELETE /admin/posts/:id(.:format)                  admin/posts#destroy
    batch_action_admin_users POST   /admin/users/batch_action(.:format)         admin/users#batch_action
                 admin_users GET    /admin/users(.:format)                      admin/users#index
                             POST   /admin/users(.:format)                      admin/users#create
@@ -83,3 +91,113 @@ batch_action_admin_comments POST   /admin/comments/batch_action(.:format)      a
                       about        /about(.:format)                            static_pages#about
                     contact        /contact(.:format)                          static_pages#contact
                                    /users/:id(.:format)                        users#show
+                   refinery        /wiki                                       Refinery::Core::Engine
+                                   /*a(.:format)                               application#routing_error
+
+Routes for Refinery::Core::Engine:
+                                       /system/resources/*dragonfly(.:format)       <Dragonfly::App name=:refinery_resources >
+        insert_admin_resources GET     /refinery/resources/insert(.:format)         refinery/admin/resources#insert
+               admin_resources GET     /refinery/resources(.:format)                refinery/admin/resources#index
+                               POST    /refinery/resources(.:format)                refinery/admin/resources#create
+            new_admin_resource GET     /refinery/resources/new(.:format)            refinery/admin/resources#new
+           edit_admin_resource GET     /refinery/resources/:id/edit(.:format)       refinery/admin/resources#edit
+                admin_resource PUT     /refinery/resources/:id(.:format)            refinery/admin/resources#update
+                               DELETE  /refinery/resources/:id(.:format)            refinery/admin/resources#destroy
+                                       /system/images/*dragonfly(.:format)          <Dragonfly::App name=:refinery_images >
+           insert_admin_images GET     /refinery/images/insert(.:format)            refinery/admin/images#insert
+                  admin_images GET     /refinery/images(.:format)                   refinery/admin/images#index
+                               POST    /refinery/images(.:format)                   refinery/admin/images#create
+               new_admin_image GET     /refinery/images/new(.:format)               refinery/admin/images#new
+              edit_admin_image GET     /refinery/images/:id/edit(.:format)          refinery/admin/images#edit
+                   admin_image PUT     /refinery/images/:id(.:format)               refinery/admin/images#update
+                               DELETE  /refinery/images/:id(.:format)               refinery/admin/images#destroy
+               admin_dashboard GET     /refinery/dashboard(.:format)                refinery/admin/dashboard#index
+ admin_disable_upgrade_message         /refinery/disable_upgrade_message(.:format)  refinery/admin/dashboard#disable_upgrade_message
+                                       /system/resources/*dragonfly(.:format)       <Dragonfly::App name=:refinery_resources >
+                               GET     /refinery/resources/insert(.:format)         refinery/admin/resources#insert
+                               GET     /refinery/resources(.:format)                refinery/admin/resources#index
+                               POST    /refinery/resources(.:format)                refinery/admin/resources#create
+                               GET     /refinery/resources/new(.:format)            refinery/admin/resources#new
+                               GET     /refinery/resources/:id/edit(.:format)       refinery/admin/resources#edit
+                               PUT     /refinery/resources/:id(.:format)            refinery/admin/resources#update
+                               DELETE  /refinery/resources/:id(.:format)            refinery/admin/resources#destroy
+                                       /system/images/*dragonfly(.:format)          <Dragonfly::App name=:refinery_images >
+                               GET     /refinery/images/insert(.:format)            refinery/admin/images#insert
+                               GET     /refinery/images(.:format)                   refinery/admin/images#index
+                               POST    /refinery/images(.:format)                   refinery/admin/images#create
+                               GET     /refinery/images/new(.:format)               refinery/admin/images#new
+                               GET     /refinery/images/:id/edit(.:format)          refinery/admin/images#edit
+                               PUT     /refinery/images/:id(.:format)               refinery/admin/images#update
+                               DELETE  /refinery/images/:id(.:format)               refinery/admin/images#destroy
+               admin_dashboard GET     /refinery/dashboard(.:format)                refinery/admin/dashboard#index
+ admin_disable_upgrade_message         /refinery/disable_upgrade_message(.:format)  refinery/admin/dashboard#disable_upgrade_message
+                                       /system/resources/*dragonfly(.:format)       <Dragonfly::App name=:refinery_resources >
+                               GET     /refinery/resources/insert(.:format)         refinery/admin/resources#insert
+                               GET     /refinery/resources(.:format)                refinery/admin/resources#index
+                               POST    /refinery/resources(.:format)                refinery/admin/resources#create
+                               GET     /refinery/resources/new(.:format)            refinery/admin/resources#new
+                               GET     /refinery/resources/:id/edit(.:format)       refinery/admin/resources#edit
+                               PUT     /refinery/resources/:id(.:format)            refinery/admin/resources#update
+                               DELETE  /refinery/resources/:id(.:format)            refinery/admin/resources#destroy
+                                       /system/images/*dragonfly(.:format)          <Dragonfly::App name=:refinery_images >
+                               GET     /refinery/images/insert(.:format)            refinery/admin/images#insert
+                               GET     /refinery/images(.:format)                   refinery/admin/images#index
+                               POST    /refinery/images(.:format)                   refinery/admin/images#create
+                               GET     /refinery/images/new(.:format)               refinery/admin/images#new
+                               GET     /refinery/images/:id/edit(.:format)          refinery/admin/images#edit
+                               PUT     /refinery/images/:id(.:format)               refinery/admin/images#update
+                               DELETE  /refinery/images/:id(.:format)               refinery/admin/images#destroy
+               admin_dashboard GET     /refinery/dashboard(.:format)                refinery/admin/dashboard#index
+ admin_disable_upgrade_message         /refinery/disable_upgrade_message(.:format)  refinery/admin/dashboard#disable_upgrade_message
+                                       /system/resources/*dragonfly(.:format)       <Dragonfly::App name=:refinery_resources >
+                               GET     /refinery/resources/insert(.:format)         refinery/admin/resources#insert
+                               GET     /refinery/resources(.:format)                refinery/admin/resources#index
+                               POST    /refinery/resources(.:format)                refinery/admin/resources#create
+                               GET     /refinery/resources/new(.:format)            refinery/admin/resources#new
+                               GET     /refinery/resources/:id/edit(.:format)       refinery/admin/resources#edit
+                               PUT     /refinery/resources/:id(.:format)            refinery/admin/resources#update
+                               DELETE  /refinery/resources/:id(.:format)            refinery/admin/resources#destroy
+                                       /system/images/*dragonfly(.:format)          <Dragonfly::App name=:refinery_images >
+                               GET     /refinery/images/insert(.:format)            refinery/admin/images#insert
+                               GET     /refinery/images(.:format)                   refinery/admin/images#index
+                               POST    /refinery/images(.:format)                   refinery/admin/images#create
+                               GET     /refinery/images/new(.:format)               refinery/admin/images#new
+                               GET     /refinery/images/:id/edit(.:format)          refinery/admin/images#edit
+                               PUT     /refinery/images/:id(.:format)               refinery/admin/images#update
+                               DELETE  /refinery/images/:id(.:format)               refinery/admin/images#destroy
+               admin_dashboard GET     /refinery/dashboard(.:format)                refinery/admin/dashboard#index
+ admin_disable_upgrade_message         /refinery/disable_upgrade_message(.:format)  refinery/admin/dashboard#disable_upgrade_message
+                          root GET     /                                            refinery/pages#home
+                 preview_pages POST    /pages/preview(.:format)                     refinery/pages#preview
+                  preview_page GET|PUT /pages/*path/preview(.:format)               refinery/pages#preview
+                          page GET     /pages/:id(.:format)                         refinery/pages#show
+                         admin GET     /refinery/pages/*path/edit(.:format)         refinery/admin/pages#edit
+          admin_children_pages GET     /refinery/pages/*path/children(.:format)     refinery/admin/pages#children
+                               PUT     /refinery/pages/*path(.:format)              refinery/admin/pages#update
+                               DELETE  /refinery/pages/*path(.:format)              refinery/admin/pages#destroy
+  update_positions_admin_pages POST    /refinery/pages/update_positions(.:format)   refinery/admin/pages#update_positions
+                   admin_pages GET     /refinery/pages(.:format)                    refinery/admin/pages#index
+                               POST    /refinery/pages(.:format)                    refinery/admin/pages#create
+                new_admin_page GET     /refinery/pages/new(.:format)                refinery/admin/pages#new
+               edit_admin_page GET     /refinery/pages/:id/edit(.:format)           refinery/admin/pages#edit
+                    admin_page PUT     /refinery/pages/:id(.:format)                refinery/admin/pages#update
+                               DELETE  /refinery/pages/:id(.:format)                refinery/admin/pages#destroy
+   link_to_admin_pages_dialogs GET     /refinery/pages_dialogs/link_to(.:format)    refinery/admin/pages_dialogs#link_to
+  test_url_admin_pages_dialogs GET     /refinery/pages_dialogs/test_url(.:format)   refinery/admin/pages_dialogs#test_url
+test_email_admin_pages_dialogs GET     /refinery/pages_dialogs/test_email(.:format) refinery/admin/pages_dialogs#test_email
+              admin_page_parts POST    /refinery/page_parts(.:format)               refinery/admin/page_parts#create
+           new_admin_page_part GET     /refinery/page_parts/new(.:format)           refinery/admin/page_parts#new
+               admin_page_part DELETE  /refinery/page_parts/:id(.:format)           refinery/admin/page_parts#destroy
+                     wymiframe GET     /wymiframe(/:id)(.:format)                   refinery/fast#wymiframe
+                       message GET     /refinery/message(.:format)                  refinery/fast#message
+                    admin_root         /refinery(.:format)                          refinery/admin/dashboard#index
+                 admin_dialogs GET     /refinery/dialogs(.:format)                  refinery/admin/dialogs#index
+                  admin_dialog GET     /refinery/dialogs/:id(.:format)              refinery/admin/dialogs#show
+refinery_update_menu_positions         /refinery/update_menu_positions(.:format)    refinery/admin/core#update_plugin_positions
+                               GET     /sitemap.xml(.:format)                       refinery/sitemap#index {:format=>"xml"}
+                                       /refinery/*path(.:format)                    refinery/admin/base#error_404
+                                       /refinery/*path(.:format)                    refinery/admin/base#error_404
+                                       /refinery/*path(.:format)                    refinery/admin/base#error_404
+               marketable_page GET     /*path(.:format)                             refinery/pages#show
+                                       /refinery/*path(.:format)                    refinery/admin/base#error_404
+                                       /refinery/*path(.:format)                    refinery/admin/base#error_404
