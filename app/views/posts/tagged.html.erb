@@ -23,7 +23,7 @@
 		  			<!--<div class="span2" style="width: 110px">
 		  				<%= link_to gravatar_for(post.user), post.user.username %>
 		  			</div> -->
-	       			<p class="span12" style="padding-left: 20px"><%= raw(post.content) %></p>
+	       			<div class="span12" style="padding-left: 20px; color: white"><%= raw(post.content) %></div>
 	       			
 	       			<div class="span12 pull-right" style="border-radius: 8px 8px 8px 8px; margin-left: 20px"><i class="icon-tags icon-white"></i><% @post.tags.any? %>
 				        <% @post.tags.each do |tag| %>				        
@@ -62,7 +62,7 @@
 							    <p class="posted-at">–Posted  <abbr class="timeago" title="<%= (c.created_at).getutc.iso8601 %>"></abbr> by <a href="users/66354"><%= @user.username %> </a></p>
 						     </pre>
 							 <% @i = @i + 1 %>
-							 <div class="pull-right"><% if owner?(c.user_id) %>
+							 <div class="pull-right"><% if admin_or_owner?(c.user_id) %>
 						  		<i class="icon-edit icon-white"></i><%= link_to " Edit Comment", edit_comment_path(:id => c.id, :post_id => c.commentable_id) %> |
 						  	 <% end %>
 						  	 <% if admin_or_owner?(c.user_id) %>
@@ -88,7 +88,7 @@
 		  <% if user_signed_in? %>
 		     <i class="icon-pencil icon-white"></i><%= link_to " Comment on post", "/comments/new?post_id=#{post.id}"%> |
 		  <% end %>
-	 	  <% if owner?(post.user_id) %>
+	 	  <% if admin_or_owner?(post.user_id) %>
 		  	<i class="icon-edit icon-white"></i><%= link_to " Edit Post", edit_post_path(post) %> |
 		  <% end %>
 		  <% if admin_or_owner?(post.user_id) %>

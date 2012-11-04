@@ -125,8 +125,11 @@
 					background-color: rgba(40, 40, 40, 0.9); 
 					padding: 10px 10px 40px; 
 					color: white" >
-				<h4 class="pull-left">No Post Found, Please try with another keyword again</h4>
-		</div><br />
+				<h4 class="pull-left">No Post Found, Please try with another keyword again or search from the tags below...</h4>
+				<br /><br />
+				<%= render :partial => "posts/tagcloud"  %>
+				<br /><br />		
+	</div><br />
 <% end %>
 
 <%= will_paginate @posts, 
