@@ -20,7 +20,8 @@ git 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable' do
   gem 'refinerycms-pages'
   gem 'refinerycms-resources'
 end
-  
+
+gem "refinerycms-settings", "2.0.1"
 gem 'refinerycms-inquiries', '~> 2.0.0'
   
 
