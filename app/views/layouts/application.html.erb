@@ -8,8 +8,8 @@
 	<meta name="google-site-verification" content="HoiZgc9B3a-YAwAFx1SHpq-XoAaNaByXKl1hTsgGW7c" /> 
 	
     <%= stylesheet_link_tag "application", media: "all" %>
-	<%= javascript_include_tag 'application' %>
-    <%= javascript_include_tag 'jquery' %>
+	<%= javascript_include_tag 'application',:async => "async" %>
+    <%= javascript_include_tag 'jquery' ,:async => "async" %>
     
    <style type="text/css">
       	a:link {text-decoration: none;color: #33B5E5;}
@@ -48,23 +48,25 @@
 	<%= render 'layouts/footer' %>
 	<!--<%= debug(params) if Rails.env.development? %>-->
  </body>
+ 
+ 
    <link rel="stylesheet" type="text/css" href="/assets/jqcloud.css" />
-   <script type="text/javascript" src="/assets/jqcloud-1.0.2.min.js"></script>
+   <script async="async" type="text/javascript" src="/assets/jqcloud-1.0.2.min.js"></script>
 
     <!-- For markitup --> 
-    <script type="text/javascript" src="/assets/jquery.markitup.js"></script>
-    <script type="text/javascript" src="/assets/set.js"></script>
+    <script async="async" type="text/javascript" src="/assets/jquery.markitup.js"></script>
+    <script async="async" type="text/javascript" src="/assets/set.js"></script>
     
 
 
     <!-- For timeago -->   
-    <script type="text/javascript" src="/assets/jquery.timeago"></script>
-	<script>jQuery(document).ready(function($) {$("abbr.timeago").timeago();});</script>
+    <script async="async" type="text/javascript" src="/assets/jquery.timeago"></script>
+	<script async="async" >jQuery(document).ready(function($) {$("abbr.timeago").timeago();});</script>
 	<link rel="stylesheet" type="text/css" href="/assets/style.css" />
 	<link rel="stylesheet" type="text/css" href="/assets/default_style.css" />
 	
 	<!-- For fading the ticker messages -->   
-    <script type="text/javascript"> 
+    <script async="async" type="text/javascript"> 
 	    $(function() {
 	   $('#flash').delay(1000).fadeIn('normal', function() {
 	      $(this).delay(3500).fadeOut();
