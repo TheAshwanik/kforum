@@ -79,4 +79,7 @@ KForum::Application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
   
+  
+  META_CONFIG = YAML.load_file("#{Rails.root}/config/metaconfig.yml")
+  
 end
