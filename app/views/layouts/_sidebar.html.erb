@@ -1,3 +1,5 @@
+<link href='http://fonts.googleapis.com/css?family=Schoolbell&v1' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Paprika' rel='stylesheet' type='text/css'>
 
 <% if !nil && user_signed_in? && current_user.confirmed? %>
 
@@ -6,13 +8,62 @@
 	<aside class="well well-large" style="border-radius: 6px 6px 6px 6px; background-color: rgba(40, 40, 40, 0.9) " >
     <div>
 	 	<ul class="nav nav-list">
-	    <li class="nav-header" style="color: white">Knock Yourself Out</li>
+	    <li class="nav-header pull-left" style="color: white">About me</li><br />
+	    <li class="divider"></li>  
+	    <li>
+	   	<blockquote style=" font-size: 10px; font-family: 'Paprika', cursive;;color: white ;padding: 4px">
+	   	<%= gravatar("AshwaniKumar","aryan.ashwani@gmail.com", "size:100")	 %>
+	   	I’m a Software Architect, Software developer and a loving husband. I am from India,currently in France.
+		The things I love most in life are Swimming, Photography and Travelling.
+		I’ve been Swimming for few years, and I really love it.
+		On week days you’ll usually find me designing Telecom Provisioning solutions for various countries..
+		On the weekends I like to be with my lovely wife and work on my higher studies or small hobby projects.
+		</blockquote>
+		</li>	   
+	    </ul>
+	 </div>
+	 
+	 <br />
+     <div>
+	 	<ul class="nav nav-list">
+	    <li class="nav-header pull-left" style="color: white">Knock Yourself Out</li><br >
 	    <li class="divider"></li>
 	    <li><a href="http://www.tibco.com/industries/telecommunications/fulfillment-orchestration/provisioning-and-service-activation/default.jsp"  target="blank">Tibco KPSA</a></li>
 	    <li><a href="http://www.tibco.com/multimedia/solution-brief-fulfillment-orchestration-suite_tcm8-13810.pdf" target="blank">Tibco FOS</a></li>
 	    <li><a href="https://docs.tibco.com/" target="blank">Tibco Product Documentation</a></li>
 	    </ul>
-	 </div> 
+	  </div>
+	  <br/>
+	  
+	  <div>
+	 	<ul class="nav nav-list">
+	    <li class="nav-header pull-left" style="color: white">Share this page</li><br /> 
+	    <li class="divider"></li>
+	    <span class='st_sharethis_large' displayText='ShareThis'></span>
+		<span class='st_facebook_large' displayText='Facebook'></span>
+		<span class='st_twitter_large' displayText='Tweet'></span>
+		<span class='st_linkedin_large' displayText='LinkedIn'></span>
+		<span class='st_delicious_large' displayText='Delicious'></span>
+		<span class='st_pinterest_large' displayText='Pinterest'></span>
+		<span class='st_email_large' displayText='Email'></span>
+	    </ul>
+	  </div>
+	 		 
+	  <br />
+	  <!--<div>
+	 	<ul class="nav nav-list">
+	    <li class="nav-header pull-left" style="color: white">Helper links</li><br /> 
+	    <li class="divider"></li>  
+	    <marquee 
+	    	onmouseenter="this.setAttribute('scrollamount', 0, 0);" 
+	    	onmouseleave="this.setAttribute('scrollamount', 6, 0);">
+	    <li><a href=<%= main_app.root_path %>>Home</a> | 
+	    <a href=<%= main_app.forums_path %>>Forum</a> | 
+	    <img src="https://www.delicious.com/static/img/delicious.small.gif" height="10" width="10" alt="Delicious" />
+        <a href="https://www.delicious.com/save" onclick="window.open('https://www.delicious.com/save?v=5&noui&jump=close&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;"> Save this on Delicious</a></marquee>
+	    </ul>
+	  </div>-->
+	 
 	</aside>
 <% else %>
 	<aside class="well well-large" style="border-radius: 6px 6px 6px 6px; background-color: rgba(40, 40, 40, 0.9)" >
@@ -23,31 +74,10 @@
 	     <% end %>
 	     </ul>
 	 </div> -->
-	 
-	 <div>
+
+	 <div id="tag_cloud" style="width: auto; color: white">
 	 	<ul class="nav nav-list">
-	    <li class="nav-header pull-left" style="color: white">Helper links</li><br />
-	    <li class="divider"></li>  
-	    <li><a href="/">Home</a></li>
-	    <li><a href=<%=main_app.forums_path%>>Forum</a></li>
-	   
-	    </ul>
-	 </div> 
-	
-	 <br />
-	  <div>
-	 	<ul class="nav nav-list">
-	    <li class="nav-header pull-left" style="color: white">Helper links</li><br />
-	    <li class="divider"></li>  
-	    <li><a href="/">Home</a></li>
-	    <img src="https://www.delicious.com/static/img/delicious.small.gif" height="10" width="10" alt="Delicious" />
-        <a href="https://www.delicious.com/save" onclick="window.open('https://www.delicious.com/save?v=5&noui&jump=close&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;"> Save this on Delicious</a>
-	    </ul>
-	 </div>
-	 <br />
-	 <div id="tag_cloud" style="width: auto; color: white"">
-	 	<ul class="nav nav-list">
-	 		<li class="nav-header pull-left">Whats Hot ?</li><br />
+	 		<li class="nav-header pull-left" style="color: white">Whats Hot ?</li><br />
 			<li class="divider"></li>
 			 <li><% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
 			    <%= link_to tag.name, main_app.tagged_url(:tag => tag.name), class: css_class , :style => "padding-top: 0px; padding-bottom: 0px;" %>
@@ -55,7 +85,6 @@
 			 </li>
 			 
 	 </div>
-
 	</aside>
     
 <% end %>

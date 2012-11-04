@@ -2,7 +2,7 @@
   <div class="navbar-inner">
   	
     <div class="container">
-      <div class="pull-left"><%= link_to "MYForum", root_path, id: "logo" %></div>
+      <div class="pull-left"><%= link_to "KForum", main_app.root_path, id: "logo" %></div>
    	  
    	  <div class="container">
       <div class="pull-right">
@@ -34,7 +34,7 @@
           
           <li><a href=<%=main_app.help_path%>><i class="icon-bell icon-white "></i>&nbsp;Help</li></a>
           <% if signed_in? %>
-          <li><a href=<%= "/wiki" %>><i class="icon-list-alt icon-white"></i>&nbsp;Wiki</li></a>
+          <li><a href=<%= refinery.root_path %>><i class="icon-list-alt icon-white"></i>&nbsp;Articles</li></a>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><Account><i class="icon-wrench icon-white"></i>&nbsp;<%=current_user.username%>&nbsp;<b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -42,7 +42,7 @@
                 <li><%= link_to "Edit Settings", main_app.edit_user_registration_path(current_user) %></li>
                 <% if current_user.admin? %>
                 	<li><%= link_to "Administration", main_app.admin_root_path %></li>
-                	<li><%= link_to "Edit Wiki Pages", "/wiki/refinery" %></li>
+                	<li><%= link_to "Edit Articles", refinery.admin_root_path %></li>
                 <% end %>
                 <li class="divider"></li>
                 <li>

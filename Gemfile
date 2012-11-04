@@ -20,6 +20,9 @@ git 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable' do
   gem 'refinerycms-pages'
   gem 'refinerycms-resources'
 end
+  
+gem 'refinerycms-inquiries', '~> 2.0.0'
+  
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

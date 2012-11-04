@@ -1,4 +1,4 @@
-MYForum::Application.routes.draw do
+KForum::Application.routes.draw do
 
   ActiveAdmin.routes(self)
 
@@ -24,7 +24,7 @@ MYForum::Application.routes.draw do
 
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
-  match '/contact', to: 'static_pages#contact'
+  #match '/contact', to: 'static_pages#contact'
   match '/users/:id', to: 'users#show'
   
   # This line mounts Refinery's routes at the root of your application.
@@ -32,7 +32,7 @@ MYForum::Application.routes.draw do
   # If you would like to change where this extension is mounted, simply change the :at option to something different.
   #
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
-  mount Refinery::Core::Engine, :at => '/wiki'
+  mount Refinery::Core::Engine, :at => '/static'
   
   
   # The priority is based upon order of creation:
