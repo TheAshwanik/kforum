@@ -21,8 +21,11 @@
       <td><%= link_to h(topic.name), topic_path(topic.id) %>  
       <td><%= topic.posts.count %></td>  
       <td class="right">
-      	<%= distance_of_time_in_words_to_now topic.last_post_at %> ago by 
-      	<%= link_to topic.user.username, "/users/#{topic.last_poster_id}" %>
+      	<% if !topic.user.nil? %>
+      		<%= distance_of_time_in_words_to_now topic.last_post_at %> ago by <%= link_to topic.user.username, "/users/#{topic.last_poster_id}" %>
+      	<% else %>
+      		<%= distance_of_time_in_words_to_now topic.last_post_at %> ago by <i>Anonymous</i>
+      	<% end %>	
       </td>
      
      <% if admin_or_owner?(topic.user_id)  %>
