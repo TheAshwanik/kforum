@@ -1,11 +1,11 @@
 <% if params[:search] != nil && params[:search] != "" %>
-	<% provide(:title, "Listing Posts with Keyword => " + params[:search] + "...") %>
+	<% provide(:title, "Listing Posts with Keyword : " + params[:search] + "...") %>
 	<div style="height:100%;  
 			background-color: rgba(40, 40, 40, 0.9); 
 			padding: 10px 10px 40px; 
 			color: white" >
 			
-			<h4 class="pull-left" style="font-size: 25px;">Listing Posts with Keyword => <%=params[:search]%></h4>
+			<h4 class="pull-left" style="font-size: 25px;">All Posts with Keyword : <%=params[:search]%></h4>
 	</div>
 <% else %>
 	<% provide(:title, "Listing all Posts...") %>
@@ -14,7 +14,7 @@
 			padding: 10px 10px 40px; 
 			color: white" >
 			
-			<h4 class="pull-left" style="font-size: 25px;">Listing all Posts...</h4>
+			<h4 class="pull-left" style="font-size: 25px;">No KeyWord supplied for search, Listing all Posts...</h4>
 	</div>
 <% end %>
 
