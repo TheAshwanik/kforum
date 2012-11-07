@@ -1,0 +1,1006 @@
+
+A new version of the Heroku Toolbelt is available, download and install from https://toolbelt.heroku.com.
+
+2012-11-06T23:13:57+00:00 app[web.1]: 
+2012-11-06T23:13:57+00:00 app[web.1]: 
+2012-11-06T23:13:57+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud.css dyno=web.1 queue=0 wait=0ms service=17ms status=304 bytes=0
+2012-11-06T23:13:57+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-06T23:13:57+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-06 23:13:57 +0000
+2012-11-06T23:13:58+00:00 app[web.1]: 
+2012-11-06T23:13:58+00:00 app[web.1]: 
+2012-11-06T23:13:58+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-06 23:13:58 +0000
+2012-11-06T23:13:58+00:00 app[web.1]: 
+2012-11-06T23:13:58+00:00 app[web.1]: 
+2012-11-06T23:13:58+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.36.70 at 2012-11-06 23:13:58 +0000
+2012-11-06T23:13:58+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-06T23:13:58+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-06T23:13:58+00:00 app[web.1]: 
+2012-11-06T23:13:58+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-06 23:13:58 +0000
+2012-11-06T23:13:58+00:00 app[web.1]: 
+2012-11-06T23:13:58+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/style.css dyno=web.1 queue=0 wait=1ms service=10ms status=304 bytes=0
+2012-11-06T23:13:58+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-06T23:13:58+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/set.js dyno=web.1 queue=0 wait=0ms service=17ms status=304 bytes=0
+2012-11-06T23:13:58+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/default_style.css dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:13:58+00:00 app[web.1]: 
+2012-11-06T23:13:58+00:00 app[web.1]: 
+2012-11-06T23:13:58+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.36.70 at 2012-11-06 23:13:58 +0000
+2012-11-06T23:13:58+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-06T23:13:58+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-06T23:13:58+00:00 app[web.1]: 
+2012-11-06T23:13:58+00:00 app[web.1]: 
+2012-11-06T23:13:58+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-06T23:13:58+00:00 app[web.1]: 
+2012-11-06T23:13:58+00:00 app[web.1]: 
+2012-11-06T23:13:58+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-06 23:13:58 +0000
+2012-11-06T23:13:58+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png" for 86.214.36.70 at 2012-11-06 23:13:58 +0000
+2012-11-06T23:13:58+00:00 app[web.1]: Served asset /glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png - 304 Not Modified (0ms)
+2012-11-06T23:14:17+00:00 app[web.1]: 
+2012-11-06T23:14:17+00:00 app[web.1]: 
+2012-11-06T23:14:17+00:00 app[web.1]: Started GET "/comments/new?post_id=7" for 86.214.36.70 at 2012-11-06 23:14:17 +0000
+2012-11-06T23:14:17+00:00 heroku[router]: GET kforum.ashwani.co.in/comments/new?post_id=7 dyno=web.1 queue=0 wait=0ms service=116ms status=200 bytes=8726
+2012-11-06T23:14:17+00:00 app[web.1]: Processing by CommentsController#new as HTML
+2012-11-06T23:14:17+00:00 app[web.1]:   Rendered comments/_form.html.erb (76.7ms)
+2012-11-06T23:14:17+00:00 app[web.1]:   Parameters: {"post_id"=>"7"}
+2012-11-06T23:14:17+00:00 app[web.1]:   Rendered comments/new.html.erb within layouts/application (77.2ms)
+2012-11-06T23:14:17+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:14:17+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (4.1ms)
+2012-11-06T23:14:17+00:00 app[web.1]:   Rendered layouts/_header.html.erb (3.9ms)
+2012-11-06T23:14:17+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (3.2ms)
+2012-11-06T23:14:17+00:00 app[web.1]: Completed 200 OK in 102ms (Views: 88.3ms | ActiveRecord: 9.3ms)
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: Served asset /application-135db025aaf9d2aeab4c5e8b8be3ced6.css - 304 Not Modified (0ms)
+2012-11-06T23:14:18+00:00 app[web.1]: Started GET "/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css" for 86.214.36.70 at 2012-11-06 23:14:18 +0000
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: Started GET "/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js" for 86.214.36.70 at 2012-11-06 23:14:18 +0000
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: Served asset /application-d95d0bdda6a187fb2263f3c67ef4de9f.js - 304 Not Modified (0ms)
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: Started GET "/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js" for 86.214.36.70 at 2012-11-06 23:14:18 +0000
+2012-11-06T23:14:18+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css dyno=web.1 queue=0 wait=0ms service=11ms status=304 bytes=0
+2012-11-06T23:14:18+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js dyno=web.1 queue=0 wait=0ms service=28ms status=304 bytes=0
+2012-11-06T23:14:18+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js dyno=web.1 queue=0 wait=0ms service=26ms status=304 bytes=0
+2012-11-06T23:14:18+00:00 app[web.1]: Served asset /jquery-765cc76e15d62a88cd61468aeaaaeb5d.js - 304 Not Modified (0ms)
+2012-11-06T23:14:18+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud-1.0.2.min.js dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.36.70 at 2012-11-06 23:14:18 +0000
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
+2012-11-06T23:14:18+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.36.70 at 2012-11-06 23:14:18 +0000
+2012-11-06T23:14:18+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
+2012-11-06T23:14:18+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-06 23:14:18 +0000
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-06T23:14:18+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud.css dyno=web.1 queue=0 wait=0ms service=14ms status=304 bytes=0
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-06 23:14:18 +0000
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-06T23:14:18+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.36.70 at 2012-11-06 23:14:18 +0000
+2012-11-06T23:14:18+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.timeago dyno=web.1 queue=0 wait=0ms service=30ms status=304 bytes=0
+2012-11-06T23:14:18+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-06 23:14:18 +0000
+2012-11-06T23:14:18+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/style.css dyno=web.1 queue=0 wait=0ms service=17ms status=304 bytes=0
+2012-11-06T23:14:18+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: 
+2012-11-06T23:14:18+00:00 app[web.1]: Started GET "/assets/default_style.css" 
+for 86.214.36.70 at 2012-11-06 23:14:18 +0000
+2012-11-06T23:14:18+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-06T23:14:18+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/default_style.css dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-06T23:14:19+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-06T23:14:19+00:00 app[web.1]: 
+2012-11-06T23:14:19+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png" for 86.214.36.70 at 2012-11-06 23:14:19 +0000
+2012-11-06T23:14:19+00:00 app[web.1]: Served asset /glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png - 304 Not Modified (0ms)
+2012-11-06T23:14:19+00:00 app[web.1]: 
+2012-11-06T23:14:19+00:00 app[web.1]: 
+2012-11-06T23:14:19+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-06 23:14:19 +0000
+2012-11-06T23:14:19+00:00 app[web.1]: 
+2012-11-06T23:14:19+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-06T23:14:19+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=19ms status=304 bytes=0
+2012-11-06T23:14:19+00:00 heroku[router]: GET kforum.ashwani.co.in/images/facebook_blue.png dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:14:19+00:00 heroku[router]: GET kforum.ashwani.co.in/images/mail3.png dyno=web.1 queue=0 wait=1ms service=18ms status=304 bytes=0
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Started GET "/assets/h1.png" for 86.214.36.70 at 2012-11-06 23:14:20 +0000
+2012-11-06T23:14:20+00:00 app[web.1]: Served asset /h1.png - 304 Not Modified (0ms)
+2012-11-06T23:14:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/h1.png dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:14:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/h3.png dyno=web.1 queue=0 wait=0ms service=11ms status=304 bytes=0
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Served asset /h2.png - 304 Not Modified (0ms)
+2012-11-06T23:14:20+00:00 app[web.1]: Started GET "/assets/h2.png" for 86.214.36.70 at 2012-11-06 23:14:20 +0000
+2012-11-06T23:14:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/bg-container.png dyno=web.1 queue=0 wait=6ms service=13ms status=304 bytes=0
+2012-11-06T23:14:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/h5.png dyno=web.1 queue=0 wait=0ms service=5ms status=304 bytes=0
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Started GET "/assets/h3.png" for 86.214.36.70 at 2012-11-06 23:14:20 +0000
+2012-11-06T23:14:20+00:00 app[web.1]: Served asset /h3.png - 304 Not Modified (0ms)
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Started GET "/assets/bg-container.png" for 86.214.36.70 at 2012-11-06 23:14:20 +0000
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Served asset /bg-container.png - 304 Not Modified (0ms)
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Started GET "/assets/h5.png" for 86.214.36.70 at 2012-11-06 23:14:20 +0000
+2012-11-06T23:14:20+00:00 app[web.1]: Served asset /h5.png - 304 Not Modified (0ms)
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Started GET "/assets/h4.png" for 86.214.36.70 at 2012-11-06 23:14:20 +0000
+2012-11-06T23:14:20+00:00 app[web.1]: Served asset /h4.png - 304 Not Modified (0ms)
+2012-11-06T23:14:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/h4.png dyno=web.1 queue=0 wait=10ms service=11ms status=304 bytes=0
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Started GET "/assets/h6.png" for 86.214.36.70 at 2012-11-06 23:14:20 +0000
+2012-11-06T23:14:20+00:00 app[web.1]: Served asset /h6.png - 304 Not Modified (0ms)
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Started GET "/assets/paragraph.png" for 86.214.36.70 at 2012-11-06 23:14:20 +0000
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Served asset /paragraph.png - 304 Not Modified (0ms)
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Started GET "/assets/bold.png" for 86.214.36.70 at 2012-11-06 23:14:20 +0000
+2012-11-06T23:14:20+00:00 app[web.1]: Served asset /bold.png - 304 Not Modified (0ms)
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Started GET "/assets/italic.png" for 86.214.36.70 at 2012-11-06 23:14:20 +0000
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Served asset /italic.png - 304 Not Modified (0ms)
+2012-11-06T23:14:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/bold.png dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:14:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/italic.png dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:14:20+00:00 app[web.1]: Served asset /stroke.png - 304 Not Modified (0ms)
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Started GET "/assets/stroke.png" for 86.214.36.70 at 2012-11-06 23:14:20 +0000
+2012-11-06T23:14:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/stroke.png dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 app[web.1]: Started GET "/assets/list-bullet.png" for 86.214.36.70 at 2012-11-06 23:14:20 +0000
+2012-11-06T23:14:20+00:00 app[web.1]: Served asset /list-bullet.png - 304 Not Modified (0ms)
+2012-11-06T23:14:20+00:00 app[web.1]: 
+2012-11-06T23:14:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/list-bullet.png dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:14:21+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/list-numeric.png dyno=web.1 queue=0 wait=2ms service=7ms status=304 bytes=0
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: Served asset /list-numeric.png - 304 Not Modified (0ms)
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: Started GET "/assets/list-numeric.png" for 86.214.36.70 at 2012-11-06 23:14:21 +0000
+2012-11-06T23:14:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/h6.png dyno=web.1 queue=0 wait=0ms service=12ms status=304 bytes=0
+2012-11-06T23:14:21+00:00 app[web.1]: Served asset /list-item.png - 304 Not Modified (0ms)
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: Started GET "/assets/list-item.png" for 86.214.36.70 at 2012-11-06 23:14:21 +0000
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: Served asset /picture.png - 304 Not Modified (0ms)
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: Started GET "/assets/picture.png" for 86.214.36.70 at 2012-11-06 23:14:21 +0000
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/picture.png dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:14:21+00:00 app[web.1]: Started GET "/assets/link.png" for 86.214.36.70 at 2012-11-06 23:14:21 +0000
+2012-11-06T23:14:21+00:00 app[web.1]: Served asset /link.png - 304 Not Modified (0ms)
+2012-11-06T23:14:21+00:00 app[web.1]: Started GET "/assets/clean.png" for 86.214.36.70 at 2012-11-06 23:14:21 +0000
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: Served asset /clean.png - 304 Not Modified (0ms)
+2012-11-06T23:14:21+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/link.png dyno=web.1 queue=0 wait=0ms service=12ms status=304 bytes=0
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: Started GET "/assets/preview.png" for 86.214.36.70 at 2012-11-06 23:14:21 +0000
+2012-11-06T23:14:21+00:00 app[web.1]: Served asset /preview.png - 304 Not Modified (0ms)
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: Served asset /bg-editor.png - 304 Not Modified (0ms)
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: Started GET "/assets/bg-editor.png" for 86.214.36.70 at 2012-11-06 23:14:21 +0000
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: 
+2012-11-06T23:14:21+00:00 app[web.1]: Started GET "/assets/handle.png" for 86.214.36.70 at 2012-11-06 23:14:21 +0000
+2012-11-06T23:14:21+00:00 app[web.1]: Served asset /handle.png - 304 Not Modified (0ms)
+2012-11-06T23:14:37+00:00 app[web.1]: 
+2012-11-06T23:14:37+00:00 app[web.1]: 
+2012-11-06T23:14:37+00:00 app[web.1]: Started POST "/posts/7/comments" for 86.214.36.70 at 2012-11-06 23:14:37 +0000
+2012-11-06T23:14:37+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"b/y6+gGIMfejUf8+kFhiDrlSUHwk1SWvlM1yCtcj/Gc=", "comment"=>{"commentable_id"=>"7", "body"=>"test comment"}, "commit"=>"Create Comment", "post_id"=>"7"}
+2012-11-06T23:14:37+00:00 app[web.1]: Processing by CommentsController#create as HTML
+2012-11-06T23:14:37+00:00 app[web.1]: Completed 302 Found in 77ms (ActiveRecord: 63.0ms)
+2012-11-06T23:14:37+00:00 app[web.1]: Redirected to http://kforum.ashwani.co.in/topics/2
+2012-11-06T23:14:37+00:00 heroku[router]: POST kforum.ashwani.co.in/posts/7/comments dyno=web.1 queue=0 wait=0ms service=88ms status=302 bytes=102
+2012-11-06T23:14:38+00:00 app[web.1]: 
+2012-11-06T23:14:38+00:00 app[web.1]: 
+2012-11-06T23:14:38+00:00 app[web.1]: Started GET "/topics/2" for 86.214.36.70 at 2012-11-06 23:14:38 +0000
+2012-11-06T23:14:38+00:00 heroku[router]: GET kforum.ashwani.co.in/topics/2 dyno=web.1 queue=0 wait=1ms service=77ms status=200 bytes=10783
+2012-11-06T23:14:38+00:00 app[web.1]: Processing by TopicsController#show as HTML
+2012-11-06T23:14:38+00:00 app[web.1]:   Parameters: {"id"=>"2"}
+2012-11-06T23:14:38+00:00 app[web.1]:   Rendered topics/show.html.erb within layouts/application (31.3ms)
+2012-11-06T23:14:38+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.1ms)
+2012-11-06T23:14:38+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (3.7ms)
+2012-11-06T23:14:38+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:14:38+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (4.3ms)
+2012-11-06T23:14:38+00:00 app[web.1]: Completed 200 OK in 63ms (Views: 23.0ms | ActiveRecord: 33.9ms)
+2012-11-06T23:14:38+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:14:38+00:00 app[web.1]: 
+2012-11-06T23:14:38+00:00 app[web.1]: 
+2012-11-06T23:14:38+00:00 app[web.1]: Started GET "/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css" for 86.214.36.70 at 2012-11-06 23:14:38 +0000
+2012-11-06T23:14:38+00:00 app[web.1]: Served asset /application-135db025aaf9d2aeab4c5e8b8be3ced6.css - 304 Not Modified (0ms)
+2012-11-06T23:14:38+00:00 app[web.1]: Started GET "/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js" for 86.214.36.70 at 2012-11-06 23:14:38 +0000
+2012-11-06T23:14:38+00:00 app[web.1]: 
+2012-11-06T23:14:38+00:00 app[web.1]: 
+2012-11-06T23:14:38+00:00 app[web.1]: Served asset /application-d95d0bdda6a187fb2263f3c67ef4de9f.js - 304 Not Modified (0ms)
+2012-11-06T23:14:38+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-06T23:14:38+00:00 app[web.1]: 
+2012-11-06T23:14:38+00:00 app[web.1]: 
+2012-11-06T23:14:38+00:00 app[web.1]: Started GET "/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js" for 86.214.36.70 at 2012-11-06 23:14:38 +0000
+2012-11-06T23:14:38+00:00 app[web.1]: Served asset /jquery-765cc76e15d62a88cd61468aeaaaeb5d.js - 304 Not Modified (0ms)
+2012-11-06T23:14:39+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud.css dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.36.70 at 2012-11-06 23:14:39 +0000
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.36.70 at 2012-11-06 23:14:39 +0000
+2012-11-06T23:14:39+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud-1.0.2.min.js dyno=web.1 queue=0 wait=0ms service=21ms status=304 bytes=0
+2012-11-06T23:14:39+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/set.js dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-06T23:14:39+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.timeago dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-06T23:14:39+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-06 23:14:39 +0000
+2012-11-06T23:14:39+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.markitup.js dyno=web.1 queue=0 wait=0ms service=10ms status=304 bytes=0
+2012-11-06T23:14:39+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-06T23:14:39+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.36.70 at 2012-11-06 23:14:39 +0000
+2012-11-06T23:14:39+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-06T23:14:39+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/style.css dyno=web.1 queue=0 wait=1ms service=26ms status=304 bytes=0
+2012-11-06T23:14:39+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-06 23:14:39 +0000
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-06 23:14:39 +0000
+2012-11-06T23:14:39+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.36.70 at 2012-11-06 23:14:39 +0000
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-06T23:14:39+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/default_style.css dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-06T23:14:39+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=11ms status=304 bytes=0
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-06 23:14:39 +0000
+2012-11-06T23:14:39+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: 
+2012-11-06T23:14:39+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png" for 86.214.36.70 at 2012-11-06 23:14:39 +0000
+2012-11-06T23:14:39+00:00 app[web.1]: Served asset /glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png - 304 Not Modified (0ms)
+2012-11-06T23:14:48+00:00 app[web.1]: Started GET "/users/edit.7" for 86.214.36.70 at 2012-11-06 23:14:48 +0000
+2012-11-06T23:14:48+00:00 app[web.1]: 
+2012-11-06T23:14:48+00:00 app[web.1]: 
+2012-11-06T23:14:48+00:00 app[web.1]: Processing by Devise::RegistrationsController#edit as 
+2012-11-06T23:14:48+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (3.6ms)
+2012-11-06T23:14:48+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:14:48+00:00 app[web.1]: Completed 200 OK in 30ms (Views: 19.1ms | ActiveRecord: 6.1ms)
+2012-11-06T23:14:48+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (3.3ms)
+2012-11-06T23:14:48+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.2ms)
+2012-11-06T23:14:48+00:00 app[web.1]:   Rendered devise/registrations/edit.html.erb within layouts/application (5.2ms)
+2012-11-06T23:14:48+00:00 heroku[router]: GET kforum.ashwani.co.in/users/edit.7 dyno=web.1 queue=0 wait=0ms service=42ms status=200 bytes=9775
+2012-11-06T23:14:48+00:00 app[web.1]: 
+2012-11-06T23:14:48+00:00 app[web.1]: 
+2012-11-06T23:14:48+00:00 app[web.1]: Started GET "/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css" for 86.214.36.70 at 2012-11-06 23:14:48 +0000
+2012-11-06T23:14:48+00:00 app[web.1]: Served asset /application-135db025aaf9d2aeab4c5e8b8be3ced6.css - 304 Not Modified (0ms)
+2012-11-06T23:14:48+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-06T23:14:48+00:00 app[web.1]: 
+2012-11-06T23:14:48+00:00 app[web.1]: 
+2012-11-06T23:14:48+00:00 app[web.1]: Served asset /jquery-765cc76e15d62a88cd61468aeaaaeb5d.js - 304 Not Modified (0ms)
+2012-11-06T23:14:48+00:00 app[web.1]: 
+2012-11-06T23:14:48+00:00 app[web.1]: Started GET "/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js" for 86.214.36.70 at 2012-11-06 23:14:48 +0000
+2012-11-06T23:14:48+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js dyno=web.1 queue=0 wait=5ms service=13ms status=304 bytes=0
+2012-11-06T23:14:48+00:00 app[web.1]: 
+2012-11-06T23:14:48+00:00 app[web.1]: Started GET "/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js" for 86.214.36.70 at 2012-11-06 23:14:48 +0000
+2012-11-06T23:14:48+00:00 app[web.1]: Served asset /application-d95d0bdda6a187fb2263f3c67ef4de9f.js - 304 Not Modified (0ms)
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.36.70 at 2012-11-06 23:14:49 +0000
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-06T23:14:49+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-06 23:14:49 +0000
+2012-11-06T23:14:49+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.markitup.js dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-06 23:14:49 +0000
+2012-11-06T23:14:49+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.36.70 at 2012-11-06 23:14:49 +0000
+2012-11-06T23:14:49+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-06T23:14:49+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-06 23:14:49 +0000
+2012-11-06T23:14:49+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/set.js dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-06T23:14:49+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.timeago dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.36.70 at 2012-11-06 23:14:49 +0000
+2012-11-06T23:14:49+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 heroku[router]: GET kforum.ashwani.co.in/images/facebook_blue.png dyno=web.1 queue=0 wait=0ms service=4ms status=304 bytes=0
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
+2012-11-06T23:14:49+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.36.70 at 2012-11-06 23:14:49 +0000
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud.css dyno=web.1 queue=0 wait=11ms service=32ms status=304 bytes=0
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-06 23:14:49 +0000
+2012-11-06T23:14:49+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=95ms status=304 bytes=0
+2012-11-06T23:14:49+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: Served asset /glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png - 304 Not Modified (0ms)
+2012-11-06T23:14:49+00:00 app[web.1]: 
+2012-11-06T23:14:49+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png" for 86.214.36.70 at 2012-11-06 23:14:49 +0000
+2012-11-06T23:14:49+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png dyno=web.1 queue=0 wait=0ms service=100ms status=304 bytes=0
+2012-11-06T23:14:53+00:00 app[web.1]: Started DELETE "/users" for 86.214.36.70 at 2012-11-06 23:14:53 +0000
+2012-11-06T23:14:53+00:00 app[web.1]: 
+2012-11-06T23:14:53+00:00 app[web.1]: 
+2012-11-06T23:14:53+00:00 heroku[router]: POST kforum.ashwani.co.in/users dyno=web.1 queue=0 wait=0ms service=82ms status=302 bytes=94
+2012-11-06T23:14:53+00:00 app[web.1]: Processing by Devise::RegistrationsController#destroy as HTML
+2012-11-06T23:14:53+00:00 app[web.1]:   Parameters: {"authenticity_token"=>"b/y6+gGIMfejUf8+kFhiDrlSUHwk1SWvlM1yCtcj/Gc="}
+2012-11-06T23:14:53+00:00 app[web.1]: Redirected to http://kforum.ashwani.co.in/
+2012-11-06T23:14:53+00:00 app[web.1]: Completed 302 Found in 68ms (ActiveRecord: 20.7ms)
+2012-11-06T23:14:54+00:00 app[web.1]: 
+2012-11-06T23:14:54+00:00 app[web.1]: 
+2012-11-06T23:14:54+00:00 app[web.1]: Started GET "/" for 86.214.36.70 at 2012-11-06 23:14:54 +0000
+2012-11-06T23:14:54+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (4.2ms)
+2012-11-06T23:14:54+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:14:54+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-06T23:14:54+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.9ms)
+2012-11-06T23:14:54+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (0.1ms)
+2012-11-06T23:14:54+00:00 app[web.1]: Completed 200 OK in 33ms (Views: 11.1ms | ActiveRecord: 18.7ms)
+2012-11-06T23:14:54+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+2012-11-06T23:14:54+00:00 app[web.1]: 
+2012-11-06T23:14:54+00:00 app[web.1]: 
+2012-11-06T23:14:54+00:00 app[web.1]: Started GET "/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css" for 86.214.36.70 at 2012-11-06 23:14:54 +0000
+2012-11-06T23:14:54+00:00 app[web.1]: Served asset /application-135db025aaf9d2aeab4c5e8b8be3ced6.css - 304 Not Modified (0ms)
+2012-11-06T23:14:54+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:14:54+00:00 app[web.1]: 
+2012-11-06T23:14:54+00:00 app[web.1]: 
+2012-11-06T23:14:54+00:00 app[web.1]: Started GET "/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js" for 86.214.36.70 at 2012-11-06 23:14:54 +0000
+2012-11-06T23:14:54+00:00 app[web.1]: Served asset /application-d95d0bdda6a187fb2263f3c67ef4de9f.js - 304 Not Modified (0ms)
+2012-11-06T23:14:54+00:00 app[web.1]: Started GET "/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js" for 86.214.36.70 at 2012-11-06 23:14:54 +0000
+2012-11-06T23:14:54+00:00 app[web.1]: Served asset /jquery-765cc76e15d62a88cd61468aeaaaeb5d.js - 304 Not Modified (0ms)
+2012-11-06T23:14:54+00:00 app[web.1]: 
+2012-11-06T23:14:54+00:00 app[web.1]: 
+2012-11-06T23:14:54+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js dyno=web.1 queue=0 wait=3ms service=14ms status=304 bytes=0
+2012-11-06T23:14:54+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js dyno=web.1 queue=0 wait=1ms service=10ms status=304 bytes=0
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.36.70 at 2012-11-06 23:14:55 +0000
+2012-11-06T23:14:55+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
+2012-11-06T23:14:55+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud-1.0.2.min.js dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.36.70 at 2012-11-06 23:14:55 +0000
+2012-11-06T23:14:55+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-06 23:14:55 +0000
+2012-11-06T23:14:55+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-06 23:14:55 +0000
+2012-11-06T23:14:55+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-06T23:14:55+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.markitup.js dyno=web.1 queue=0 wait=0ms service=30ms status=304 bytes=0
+2012-11-06T23:14:55+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/set.js dyno=web.1 queue=0 wait=0ms service=17ms status=304 bytes=0
+2012-11-06T23:14:55+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud.css dyno=web.1 queue=0 wait=0ms service=33ms status=304 bytes=0
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-06T23:14:55+00:00 app[web.1]: Started GET "/asset
+s/jquery.timeago" for 86.214.36.70 at 2012-11-06 23:14:55 +0000
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-06 23:14:55 +0000
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/style.css dyno=web.1 queue=0 wait=0ms service=20ms status=304 bytes=0
+2012-11-06T23:14:55+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-06T23:14:55+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.timeago dyno=web.1 queue=0 wait=3ms service=14ms status=304 bytes=0
+2012-11-06T23:14:55+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/default_style.css dyno=web.1 queue=0 wait=0ms service=9ms status=304 bytes=0
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.36.70 at 2012-11-06 23:14:55 +0000
+2012-11-06T23:14:55+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-06 23:14:55 +0000
+2012-11-06T23:14:55+00:00 app[web.1]: 
+2012-11-06T23:14:55+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-06T23:14:55+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:15:06+00:00 app[web.1]: 
+2012-11-06T23:15:06+00:00 app[web.1]: Started GET "/users/sign_up" for 86.214.36.70 at 2012-11-06 23:15:06 +0000
+2012-11-06T23:15:06+00:00 app[web.1]: 
+2012-11-06T23:15:06+00:00 app[web.1]: Processing by Devise::RegistrationsController#new as HTML
+2012-11-06T23:15:06+00:00 app[web.1]:   Rendered devise/shared/_links.erb (0.5ms)
+2012-11-06T23:15:06+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:15:06+00:00 app[web.1]:   Rendered devise/registrations/new.html.erb within layouts/application (5.2ms)
+2012-11-06T23:15:06+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.0ms)
+2012-11-06T23:15:06+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (0.1ms)
+2012-11-06T23:15:06+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (3.0ms)
+2012-11-06T23:15:06+00:00 app[web.1]: Completed 200 OK in 20ms (Views: 12.7ms | ActiveRecord: 3.8ms)
+2012-11-06T23:15:06+00:00 heroku[router]: GET kforum.ashwani.co.in/users/sign_up dyno=web.1 queue=0 wait=0ms service=32ms status=200 bytes=7313
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: Started GET "/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js" for 86.214.36.70 at 2012-11-06 23:15:07 +0000
+2012-11-06T23:15:07+00:00 app[web.1]: Served asset /application-d95d0bdda6a187fb2263f3c67ef4de9f.js - 304 Not Modified (0ms)
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: Started GET "/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css" for 86.214.36.70 at 2012-11-06 23:15:07 +0000
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: Served asset /application-135db025aaf9d2aeab4c5e8b8be3ced6.css - 304 Not Modified (0ms)
+2012-11-06T23:15:07+00:00 app[web.1]: Started GET "/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js" for 86.214.36.70 at 2012-11-06 23:15:07 +0000
+2012-11-06T23:15:07+00:00 app[web.1]: Served asset /jquery-765cc76e15d62a88cd61468aeaaaeb5d.js - 304 Not Modified (0ms)
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.36.70 at 2012-11-06 23:15:07 +0000
+2012-11-06T23:15:07+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-06 23:15:07 +0000
+2012-11-06T23:15:07+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-06T23:15:07+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.timeago dyno=web.1 queue=0 wait=0ms service=9ms status=304 bytes=0
+2012-11-06T23:15:07+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-06 23:15:07 +0000
+2012-11-06T23:15:07+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.36.70 at 2012-11-06 23:15:07 +0000
+2012-11-06T23:15:07+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
+2012-11-06T23:15:07+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud-1.0.2.min.js dyno=web.1 queue=0 wait=7ms service=13ms status=304 bytes=0
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.36.70 at 2012-11-06 23:15:07 +0000
+2012-11-06T23:15:07+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-06 23:15:07 +0000
+2012-11-06T23:15:07+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/style.css dyno=web.1 queue=0 wait=0ms service=23ms status=304 bytes=0
+2012-11-06T23:15:07+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-06T23:15:07+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.36.70 at 2012-11-06 23:15:07 +0000
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:07+00:00 app[web.1]: 
+2012-11-06T23:15:08+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-06T23:15:08+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-06T23:15:08+00:00 app[web.1]: 
+2012-11-06T23:15:08+00:00 app[web.1]: 
+2012-11-06T23:15:08+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-06 23:15:08 +0000
+2012-11-06T23:15:23+00:00 app[web.1]: 
+2012-11-06T23:15:23+00:00 app[web.1]: 
+2012-11-06T23:15:23+00:00 app[web.1]: Started POST "/users" for 86.214.36.70 at 2012-11-06 23:15:23 +0000
+2012-11-06T23:15:26+00:00 app[web.1]: Processing by Devise::RegistrationsController#create as HTML
+2012-11-06T23:15:26+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZSf7Yc/CPTRyYgyjc1foQSO+QiRGSkp7dgjGijm8owQ=", "user"=>{"username"=>"kajal", "email"=>"kajal.rawat06@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "mail_subscription"=>"1"}, "commit"=>"Sign up"}
+2012-11-06T23:15:26+00:00 app[web.1]: 
+2012-11-06T23:15:26+00:00 app[web.1]: Completed 302 Found in 2745ms (ActiveRecord: 0.0ms)
+2012-11-06T23:15:26+00:00 app[web.1]: Sent mail to kajal.rawat06@gmail.com (2158ms)
+2012-11-06T23:15:26+00:00 app[web.1]: Redirected to http://kforum.ashwani.co.in/
+2012-11-06T23:15:26+00:00 app[web.1]:   Rendered devise/mailer/confirmation_instructions.html.erb (1.0ms)
+2012-11-06T23:15:26+00:00 app[web.1]: 
+2012-11-06T23:15:26+00:00 app[web.1]: Started GET "/" for 86.214.36.70 at 2012-11-06 23:15:26 +0000
+2012-11-06T23:15:26+00:00 app[web.1]: 
+2012-11-06T23:15:26+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-06T23:15:26+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (5.0ms)
+2012-11-06T23:15:26+00:00 app[web.1]: Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 2.6ms)
+2012-11-06T23:15:26+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+2012-11-06T23:15:26+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.9ms)
+2012-11-06T23:15:26+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:15:26+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (0.1ms)
+2012-11-06T23:15:26+00:00 heroku[router]: GET kforum.ashwani.co.in/ dyno=web.1 queue=0 wait=0ms service=28ms status=200 bytes=7269
+2012-11-06T23:15:26+00:00 app[web.1]: 
+2012-11-06T23:15:26+00:00 app[web.1]: 
+2012-11-06T23:15:26+00:00 app[web.1]: Started GET "/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css" for 86.214.36.70 at 2012-11-06 23:15:26 +0000
+2012-11-06T23:15:26+00:00 app[web.1]: Served asset /application-135db025aaf9d2aeab4c5e8b8be3ced6.css - 304 Not Modified (0ms)
+2012-11-06T23:15:26+00:00 app[web.1]: 
+2012-11-06T23:15:26+00:00 app[web.1]: Started GET "/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js" for 86.214.36.70 at 2012-11-06 23:15:26 +0000
+2012-11-06T23:15:26+00:00 app[web.1]: Started GET "/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js" for 86.214.36.70 at 2012-11-06 23:15:26 +0000
+2012-11-06T23:15:26+00:00 app[web.1]: 
+2012-11-06T23:15:26+00:00 app[web.1]: Served asset /jquery-765cc76e15d62a88cd61468aeaaaeb5d.js - 304 Not Modified (0ms)
+2012-11-06T23:15:26+00:00 app[web.1]: 
+2012-11-06T23:15:26+00:00 app[web.1]: 
+2012-11-06T23:15:26+00:00 app[web.1]: Served asset /application-d95d0bdda6a187fb2263f3c67ef4de9f.js - 304 Not Modified (0ms)
+2012-11-06T23:15:26+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js dyno=web.1 queue=0 wait=0ms service=77ms status=304 bytes=0
+2012-11-06T23:15:26+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js dyno=web.1 queue=0 wait=0ms service=76ms status=304 bytes=0
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.36.70 at 2012-11-06 23:15:27 +0000
+2012-11-06T23:15:27+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.36.70 at 2012-11-06 23:15:27 +0000
+2012-11-06T23:15:27+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
+2012-11-06T23:15:27+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud-1.0.2.min.js dyno=web.1 queue=0 wait=0ms service=10ms status=304 bytes=0
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-06 23:15:27 +0000
+2012-11-06T23:15:27+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-06T23:15:27+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-06 23:15:27 +0000
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.36.70 at 2012-11-06 23:15:27 +0000
+2012-11-06T23:15:27+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-06T23:15:27+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.markitup.js dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:15:27+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.timeago dyno=web.1 queue=0 wait=0ms service=9ms status=304 bytes=0
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.36.70 at 2012-11-06 23:15:27 +0000
+2012-11-06T23:15:27+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/default_style.css dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-06 23:15:27 +0000
+2012-11-06T23:15:27+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-06T23:15:27+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/style.css dyno=web.1 queue=0 wait=21ms service=39ms status=304 bytes=0
+2012-11-06T23:15:27+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-06T23:15:27+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: 
+2012-11-06T23:15:27+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-06 23:15:27 +0000
+2012-11-06T23:15:27+00:00 heroku[router]: GET kforum.ashwani.co.in/images/facebook_blue.png dyno=web.1 queue=0 wait=0ms service=4ms status=304 bytes=0
+2012-11-06T23:15:43+00:00 app[web.1]: 
+2012-11-06T23:15:43+00:00 app[web.1]: 
+2012-11-06T23:15:43+00:00 app[web.1]: Started GET "/users/confirmation?confirmation_token=3oe4mpBqiv28py2ABeUC" for 86.214.36.70 at 2012-11-06 23:15:43 +0000
+2012-11-06T23:15:43+00:00 app[web.1]: *******************************==============********
+2012-11-06T23:15:43+00:00 app[web.1]: /static/refinery
+2012-11-06T23:15:43+00:00 app[web.1]: user_root_path
+2012-11-06T23:15:43+00:00 app[web.1]: Processing by Devise::ConfirmationsController#show as HTML
+2012-11-06T23:15:43+00:00 app[web.1]:   Parameters: {"confirmation_token"=>"3oe4mpBqiv28py2ABeUC"}
+2012-11-06T23:15:43+00:00 app[web.1]: Redirected to http://kforum.ashwani.co.in/
+2012-11-06T23:15:43+00:00 app[web.1]: Completed 302 Found in 32ms (ActiveRecord: 19.9ms)
+2012-11-06T23:15:43+00:00 heroku[router]: GET kforum.ashwani.co.in/users/confirmation?confirmation_token=3oe4mpBqiv28py2ABeUC dyno=web.1 queue=0 wait=0ms service=49ms status=302 bytes=94
+2012-11-06T23:15:44+00:00 app[web.1]: Started GET "/" for 86.214.36.70 at 2012-11-06 23:15:44 +0000
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-11-06T23:15:44+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+2012-11-06T23:15:44+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.3ms)
+2012-11-06T23:15:44+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:15:44+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (0.4ms)
+2012-11-06T23:15:44+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (6.7ms)
+2012-11-06T23:15:44+00:00 app[web.1]: Completed 200 OK in 23ms (Views: 14.4ms | ActiveRecord: 5.5ms)
+2012-11-06T23:15:44+00:00 heroku[router]: GET kforum.ashwani.co.in/ dyno=web.1 queue=0 wait=0ms service=61ms status=200 bytes=11816
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: Started GET "/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js" for 86.214.36.70 at 2012-11-06 23:15:44 +0000
+2012-11-06T23:15:44+00:00 app[web.1]: Served asset /application-d95d0bdda6a187fb2263f3c67ef4de9f.js - 304 Not Modified (0ms)
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: Started GET "/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js" for 86.214.36.70 at 2012-11-06 23:15:44 +0000
+2012-11-06T23:15:44+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js dyno=web.1 queue=0 wait=0ms service=23ms status=304 bytes=0
+2012-11-06T23:15:44+00:00 app[web.1]: Served asset /jquery-765cc76e15d62a88cd61468aeaaaeb5d.js - 304 Not Modified (0ms)
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.36.70 at 2012-11-06 23:15:44 +0000
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-06 23:15:44 +0000
+2012-11-06T23:15:44+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.36.70 at 2012-11-06 23:15:44 +0000
+2012-11-06T23:15:44+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
+2012-11-06T23:15:44+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud-1.0.2.min.js dyno=web.1 queue=0 wait=1ms service=37ms status=304 bytes=0
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-06 23:15:44 +0000
+2012-11-06T23:15:44+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/set.js dyno=web.1 queue=0 wait=0ms service=37ms status=304 bytes=0
+2012-11-06T23:15:44+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-06T23:15:44+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.36.70 at 2012-11-06 23:15:44 +0000
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 app[web.1]: 
+2012-11-06T23:15:44+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud.css dyno=web.1 queue=0 wait=15ms service=26ms status=304 bytes=0
+2012-11-06T23:15:44+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.timeago dyno=web.1 queue=0 wait=2ms service=29ms status=304 bytes=0
+2012-11-06T23:15:45+00:00 app[web.1]: 
+2012-11-06T23:15:45+00:00 app[web.1]: Started GET "/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css" for 86.214.36.70 at 2012-11-06 23:15:45 +0000
+2012-11-06T23:15:45+00:00 app[web.1]: 
+2012-11-06T23:15:45+00:00 app[web.1]: Served asset /application-135db025aaf9d2aeab4c5e8b8be3ced6.css - 304 Not Modified (0ms)
+2012-11-06T23:15:45+00:00 app[web.1]: 
+2012-11-06T23:15:45+00:00 app[web.1]: 
+2012-11-06T23:15:45+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-06 23:15:45 +0000
+2012-11-06T23:15:45+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/style.css dyno=web.1 queue=0 wait=0ms service=62ms status=304 bytes=0
+2012-11-06T23:15:45+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/default_style.css dyno=web.1 queue=0 wait=0ms service=45ms status=304 bytes=0
+2012-11-06T23:15:45+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-06T23:15:45+00:00 app[web.1]: 
+2012-11-06T23:15:45+00:00 app[web.1]: 
+2012-11-06T23:15:45+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.36.70 at 2012-11-06 23:15:45 +0000
+2012-11-06T23:15:45+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-06T23:15:45+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css dyno=web.1 queue=0 wait=17ms service=81ms status=304 bytes=0
+2012-11-06T23:15:45+00:00 app[web.1]: 
+2012-11-06T23:15:45+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-06 23:15:45 +0000
+2012-11-06T23:15:45+00:00 app[web.1]: 
+2012-11-06T23:15:45+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-06T23:15:45+00:00 app[web.1]: 
+2012-11-06T23:15:45+00:00 app[web.1]: 
+2012-11-06T23:15:45+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png" for 86.214.36.70 at 2012-11-06 23:15:45 +0000
+2012-11-06T23:15:45+00:00 app[web.1]: Served asset /glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png - 304 Not Modified (0ms)
+2012-11-06T23:15:45+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=15ms status=304 bytes=0
+2012-11-06T23:15:56+00:00 app[web.1]: 
+2012-11-06T23:15:56+00:00 app[web.1]: 
+2012-11-06T23:15:56+00:00 app[web.1]: Started GET "/forums" for 86.214.36.70 at 2012-11-06 23:15:56 +0000
+2012-11-06T23:15:56+00:00 app[web.1]: Completed 200 OK in 71ms (Views: 22.3ms | ActiveRecord: 42.0ms)
+2012-11-06T23:15:56+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (4.6ms)
+2012-11-06T23:15:56+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (4.6ms)
+2012-11-06T23:15:56+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.5ms)
+2012-11-06T23:15:56+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:15:56+00:00 app[web.1]:   Rendered forums/index.html.erb within layouts/application (10.0ms)
+2012-11-06T23:15:56+00:00 app[web.1]: Processing by ForumsController#index as HTML
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: Started GET "/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js" for 86.214.36.70 at 2012-11-06 23:15:57 +0000
+2012-11-06T23:15:57+00:00 app[web.1]: Served asset /application-d95d0bdda6a187fb2263f3c67ef4de9f.js - 304 Not Modified (0ms)
+2012-11-06T23:15:57+00:00 app[web.1]: Served asset /application-135db025aaf9d2aeab4c5e8b8be3ced6.css - 304 Not Modified (0ms)
+2012-11-06T23:15:57+00:00 app[web.1]: Started GET "/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css" for 86.214.36.70 at 2012-11-06 23:15:57 +0000
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: Started GET "/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js" for 86.214.36.70 at 2012-11-06 23:15:57 +0000
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: Served asset /jquery-765cc76e15d62a88cd61468aeaaaeb5d.js - 304 Not Modified (0ms)
+2012-11-06T23:15:57+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js dyno=web.1 queue=0 wait=0ms service=11ms status=304 bytes=0
+2012-11-06T23:15:57+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:15:57+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-06 23:15:57 +0000
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-06T23:15:57+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.markitup.js dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:15:57+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-06 23:15:57 +0000
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.36.70 at 2012-11-06 23:15:57 +0000
+2012-11-06T23:15:57+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
+2012-11-06T23:15:57+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-06 23:15:57 +0000
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-06T23:15:57+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/style.css dyno=web.1 queue=0 wait=0ms service=23ms status=304 bytes=0
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.36.70 at 2012-11-06 23:15:57 +0000
+2012-11-06T23:15:57+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.36.70 at 2012-11-06 23:15:57 +0000
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-06T23:15:57+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/default_style.css dyno=web.1 queue=0 wait=0ms service=25ms status=304 bytes=0
+2012-11-06T23:15:57+00:00 heroku[router]: GET kforum.ashwani.co.in/images/mail3.png dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: 
+2012-11-06T23:15:57+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.36.70 at 2012-11-06 23:15:57 +0000
+2012-11-06T23:15:57+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
+2012-11-06T23:15:58+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-06T23:15:58+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-06 23:15:58 +0000
+2012-11-06T23:15:58+00:00 app[web.1]: 
+2012-11-06T23:15:58+00:00 app[web.1]: 
+2012-11-06T23:15:58+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png" for 86.214.36.70 at 2012-11-06 23:15:58 +0000
+2012-11-06T23:15:58+00:00 app[web.1]: 
+2012-11-06T23:15:58+00:00 app[web.1]: 
+2012-11-06T23:15:58+00:00 app[web.1]: Served asset /glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png - 304 Not Modified (1ms)
+2012-11-06T23:15:58+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-06T23:15:59+00:00 app[web.1]: 
+2012-11-06T23:15:59+00:00 app[web.1]: 
+2012-11-06T23:15:59+00:00 app[web.1]: Started GET "/forums/1" for 86.214.36.70 at 2012-11-06 23:15:59 +0000
+2012-11-06T23:15:59+00:00 heroku[router]: GET kforum.ashwani.co.in/forums/1 dyno=web.1 queue=0 wait=0ms service=62ms status=200 bytes=8545
+2012-11-06T23:15:59+00:00 app[web.1]: Processing by ForumsController#show as HTML
+2012-11-06T23:15:59+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-06T23:15:59+00:00 app[web.1]:   Rendered forums/show.html.erb within layouts/application (9.8ms)
+2012-11-06T23:15:59+00:00 app[web.1]: Completed 200 OK in 48ms (Views: 13.9ms | ActiveRecord: 29.4ms)
+2012-11-06T23:15:59+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (3.5ms)
+2012-11-06T23:15:59+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.1ms)
+2012-11-06T23:15:59+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (4.1ms)
+2012-11-06T23:15:59+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:15:59+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css dyno=web.1 queue=0 wait=0ms service=12ms status=304 bytes=0
+2012-11-06T23:15:59+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js dyno=web.1 queue=0 wait=0ms service=9ms status=304 bytes=0
+2012-11-06T23:15:59+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:16:00+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/set.js dyno=web.1 queue=0 wait=3ms service=9ms status=304 bytes=0
+2012-11-06T23:16:00+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.timeago dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-06T23:16:00+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.markitup.js dyno=web.1 queue=0 wait=3ms service=12ms status=304 bytes=0
+2012-11-06T23:16:00+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/style.css dyno=web.1 queue=0 wait=0ms service=12ms status=304 bytes=0
+2012-11-06T23:16:00+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/default_style.css dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: Started GET "/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css" for 86.214.36.70 at 2012-11-06 23:15:59 +0000
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: Served asset /application-135db025aaf9d2aeab4c5e8b8be3ced6.css - 304 Not Modified (0ms)
+2012-11-06T23:16:00+00:00 app[web.1]: Started GET "/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js" for 86.214.36.70 at 2012-11-06 23:15:59 +0000
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: Served asset /application-d95d0bdda6a187fb2263f3c67ef4de9f.js - 304 Not Modified (0ms)
+2012-11-06T23:16:00+00:00 app[web.1]: Started GET "/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js" for 86.214.36.70 at 2012-11-06 23:15:59 +0000
+2012-11-06T23:16:00+00:00 app[web.1]: Served asset /jquery-765cc76e15d62a88cd61468aeaaaeb5d.js - 304 Not Modified (0ms)
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.36.70 at 2012-11-06 23:16:00 +0000
+2012-11-06T23:16:00+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-06 23:16:00 +0000
+2012-11-06T23:16:00+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.36.70 at 2012-11-06 23:16:00 +0000
+2012-11-06T23:16:00+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-06 23:16:00 +0000
+2012-11-06T23:16:00+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.36.70 at 2012-11-06 23:16:00 +0000
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-06T23:16:00+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
+2012-11-06T23:16:00+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-06T23:16:00+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.36.70 at 2012-11-06 23:16:00 +0000
+2012-11-06T23:16:00+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-06 23:16:00 +0000
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-06 23:16:00 +0000
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-06T23:16:00+00:00 app[web.1]: 
+2012-11-06T23:16:00+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png" for 86.214.36.70 at 2012-11-06 23:16:00 +0000
+2012-11-06T23:16:00+00:00 app[web.1]: Served asset /glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png - 304 Not Modified (0ms)
+2012-11-06T23:16:00+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-06T23:16:00+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=5ms service=21ms status=304 bytes=0
+2012-11-06T23:16:04+00:00 app[web.1]: 
+2012-11-06T23:16:04+00:00 app[web.1]: 
+2012-11-06T23:16:04+00:00 app[web.1]: Started GET "/topics/2" for 86.214.36.70 at 2012-11-06 23:16:04 +0000
+2012-11-06T23:16:04+00:00 app[web.1]:   Parameters: {"id"=>"2"}
+2012-11-06T23:16:04+00:00 app[web.1]: Processing by TopicsController#show as HTML
+2012-11-06T23:16:04+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/refinerycms-af755744dc5e/core/app/views/refinery/_content_page.html.erb (105.7ms)
+2012-11-06T23:16:04+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:16:04+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/refinerycms-af755744dc5e/pages/app/views/refinery/pages/show.html.erb within layouts/application (109.3ms)
+2012-11-06T23:16:04+00:00 app[web.1]:   Rendered topics/show.html.erb within layouts/application (16.6ms)
+2012-11-06T23:16:04+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.4ms)
+2012-11-06T23:16:04+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (4.0ms)
+2012-11-06T23:16:04+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (5.0ms)
+2012-11-06T23:16:04+00:00 app[web.1]: Completed 404 Not Found in 332ms (Views: 124.9ms | ActiveRecord: 34.9ms)
+2012-11-06T23:16:04+00:00 heroku[router]: GET kforum.ashwani.co.in/topics/2 dyno=web.1 queue=0 wait=0ms service=342ms status=404 bytes=7059
+2012-11-06T23:16:04+00:00 app[web.1]: 
+2012-11-06T23:16:04+00:00 app[web.1]: Started GET "/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css" for 86.214.36.70 at 2012-11-06 23:16:04 +0000
+2012-11-06T23:16:04+00:00 app[web.1]: 
+2012-11-06T23:16:04+00:00 app[web.1]: Served asset /application-135db025aaf9d2aeab4c5e8b8be3ced6.css - 304 Not Modified (0ms)
+2012-11-06T23:16:04+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: Started GET "/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js" for 86.214.36.70 at 2012-11-06 23:16:05 +0000
+2012-11-06T23:16:05+00:00 app[web.1]: Served asset /application-d95d0bdda6a187fb2263f3c67ef4de9f.js - 304 Not Modified (0ms)
+2012-11-06T23:16:05+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js dyno=web.1 queue=0 wait=9ms service=23ms status=304 bytes=0
+2012-11-06T23:16:05+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud.css dyno=web.1 queue=0 wait=1ms service=9ms status=304 bytes=0
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.36.70 at 2012-11-06 23:16:05 +0000
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: Started GET "/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js" for 86.214.36.70 at 2012-11-06 23:16:05 +0000
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
+2012-11-06T23:16:05+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.36.70 at 2012-11-06 23:16:05 +0000
+2012-11-06T23:16:05+00:00 app[web.1]: Served asset /jquery-765cc76e15d62a88cd61468aeaaaeb5d.js - 304 Not Modified (0ms)
+2012-11-06T23:16:05+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud-1.0.2.min.js dyno=web.1 queue=0 wait=0ms service=9ms status=304 bytes=0
+2012-11-06T23:16:05+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-06 23:16:05 +0000
+2012-11-06T23:16:05+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js dyno=web.1 queue=0 wait=0ms service=13ms status=304 bytes=0
+2012-11-06T23:16:05+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.markitup.js dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-06 23:16:05 +0000
+2012-11-06T23:16:05+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-06T23:16:05+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/set.js dyno=web.1 queue=0 wait=3ms service=49ms status=304 bytes=0
+2012-11-06T23:16:05+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/style.css dyno=web.1 queue=0 wait=0ms service=9ms status=304 bytes=0
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-06 23:16:05 +0000
+2012-11-06T23:16:05+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.36.70 at 2012-11-06 23:16:05 +0000
+2012-11-06T23:16:05+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-06T23:16:05+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.36.70 at 2012-11-06 23:16:05 +0000
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-06T23:16:05+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.timeago dyno=web.1 queue=0 wait=0ms service=11ms status=304 bytes=0
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-06 23:16:05 +0000
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-06T23:16:05+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=9ms status=304 bytes=0
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: 
+2012-11-06T23:16:05+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png" for 86.214.36.70 at 2012-11-06 23:16:05 +0000
+2012-11-06T23:16:05+00:00 app[web.1]: Served asset /glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png - 304 Not Modified (0ms)
+2012-11-06T23:16:13+00:00 app[web.1]: 
+2012-11-06T23:16:13+00:00 app[web.1]: 
+2012-11-06T23:16:13+00:00 app[web.1]: Started GET "/forums/1" for 86.214.36.70 at 2012-11-06 23:16:13 +0000
+2012-11-06T23:16:13+00:00 heroku[router]: GET kforum.ashwani.co.in/forums/1 dyno=web.1 queue=0 wait=0ms service=127ms status=200 bytes=8546
+2012-11-06T23:16:13+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:16:13+00:00 app[web.1]:   Rendered layouts/_header.html.erb (4.0ms)
+2012-11-06T23:16:13+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (4.9ms)
+2012-11-06T23:16:13+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (3.6ms)
+2012-11-06T23:16:13+00:00 app[web.1]:   Rendered forums/show.html.erb within layouts/application (15.0ms)
+2012-11-06T23:16:13+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-06T23:16:13+00:00 app[web.1]: Completed 200 OK in 116ms (Views: 22.4ms | ActiveRecord: 16.4ms)
+2012-11-06T23:16:13+00:00 app[web.1]: Processing by ForumsController#show as HTML
+2012-11-06T23:16:17+00:00 app[web.1]: 
+2012-11-06T23:16:17+00:00 app[web.1]: Started GET "/topics/2" for 86.214.36.70 at 2012-11-06 23:16:17 +0000
+2012-11-06T23:16:17+00:00 app[web.1]: 
+2012-11-06T23:16:17+00:00 app[web.1]: Processing by TopicsController#show as HTML
+2012-11-06T23:16:17+00:00 app[web.1]:   Parameters: {"id"=>"2"}
+2012-11-06T23:16:17+00:00 app[web.1]:   Rendered topics/show.html.erb within layouts/application (19.1ms)
+2012-11-06T23:16:17+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/refinerycms-af755744dc5e/core/app/views/refinery/_content_page.html.erb (0.8ms)
+2012-11-06T23:16:17+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/refinerycms-af755744dc5e/pages/app/views/refinery/pages/show.html.erb within layouts/application (1.4ms)
+2012-11-06T23:16:17+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:16:17+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.3ms)
+2012-11-06T23:16:17+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (3.6ms)
+2012-11-06T23:16:17+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (3.0ms)
+2012-11-06T23:16:17+00:00 app[web.1]: Completed 404 Not Found in 56ms (Views: 10.8ms | ActiveRecord: 23.3ms)
+2012-11-06T23:16:17+00:00 heroku[router]: GET kforum.ashwani.co.in/topics/2 dyno=web.1 queue=0 wait=0ms service=80ms status=404 bytes=7059
+2012-11-06T23:16:18+00:00 app[web.1]: 
+2012-11-06T23:16:18+00:00 app[web.1]: Started GET "/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css" for 86.214.36.70 at 2012-11-06 23:16:18 +0000
+2012-11-06T23:16:18+00:00 app[web.1]: 
+2012-11-06T23:16:18+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css dyno=web.1 queue=0 wait=0ms service=22ms status=304 bytes=0
+2012-11-06T23:16:18+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud.css dyno=web.1 queue=0 wait=0ms service=16ms status=304 bytes=0
+2012-11-06T23:16:18+00:00 app[web.1]: 
+2012-11-06T23:16:18+00:00 app[web.1]: 
+2012-11-06T23:16:18+00:00 app[web.1]: Started GET "/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js" for 86.214.36.70 at 2012-11-06 23:16:18 +0000
+2012-11-06T23:16:18+00:00 app[web.1]: Served asset /application-d95d0bdda6a187fb2263f3c67ef4de9f.js - 304 Not Modified (0ms)
+2012-11-06T23:16:18+00:00 app[web.1]: 
+2012-11-06T23:16:18+00:00 app[web.1]: Served asset /application-135db025aaf9d2aeab4c5e8b8be3ced6.css - 304 Not Modified (0ms)
+2012-11-06T23:16:18+00:00 app[web.1]: 
+2012-11-06T23:16:18+00:00 app[web.1]: Started GET "/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js" for 86.214.36.70 at 2012-11-06 23:16:18 +0000
+2012-11-06T23:16:18+00:00 app[web.1]: Served asset /jquery-765cc76e15d62a88cd61468aeaaaeb5d.js - 304 Not Modified (0ms)
+2012-11-06T23:16:18+00:00 app[web.1]: 
+2012-11-06T23:16:18+00:00 app[web.1]: 
+2012-11-06T23:16:18+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.36.70 at 2012-11-06 23:16:18 +0000
+2012-11-06T23:16:18+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
+2012-11-06T23:16:18+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud-1.0.2.min.js dyno=web.1 queue=0 wait=0ms service=14ms status=304 bytes=0
+2012-11-06T23:16:18+00:00 app[web.1]: 
+2012-11-06T23:16:18+00:00 app[web.1]: 
+2012-11-06T23:16:18+00:00 app[web.1]: 
+2012-11-06T23:16:18+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
+2012-11-06T23:16:18+00:00 app[web.1]: 
+2012-11-06T23:16:18+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.36.70 at 2012-11-06 23:16:18 +0000
+2012-11-06T23:16:18+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-06 23:16:18 +0000
+2012-11-06T23:16:18+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-06T23:16:18+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.markitup.js dyno=web.1 queue=0 wait=2ms service=8ms status=304 bytes=0
+2012-11-06T23:16:19+00:00 app[web.1]: 
+2012-11-06T23:16:19+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.36.70 at 2012-11-06 23:16:19 +0000
+2012-11-06T23:16:19+00:00 app[web.1]: 
+2012-11-06T23:16:19+00:00 app[web.1]: 
+2012-11-06T23:16:19+00:00 app[web.1]: 
+2012-11-06T23:16:19+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-06 23:16:19 +0000
+2012-11-06T23:16:19+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-06T23:16:19+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-06T23:16:19+00:00 app[web.1]: 
+2012-11-06T23:16:19+00:00 app[web.1]: 
+2012-11-06T23:16:19+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-06 23:16:19 +0000
+2012-11-06T23:16:19+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.timeago dyno=web.1 queue=0 wait=0ms service=9ms status=304 bytes=0
+2012-11-06T23:16:19+00:00 app[web.1]: 
+2012-11-06T23:16:19+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-06T23:16:19+00:00 app[web.1]: 
+2012-11-06T23:16:19+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.36.70 at 2012-11-06 23:16:19 +0000
+2012-11-06T23:16:19+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-06T23:16:19+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
+2012-11-06T23:16:19+00:00 app[web.1]: 
+2012-11-06T23:16:19+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-06 23:16:19 +0000
+2012-11-06T23:16:19+00:00 app[web.1]: 
+2012-11-06T23:16:19+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-06T23:16:19+00:00 app[web.1]: 
+2012-11-06T23:16:19+00:00 app[web.1]: 
+2012-11-06T23:16:19+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png" for 86.214.36.70 at 2012-11-06 23:16:19 +0000
+2012-11-06T23:16:19+00:00 app[web.1]: Served asset /glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png - 304 Not Modified (0ms)
+2012-11-06T23:17:37+00:00 app[web.1]: 
+2012-11-06T23:17:37+00:00 app[web.1]: 
+2012-11-06T23:17:37+00:00 app[web.1]: Started GET "/forums/1" for 86.214.36.70 at 2012-11-06 23:17:37 +0000
+2012-11-06T23:17:37+00:00 app[web.1]:   Rendered forums/show.html.erb within layouts/application (13.2ms)
+2012-11-06T23:17:37+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:17:37+00:00 app[web.1]: Processing by ForumsController#show as HTML
+2012-11-06T23:17:37+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.2ms)
+2012-11-06T23:17:37+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (5.0ms)
+2012-11-06T23:17:37+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2012-11-06T23:17:37+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (3.1ms)
+2012-11-06T23:17:37+00:00 app[web.1]: Completed 200 OK in 37ms (Views: 18.4ms | ActiveRecord: 13.1ms)
+2012-11-06T23:17:37+00:00 heroku[router]: GET kforum.ashwani.co.in/forums/1 dyno=web.1 queue=0 wait=0ms service=63ms status=200 bytes=8545
+2012-11-06T23:17:46+00:00 app[web.1]: 
+2012-11-06T23:17:46+00:00 app[web.1]: 
+2012-11-06T23:17:46+00:00 app[web.1]: Started GET "/topics/2" for 86.214.36.70 at 2012-11-06 23:17:46 +0000
+2012-11-06T23:17:46+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-06T23:17:46+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (4.0ms)
+2012-11-06T23:17:46+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.3ms)
+2012-11-06T23:17:46+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/refinerycms-af755744dc5e/pages/app/views/refinery/pages/show.html.erb within layouts/application (1.9ms)
+2012-11-06T23:17:46+00:00 app[web.1]:   Rendered topics/show.html.erb within layouts/application (22.5ms)
+2012-11-06T23:17:46+00:00 app[web.1]: Processing by TopicsController#show as HTML
+2012-11-06T23:17:46+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/bundler/gems/refinerycms-af755744dc5e/core/app/views/refinery/_content_page.html.erb (1.3ms)
+2012-11-06T23:17:46+00:00 app[web.1]:   Parameters: {"id"=>"2"}
+2012-11-06T23:17:46+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (3.5ms)
+2012-11-06T23:17:46+00:00 app[web.1]: Completed 404 Not Found in 53ms (Views: 12.2ms | ActiveRecord: 16.6ms)
+2012-11-06T23:17:46+00:00 heroku[router]: GET kforum.ashwani.co.in/topics/2 dyno=web.1 queue=0 wait=0ms service=77ms status=404 bytes=7059
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: Started GET "/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css" for 86.214.36.70 at 2012-11-06 23:17:47 +0000
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: Served asset /application-135db025aaf9d2aeab4c5e8b8be3ced6.css - 304 Not Modified (0ms)
+2012-11-06T23:17:47+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css dyno=web.1 queue=0 wait=0ms service=11ms status=304 bytes=0
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: Started GET "/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js" for 86.214.36.70 at 2012-11-06 23:17:47 +0000
+2012-11-06T23:17:47+00:00 app[web.1]: Served asset /application-d95d0bdda6a187fb2263f3c67ef4de9f.js - 304 Not Modified (0ms)
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: Started GET "/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js" for 86.214.36.70 at 2012-11-06 23:17:47 +0000
+2012-11-06T23:17:47+00:00 app[web.1]: Served asset /jquery-765cc76e15d62a88cd61468aeaaaeb5d.js - 304 Not Modified (0ms)
+2012-11-06T23:17:47+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js dyno=web.1 queue=0 wait=0ms service=10ms status=304 bytes=0
+2012-11-06T23:17:47+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud.css dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.36.70 at 2012-11-06 23:17:47 +0000
+2012-11-06T23:17:47+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.36.70 at 2012-11-06 23:17:47 +0000
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
+2012-11-06T23:17:47+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud-1.0.2.min.js dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-06T23:17:47+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.36.70 at 2012-11-06 23:17:47 +0000
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+2012-11-06T23:17:47+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.markitup.js dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.36.70 at 2012-11-06 23:17:47 +0000
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
+2012-11-06T23:17:47+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.36.70 at 2012-11-06 23:17:47 +0000
+2012-11-06T23:17:47+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
+2012-11-06T23:17:47+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery.timeago dyno=web.1 queue=0 wait=0ms service=14ms status=304 bytes=0
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: 
+2012-11-06T23:17:47+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.36.70 at 2012-11-06 23:17:47 +0000
+2012-11-06T23:17:47+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
+2012-11-06T23:17:47+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/style.css dyno=web.1 queue=0 wait=0ms service=8ms status=304 bytes=0
+2012-11-06T23:17:48+00:00 heroku[router]: GET kforum.ashwani.co.in/images/mail3.png dyno=web.1 queue=0 wait=0ms service=5ms status=304 bytes=0
+2012-11-06T23:17:48+00:00 app[web.1]: 
+2012-11-06T23:17:48+00:00 app[web.1]: 
+2012-11-06T23:17:48+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.36.70 at 2012-11-06 23:17:48 +0000
+2012-11-06T23:17:48+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
+2012-11-06T23:17:48+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.36.70 at 2012-11-06 23:17:48 +0000
+2012-11-06T23:17:48+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
+2012-11-06T23:17:48+00:00 app[web.1]: 
+2012-11-06T23:17:48+00:00 app[web.1]: 
+2012-11-06T23:17:48+00:00 app[web.1]: 
+2012-11-06T23:17:48+00:00 app[web.1]: 
+2012-11-06T23:17:48+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png" for 86.214.36.70 at 2012-11-06 23:17:48 +0000
+2012-11-06T23:17:48+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=11ms status=304 bytes=0
+2012-11-06T23:17:48+00:00 app[web.1]: Served asset /glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png - 304 Not Modified (0ms)
