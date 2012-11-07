@@ -1,5 +1,5 @@
 <% full_title resource_name.to_s.humanize %>
-<div style="width: 450px; background-color: rgba(40, 40, 40, 0.9);padding: 20px; color: white">
+<div style="width: 700px; background-color: rgba(40, 40, 40, 0.9);padding: 20px; color: white">
 <h2 class="pull-left">Edit Settings</h2><br /><br /><br />
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
@@ -14,10 +14,11 @@
   <div><%= f.label :password , "Password:  (leave blank if you don't want to change it)" , :style =>"color: white"%>
   <%= f.password_field :password %></div><br />
 
-  <div><%= f.label :password_confirmation , :style =>"color: white"%>
-  <%= f.password_field :password_confirmation %></div><br />
+  <div><%= f.label :password_confirmation,"Password Confirmation:  (leave blank if you don't want to change it)" , :style =>"color: white"%>
+  <%= f.password_field :password_confirmation %></div><br /><br />
 
-  <div><%= f.label :current_password , "Current Password: (we need your current password to confirm your changes)", :style =>"color: white" %>
+  We need your current password to confirm your changes:
+  <div><%= f.label :current_password , "*Current Password", :style =>"color: white" %>
   <%= f.password_field :current_password %></div><br />
   
   <div><%= f.check_box :mail_subscription %> <%= f.label "Lend a helping hand, by receiving E-mail for new posts?" , :style =>"color: white" %></div>
@@ -27,9 +28,10 @@
   
 <% end %>
 
+
+<!--
 <h3>Cancel my account</h3>
-
 <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>
-
+-->
 
 </div>
