@@ -1,105 +1,101 @@
-
-A new version of the Heroku Toolbelt is available, download and install from https://toolbelt.heroku.com.
-
-2012-11-08T21:18:19+00:00 app[web.1]: 
-2012-11-08T21:18:19+00:00 app[web.1]: 
-2012-11-08T21:18:19+00:00 app[web.1]: Started GET "/forums/1" for 86.214.250.57 at 2012-11-08 21:18:19 +0000
-2012-11-08T21:18:19+00:00 app[web.1]:   Parameters: {"id"=>"1"}
-2012-11-08T21:18:19+00:00 app[web.1]: Processing by ForumsController#show as HTML
-2012-11-08T21:18:19+00:00 app[web.1]:   Rendered forums/show.html.erb within layouts/application (18.4ms)
-2012-11-08T21:18:19+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (4.4ms)
-2012-11-08T21:18:19+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (3.6ms)
-2012-11-08T21:18:19+00:00 app[web.1]: Completed 200 OK in 59ms (Views: 29.3ms | ActiveRecord: 22.8ms)
-2012-11-08T21:18:19+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
-2012-11-08T21:18:19+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.7ms)
-2012-11-08T21:18:19+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/background3.jpg dyno=web.1 queue=0 wait=0ms service=11ms status=304 bytes=0
-2012-11-08T21:18:19+00:00 app[web.1]: 
-2012-11-08T21:18:19+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png" for 86.214.250.57 at 2012-11-08 21:18:19 +0000
-2012-11-08T21:18:19+00:00 app[web.1]: Served asset /glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png - 304 Not Modified (0ms)
-2012-11-08T21:18:19+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png dyno=web.1 queue=0 wait=1ms service=7ms status=304 bytes=0
-2012-11-08T21:18:19+00:00 app[web.1]: 
-2012-11-08T21:18:19+00:00 app[web.1]: 
-2012-11-08T21:18:19+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png" for 86.214.250.57 at 2012-11-08 21:18:19 +0000
-2012-11-08T21:18:19+00:00 app[web.1]: Served asset /glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png - 304 Not Modified (0ms)
-2012-11-08T21:18:19+00:00 app[web.1]: 
-2012-11-08T21:18:19+00:00 app[web.1]: 
-2012-11-08T21:18:19+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.250.57 at 2012-11-08 21:18:19 +0000
-2012-11-08T21:18:19+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
-2012-11-08T21:18:19+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
-2012-11-08T21:18:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js dyno=web.1 queue=0 wait=0ms service=6ms status=304 bytes=0
-2012-11-08T21:18:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud.css dyno=web.1 queue=0 wait=0ms service=13ms status=304 bytes=0
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/jqcloud-1.0.2.min.js dyno=web.1 queue=0 wait=0ms service=10ms status=304 bytes=0
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: Started GET "/assets/application-d95d0bdda6a187fb2263f3c67ef4de9f.js" for 86.214.250.57 at 2012-11-08 21:18:20 +0000
-2012-11-08T21:18:20+00:00 app[web.1]: Served asset /application-d95d0bdda6a187fb2263f3c67ef4de9f.js - 304 Not Modified (0ms)
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: Served asset /application-135db025aaf9d2aeab4c5e8b8be3ced6.css - 304 Not Modified (0ms)
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: Started GET "/assets/application-135db025aaf9d2aeab4c5e8b8be3ced6.css" for 86.214.250.57 at 2012-11-08 21:18:20 +0000
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: Started GET "/assets/jquery-765cc76e15d62a88cd61468aeaaaeb5d.js" for 86.214.250.57 at 2012-11-08 21:18:20 +0000
-2012-11-08T21:18:20+00:00 app[web.1]: Served asset /jquery-765cc76e15d62a88cd61468aeaaaeb5d.js - 304 Not Modified (0ms)
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: Started GET "/assets/jqcloud-1.0.2.min.js" for 86.214.250.57 at 2012-11-08 21:18:20 +0000
-2012-11-08T21:18:20+00:00 app[web.1]: Served asset /jqcloud-1.0.2.min.js - 304 Not Modified (0ms)
-2012-11-08T21:18:20+00:00 app[web.1]: Started GET "/assets/jqcloud.css" for 86.214.250.57 at 2012-11-08 21:18:20 +0000
-2012-11-08T21:18:20+00:00 app[web.1]: Served asset /jqcloud.css - 304 Not Modified (0ms)
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: Started GET "/assets/jquery.markitup.js" for 86.214.250.57 at 2012-11-08 21:18:20 +0000
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: Served asset /jquery.markitup.js - 304 Not Modified (0ms)
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: Started GET "/assets/set.js" for 86.214.250.57 at 2012-11-08 21:18:20 +0000
-2012-11-08T21:18:20+00:00 app[web.1]: Served asset /set.js - 304 Not Modified (0ms)
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: Served asset /jquery.timeago - 304 Not Modified (0ms)
-2012-11-08T21:18:20+00:00 app[web.1]: Started GET "/assets/jquery.timeago" for 86.214.250.57 at 2012-11-08 21:18:20 +0000
-2012-11-08T21:18:20+00:00 app[web.1]: Started GET "/assets/default_style.css" for 86.214.250.57 at 2012-11-08 21:18:20 +0000
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/default_style.css dyno=web.1 queue=0 wait=0ms service=17ms status=304 bytes=0
-2012-11-08T21:18:20+00:00 app[web.1]: Served asset /default_style.css - 304 Not Modified (0ms)
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: 
-2012-11-08T21:18:20+00:00 app[web.1]: Started GET "/assets/style.css" for 86.214.250.57 at 2012-11-08 21:18:20 +0000
-2012-11-08T21:18:20+00:00 app[web.1]: Served asset /style.css - 304 Not Modified (0ms)
-2012-11-08T21:18:20+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/style.css dyno=web.1 queue=0 wait=1ms service=30ms status=304 bytes=0
-2012-11-08T21:18:21+00:00 app[web.1]: 
-2012-11-08T21:18:21+00:00 app[web.1]: 
-2012-11-08T21:18:21+00:00 app[web.1]: Started GET "/assets/background3.jpg" for 86.214.250.57 at 2012-11-08 21:18:21 +0000
-2012-11-08T21:18:21+00:00 app[web.1]: Served asset /background3.jpg - 304 Not Modified (0ms)
-2012-11-08T21:18:21+00:00 app[web.1]: 
-2012-11-08T21:18:21+00:00 app[web.1]: 
-2012-11-08T21:18:21+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png" for 86.214.250.57 at 2012-11-08 21:18:21 +0000
-2012-11-08T21:18:21+00:00 app[web.1]: Served asset /glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png - 304 Not Modified (0ms)
-2012-11-08T21:18:21+00:00 app[web.1]: 
-2012-11-08T21:18:21+00:00 app[web.1]: Served asset /glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png - 304 Not Modified (0ms)
-2012-11-08T21:18:21+00:00 app[web.1]: 
-2012-11-08T21:18:21+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png" for 86.214.250.57 at 2012-11-08 21:18:21 +0000
-2012-11-08T21:18:21+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png dyno=web.1 queue=0 wait=0ms service=17ms status=304 bytes=0
-2012-11-08T21:18:21+00:00 heroku[router]: GET kforum.ashwani.co.in/assets/glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
-2012-11-08T21:37:54+00:00 heroku[slugc]: Slug compilation started
-2012-11-08T21:39:11+00:00 heroku[web.1]: State changed from up to down
-2012-11-08T21:39:11+00:00 heroku[web.1]: State changed from down to starting
-2012-11-08T21:39:12+00:00 heroku[slugc]: Slug compilati
-on finished
-2012-11-08T21:39:15+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 37568`
-2012-11-08T21:39:29+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-11-08T21:39:29+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-11-08T21:39:29+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-11-08T21:39:33+00:00 app[web.1]: => Booting WEBrick
-2012-11-08T21:39:33+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:37568
-2012-11-08T21:39:33+00:00 app[web.1]: => Call with -d to detach
-2012-11-08T21:39:33+00:00 app[web.1]: => Ctrl-C to shutdown server
-2012-11-08T21:39:41+00:00 app[web.1]: [2012-11-08 21:39:41] INFO  WEBrick 1.3.1
-2012-11-08T21:39:41+00:00 app[web.1]: [2012-11-08 21:39:41] INFO  WEBrick::HTTPServer#start: pid=2 port=37568
-2012-11-08T21:39:41+00:00 app[web.1]: [2012-11-08 21:39:41] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
-2012-11-08T21:39:43+00:00 heroku[web.1]: State changed from starting to up
+2012-11-08T21:59:34+00:00 app[web.1]: /app/vendor/bundle/ruby/1.9.1/gems/rufus-scheduler-2.0.17/lib/rufus/sc/jobs.rb:231:in `trigger_block'
+2012-11-08T21:59:34+00:00 app[web.1]: /app/vendor/bundle/ruby/1.9.1/gems/rufus-scheduler-2.0.17/lib/rufus/sc/jobs.rb:191:in `block in trigger'
+2012-11-08T21:59:34+00:00 app[web.1]: /app/vendor/bundle/ruby/1.9.1/gems/rufus-scheduler-2.0.17/lib/rufus/sc/scheduler.rb:416:in `call'
+2012-11-08T21:59:34+00:00 app[web.1]: /app/vendor/bundle/ruby/1.9.1/gems/rufus-scheduler-2.0.17/lib/rufus/sc/scheduler.rb:416:in `block in trigger_job'
+2012-11-08T21:59:34+00:00 app[web.1]: ================================================================================
+2012-11-08T22:00:03+00:00 heroku[web.1]: State changed from up to down
+2012-11-08T22:00:03+00:00 heroku[web.1]: State changed from down to starting
+2012-11-08T22:00:04+00:00 heroku[slugc]: Slug compilation finished
+2012-11-08T22:00:06+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-11-08T22:00:06+00:00 app[web.1]: [2012-11-08 22:00:06] ERROR SignalException: SIGTERM
+2012-11-08T22:00:06+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-11-08T22:00:07+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 44434`
+2012-11-08T22:00:16+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-11-08T22:00:16+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-11-08T22:00:18+00:00 heroku[web.1]: Process exited with status 137
+2012-11-08T22:00:22+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-08T22:00:22+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-08T22:00:22+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-11-08T22:00:26+00:00 app[web.1]: => Booting WEBrick
+2012-11-08T22:00:26+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-11-08T22:00:26+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:44434
+2012-11-08T22:00:26+00:00 app[web.1]: => Call with -d to detach
+2012-11-08T22:00:48+00:00 app[web.1]: [2012-11-08 22:00:48] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-11-08T22:00:48+00:00 app[web.1]: [2012-11-08 22:00:48] INFO  WEBrick::HTTPServer#start: pid=2 port=44434
+2012-11-08T22:00:48+00:00 app[web.1]: [2012-11-08 22:00:48] INFO  WEBrick 1.3.1
+2012-11-08T22:00:50+00:00 heroku[web.1]: State changed from starting to up
+2012-11-08T22:02:27+00:00 app[web.1]: 
+2012-11-08T22:02:27+00:00 app[web.1]: 
+2012-11-08T22:02:27+00:00 app[web.1]: Started GET "/" for 50.17.28.19 at 2012-11-08 22:02:27 +0000
+2012-11-08T22:02:39+00:00 app[web.1]: WARN: tilt autoloading 'coffee_script' in a non thread-safe way; explicit require 'coffee_script' suggested.
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled custom.css  (1465ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled forums.css  (1ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled layout.css  (6ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Processing by StaticPagesController#home as */*
+2012-11-08T22:02:50+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (85.1ms)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled active_admin.css  (2231ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled posts.css  (1ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled scaffolds.css  (9ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled static_pages.css  (1ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled topics.css  (1ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled twitter_bootstrap.css  (904ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled application.css  (4895ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled jquery.js  (1ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled jquery_ujs.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled bootstrap-tab.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled bootstrap-transition.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled bootstrap-alert.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled bootstrap-button.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled bootstrap-carousel.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled bootstrap-collapse.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled bootstrap-scrollspy.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled bootstrap-dropdown.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled bootstrap-modal.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled active_admin/components/jquery.aa.dropdown-menu.js  (177ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled active_admin/components/jquery.aa.popover.js  (165ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled active_admin/components/jquery.aa.table-checkbox-toggler.js  (151ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled active_admin/pages/application.js  (145ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled active_admin/pages/batch_actions.js  (155ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled active_admin/application.js  (1607ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled topics.js  (148ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled active_admin/base.js  (1677ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled active_admin.js  (1684ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled forums.js  (147ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled jquery.timeago.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled posts.js  (139ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled application.js  (2579ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.6ms)
+2012-11-08T22:02:50+00:00 app[web.1]:   Rendered layouts/_header.html.erb (95.4ms)
+2012-11-08T22:02:50+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (1.0ms)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled active_admin/components/jquery.aa.checkbox-toggler.js  (177ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled static_pages.js  (144ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (8.7ms)
+2012-11-08T22:02:50+00:00 app[web.1]: Completed 200 OK in 22933ms (Views: 22588.7ms | ActiveRecord: 48.4ms)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled active_admin/lib/namespace.js  (421ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled jquery-ui.js  (2ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled bootstrap-popover.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled bootstrap-typeahead.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled bootstrap.js  (185ms)  (pid 2)
+2012-11-08T22:02:50+00:00 app[web.1]: Compiled bootstrap-tooltip.js  (0ms)  (pid 2)
+2012-11-08T22:02:50+00:00 heroku[router]: GET kforum.ashwani.co.in/ dyno=web.1 queue=0 wait=3ms service=23294ms status=200 bytes=7098
+2012-11-08T22:04:27+00:00 app[web.1]: Started GET "/" for 50.17.28.19 at 2012-11-08 22:04:27 +0000
+2012-11-08T22:04:27+00:00 app[web.1]: 
+2012-11-08T22:04:27+00:00 app[web.1]: 
+2012-11-08T22:04:27+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+2012-11-08T22:04:27+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.8ms)
+2012-11-08T22:04:27+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (0.1ms)
+2012-11-08T22:04:27+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-08T22:04:27+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (3.1ms)
+2012-11-08T22:04:27+00:00 app[web.1]: Completed 200 OK in 14ms (Views: 8.7ms | ActiveRecord: 2.4ms)
+2012-11-08T22:04:27+00:00 app[web.1]: Processing by StaticPagesController#home as */*
+2012-11-08T22:06:26+00:00 app[web.1]: 
+2012-11-08T22:06:26+00:00 app[web.1]: 
+2012-11-08T22:06:26+00:00 app[web.1]: Started GET "/" for 50.17.28.19 at 2012-11-08 22:06:26 +0000
+2012-11-08T22:06:26+00:00 heroku[router]: GET kforum.ashwani.co.in/ dyno=web.1 queue=0 wait=0ms service=23ms status=200 bytes=7093
+2012-11-08T22:06:26+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (3.0ms)
+2012-11-08T22:06:26+00:00 app[web.1]: Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 2.5ms)
+2012-11-08T22:06:26+00:00 app[web.1]:   Rendered layouts/_sidebar.html.erb (0.1ms)
+2012-11-08T22:06:26+00:00 app[web.1]: Processing by StaticPagesController#home as */*
+2012-11-08T22:06:26+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+2012-11-08T22:06:26+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-11-08T22:06:26+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.8ms)

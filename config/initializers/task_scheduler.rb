@@ -1,7 +1,7 @@
 require 'rufus/scheduler'
 scheduler = Rufus::Scheduler.start_new
 
-scheduler.every '2m' do
+scheduler.every '10m' do
    require "net/http"
    require "uri"
    url = 'http://kforum.ashwani.co.in'
