@@ -63,6 +63,8 @@ module KForum
     #ActsAsTaggableOn.remove_unused_tags = true
     ActsAsTaggableOn.force_lowercase = true
     
+    config.assets.initialize_on_precompile = false
+    
     config.active_record.observers = :post_observer
     
     config.middleware.use ExceptionNotifier,
