@@ -83,10 +83,8 @@
 			<% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
 			<%= link_to tag.name, main_app.tagged_url(:tag => tag.name), class: css_class , :style => "padding-top: 0px; padding-bottom: 0px;" %>
 			<% end %>
-
-			 
 	 </div>
-	 
+	 <br /><br />
 	 <div>
 	 	<ul class="nav nav-list">
 	    <li class="nav-header pull-left" style="color: white">Recent Posts</li><br />
@@ -94,6 +92,7 @@
 	    <li><%= render :partial => "/posts/post_stream"  %></li>
 		</ul>
 	 </div>
+	 <br /><br />
 	
 	 <div>
 	 	<ul class="nav nav-list">
@@ -102,6 +101,7 @@
 	   	<li><%= render :partial => "/comments/comment_stream"  %></li>
 		</ul>
 	 </div>
+	 <br /><br />
 	 
 	</aside>
     
