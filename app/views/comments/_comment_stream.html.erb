@@ -6,7 +6,7 @@
 		<div class="pull-right">
 			<div><%= distance_of_time_in_words_to_now item.created_at %> ago by </div>
 			<div style=" font-size: 10px; font-family: 'Paprika', cursive;color: white ;">
-				<%= gravatar(@user.username ,@user.email, "width: 20px; height: 20px; padding-right:10px") %></div>
+				<%= gravatar(@user.username ,@user.email, "width: 20px; height: 20px; padding-right:2px") %></div>
 			<div><%= link_to @user.username , "/users/#{item.user_id}" %></div>
 		</div>	
 	</blockquote>
