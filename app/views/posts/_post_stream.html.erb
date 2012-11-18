@@ -3,11 +3,11 @@
 	<% @user = find_user(postitem.user_id) %>
 	<blockquote style="padding: 0px;font-size: 10px; font-family: 'Paprika', cursive; color: white ">
 		<p style=" font-size: 12px; font-family: 'Paprika', cursive;color: white ; word-wrap:break-word">
-			<%= link_to (raw(postitem.content)), topic_path(@topic.id) %></p>	
+			<%= link_to raw(truncate(postitem.content)), topic_path(@topic.id) %></p>	
 		<div class="pull-right">
 			<div><%= distance_of_time_in_words_to_now postitem.created_at %> ago by </div>
 			<div style=" font-size: 10px; font-family: 'Paprika', cursive;color: white ;">
-				<%= gravatar(@user.username ,@user.email, "width: 20px; height: 20px;padding:0px") %></div>
+				<%= gravatar(@user.username ,@user.email, "width: 20px; height: 20px; padding-right:10px") %></div>
 			<div><%= link_to @user.username , "/users/#{postitem.user_id}" %></div>
 		</div>	
 	</blockquote>
