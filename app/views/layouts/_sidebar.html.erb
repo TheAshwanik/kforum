@@ -5,7 +5,7 @@
 
 <%if @home_page %>
 	<br /><br /><br /><br />
-	<aside class="well well-large" style="border-radius: 6px 6px 6px 6px; background-color: rgba(40, 40, 40, 0.9) " >
+	<aside class="well well-small" style="border-radius: 6px 6px 6px 6px; background-color: rgba(40, 40, 40, 0.9) " >
     <div>
 	 	<ul class="nav nav-list">
 	    <li class="nav-header pull-left" style="color: white">About me</li><br />
@@ -66,7 +66,7 @@
 	 
 	</aside>
 <% else %>
-	<aside class="well well-large" style="border-radius: 6px 6px 6px 6px; background-color: rgba(40, 40, 40, 0.9)" >
+	<aside class="well well-small" style="border-radius: 6px 6px 6px 6px; background-color: rgba(40, 40, 40, 0.9)" >
 	  <!-- <div>
 	  	<ul>
 	     <% menu_for "Articles" do %>
@@ -85,6 +85,23 @@
 
 			 
 	 </div>
+	 
+	 <div>
+	 	<ul class="nav nav-list">
+	    <li class="nav-header pull-left" style="color: white">Recent Posts</li><br />
+	    <li class="divider"></li>
+	    <li><%= render :partial => "/posts/post_stream"  %></li>
+		</ul>
+	 </div>
+	
+	 <div>
+	 	<ul class="nav nav-list">
+	    <li class="nav-header pull-left" style="color: white">Recent Comments</li><br />
+	    <li class="divider"></li>
+	   	<li><%= render :partial => "/comments/comment_stream"  %></li>
+		</ul>
+	 </div>
+	 
 	</aside>
     
 <% end %>

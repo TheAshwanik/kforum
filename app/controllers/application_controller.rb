@@ -7,7 +7,15 @@ class ApplicationController < ActionController::Base
   
   rescue_from Exception, :with => :server_error
 
-  before_filter :set_cache_buster
+  before_filter :set_cache_buster, :create_activity_stream
+  
+  def create_activity_stream
+     @post_activity_stream = ""
+     @comment_activity_stream = ""
+     @post_activity_stream = Post.find(:all, :limit => 4,:order => 'created_at DESC' , :conditions=>["created_at > ?", 1.week.ago]).sort_by {|item| - item.created_at.to_i} 
+     @comment_activity_stream = Comment.find(:all, :limit => 4,:order => 'created_at DESC' ,:conditions=>["created_at > ?", 1.week.ago]).sort_by {|item| - item.created_at.to_i}
+     
+  end
   
     def admin_required  
       unless current_user && (current_user.admin == true || current_user.id == 1)  
