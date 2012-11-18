@@ -79,7 +79,14 @@ module ApplicationHelper
     params.merge({:topic_name => @topic.name, :topic_id => @topic.id})
   end
 
-
+  def truncate(text, max_sentences = 3, max_words = 5)
+    # Take first 3 setences (blah. blah. blah)
+    three_sentences = text.split('. ').slice(0, max_sentences).join('. ')
+    # Take first 50 words of the above
+    shortened = three_sentences.split(' ').slice(0, max_words).join(' ')
+    return shortened # bah, explicit return is evil
+  end
+  
   def menu_for(bar,&block)
     menu_items = ["Forum","Edit Setting"]
     path_of = { "Forum" => main_app.forums_path,
