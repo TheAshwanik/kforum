@@ -34,7 +34,7 @@
 	       			<br /><br />
 	       			<div class="span12"> 
 	       				   <p class="posted-at pull-right">–Posted  <abbr class="timeago" title="<%= (post.created_at).getutc.iso8601 %>"></abbr> 
-	       						  by <a href="/users/"<%=post.user.id%>> <%= find_user(post.user_id).username %>  
+	       						  by <a href="/users/<%=post.user.id%>" > <%= find_user(post.user_id).username %>  
 	       						</a>
 	       					</p>
 	       			</div>
