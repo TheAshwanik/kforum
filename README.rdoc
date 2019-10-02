@@ -1,3 +1,12 @@
+==Hello this is my attempt to launch a discussion forum made completely with rails.
+It has got a lot of features.
+
+== screenshot
+![alt text](https://i.paste.pics/a0fa87aefc2d820671d97819e616ce85.png)
+
+
+== The Usual Rails Welcome message below
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
