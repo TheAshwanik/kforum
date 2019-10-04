@@ -3,6 +3,9 @@
   <head>
     <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
+    <meta name="keywords" content="<%= meta_keywords %>" />
+	<meta name="description" content="<%= meta_description %>" /> 
+
     <%= stylesheet_link_tag "application", media: "all" %>
 	<%= javascript_include_tag 'application' %>
     <%= javascript_include_tag 'jquery' %>
@@ -68,10 +71,5 @@
 	});
 	</script>
 	
-	<!-- Sharethis settings -->
-	<script type="text/javascript">var switchTo5x=true;</script>
-	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-	<script type="text/javascript">stLight.options({publisher: "ur-71c34be7-d524-c460-ac27-2ab2f6dd7e85"});</script>
-
 </html>
 

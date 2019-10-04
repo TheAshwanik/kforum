@@ -79,10 +79,10 @@
 	 	<ul class="nav nav-list">
 	 		<li class="nav-header pull-left" style="color: white">Whats Hot ?</li><br />
 			<li class="divider"></li>
-			 <li><% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
-			    <%= link_to tag.name, main_app.tagged_url(:tag => tag.name), class: css_class , :style => "padding-top: 0px; padding-bottom: 0px;" %>
-			    <% end %>
-			 </li>
+			<% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
+			<%= link_to tag.name, main_app.tagged_url(:tag => tag.name), class: css_class , :style => "padding-top: 0px; padding-bottom: 0px;" %>
+			<% end %>
+
 			 
 	 </div>
 	</aside>
