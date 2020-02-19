@@ -10,7 +10,7 @@ gem 'activeadmin'
 #gem 'progress_bar'
 gem 'newrelic_rpm'
 gem 'exception_notification' , git: 'git://github.com/alanjds/exception_notification.git' , :require => 'exception_notifier'
-
+gem 'rufus-scheduler'
 
 #Refinery
 git 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable' do
