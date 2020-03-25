@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 gem 'bootstrap-sass', '2.0.4'
-gem 'will_paginate', '3.0.3'
+gem 'will_paginate', '3.0.12'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'bootswatch-rails'
 gem 'activeadmin'
